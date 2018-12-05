@@ -31,6 +31,7 @@ Chương về Arc và Racket giống như một chương độc lập về cách
 Sau khi đã mài sắc công cụ và mài sắc tư duy, các bạn có khả năng tự đánh giá, và có khả năng chỉnh sửa và đóng góp vào chính dự án này. Đây là dự án cộng đồng, đăng trên github, tôi không giữ bản quyền, tất cả đóng góp đều được ghi nhận. Hoặc các bạn có thể bắt đầu làm luôn dự án của chính mình.
 
 ## Mục lục
+0. Giới thiệu 
 1. [Hệ điều hành](he-dieu-hanh.md)
    * Hệ điều hành mã nguồn mở.
    * Mã hóa thông tin 
