@@ -42,13 +42,13 @@ Tất cả các phần cứng bên trong *case* máy tính được kết nối 
 
 Khi máy tính đọc dữ liệu trên đĩa, có nghĩa là bộ xử lý gửi yêu cầu đọc qua cổng bus đến bộ điều khiển đĩa. Bộ điều khiển đĩa, với chuyên môn của hắn, sẽ điều khiển đầu đọc, xoay đĩa các kiểu để đọc dữ liệu nhị phân từ hóa (ví dụ chỗ nào mà từ trường bị méo thì đọc là 1, chỗ nào bình thường đọc là 0 chả hạn), sau đó lưu dữ liệu vào một vị trí nào đó trong bộ nhớ. Sau đó bộ điều khiển đĩa gửi tin trở lại cho bộ xử lý về địa chỉ của đám dữ liệu. Bộ xử lý, trên cơ sở đó, lại dùng cổng *bus* để đọc đám dữ liệu.
 
-## Hệ điều hành<a name="hệ-điều-hành">
+## Hệ điều hành
 
 Nếu ta hình dung trong không gian, mỗi chương trình trên máy là một điểm sáng, thì cả hệ thống tư duy của cái máy tính là một mớ rối phức tạp và đẹp đẽ. Hệ thống nơ-ron và các mối liên kết của nơ-ron trong não cũng như vậy. Khi ta ấn nút bật máy tính, hệ điều hành (*operating system* - một chương trình đặc biệt) sẽ tỉnh dậy đầu tiên. Việc của hệ điều hành là giúp đỡ các chương trình khác chạy mượt hơn bằng cách xử lý đám rách việc phần cứng. Quá trình gọi hệ điều hành dậy gọi là kéo dậy (*booting* - nắm tóc tự kéo mình dậy). Máy tính của bạn biết cách kéo dậy (*boot*) bởi vì cách boot được viết sẵn vào chip BIOS (*basic input/output system*) của hắn. Chip BIOS trỏ đến một vị trí cố định trên ổ cứng, thường là đặc khu đầu tiên (được đánh số bé nhất), máy tính nghe theo chỉ dẫn tìm đến đó sẽ thấy một chương trình đặc biệt gọi là người tải chương trình kéo dậy (*boot loader* - tên là Grub hoặc LILO). Người tải chương trình kéo dậy sẽ được lôi vào bộ nhớ và bắt đầu chạy. Việc của hắn là gọi hệ điều hành dậy. Đầu tiên hắn đi tìm lõi (*kernel*), tải lõi vào bộ nhớ và bắt lõi chạy. Nếu bạn bật máy và thấy chữ LILO trên màn hình và một đám chấm chấm sau đó, có nghĩa là máy đang tải lõi. Mỗi dấu chấm nghĩa là nó đã tải được thêm một khối code của lõi.
 
 Có thể bạn sẽ tò mò hỏi tại sao BIOS không tải lõi trực tiếp, tại sao hắn phải chạy đi tìm người tải chương trình kéo dậy? Tại vì BIOS không thông minh lắm. BIOS được viết cho những máy tính cổ xưa và không có khả năng để tải lõi trực tiếp. 
 
-### Lõi<a name="lõi"></a>
+### Lõi 
 
 Sau đó lõi sẽ chạy lăng xăng đi tìm đám phần cứng còn lại. Hắn không tìm linh tinh, hắn tìm đến những cổng ra/vào (*I/O port*) với những địa chỉ đặc biệt mà hắn biết là dễ có khả năng đó là địa chỉ của một cổng *bus* với một thẻ điều khiển đang đợi sẵn nghe lệnh. Lõi không đi tìm linh tinh bởi vì hắn có rất nhiều thông tin được viết sẵn cho hắn từ trước, hắn biết chỗ nào dễ có khả năng được việc và hắn biết cách đám điều khiển đánh tín hiệu trở lại nếu họ có mặt ở đó đợi hắn. Quá trình này được gọi là tự động lọ mọ.
 
@@ -90,7 +90,7 @@ Dù gì, phiên bản **getty** ở điểm điều khiển sẽ ghi nhận tên
 
 [*Hình: Cổng giao tiếp Terminal*](https://i.ytimg.com/vi/CGk6-89g6jg/maxresdefault.jpg)
 
-### Các chương trình<a name="các-chương-trình"></a>
+### Các chương trình
 
 Sau khi *boot* xong, bạn tưởng tượng cái máy tính của bạn như một vườn bách thú chứa các chương trình thuộc các kiểu trên đời. Tất cả đều nhốn nháo đợi có gì đó để làm. Tất cả đều đợi sự kiện (*event*) gì đó xảy ra. Khi tôi nói sự kiện, có nghĩa là sự kiện chuột, bàn phím hoặc màn hình chạm: ví dụ bạn nhấn một phím trên bàn phím, hoặc bạn di chuột, hoặc ấn chuột trái phải.. Hoặc nếu máy tính của bạn được kết nối vào mạng với máy khác, thì sự kiện có thể là một gói dữ liệu vừa được gửi đến qua mạng đó. 
 
@@ -131,7 +131,7 @@ Các chương trình không chạy song song, chúng xếp hàng đợi đến l
 
 Ngoài việc phân bổ thời gian, người lên lịch cũng phân bổ không gian bộ nhớ để các chương trình không dẫm chân lên nhau khi chen chúc trong bộ nhớ làm việc. Kể cả nếu bọn nó không ghét nhau, bạn không muốn lỗi ở trong chương trình này phá hoại chương trình khác. Vì thế cần phải quản lý bộ nhớ. Mỗi chương trình trong sở thú cần một khu bộ nhớ riêng, để chạy code và giữ biến và kết quả. Tập hợp này bao gồm một khu chứa code (chỉ có quyền đọc) chứa hướng dẫn cho máy tính, và một khu chứa dữ liệu (có quyền viết) để lưu biến và kết quả. Khu dữ liệu bắt buộc phải riêng rẽ, nhưng nếu hai chương trình chạy cùng một đoạn code thì khu chứa code có thể được chia nhau. 
 
-### Bộ nhớ ảo<a name="bộ-nhớ-ảo"></a>
+### Bộ nhớ ảo
 RAM - giống như bộ nhớ ở phần cầu não trước trán, kích cỡ bé nhưng xử lý nhanh và dùng để tư duy tỉnh táo, xử lý các vấn đề xảy đến, và để hoạt động bình thường. RAM bé quá nên ta nghĩ cách dùng bộ nhớ ảo. Tức là khi có một phần việc ở RAM mà chưa cần ngay, lõi sẽ bê phần thông tin đó để vào ổ cứng, để cho phần bộ nhớ ở RAM trống đi dùng vào việc khác có ích. Tiền không thể để đắp chiếu. Phần bộ nhớ ảo ở ổ cứng mà chuyên để trữ thông tin chưa cần đến đó gọi là không gian để hoán đổi (*swap space*). Tất nhiên ghi đọc ở ổ cứng thì chậm hơn ở RAM nhiều lần. Nói tiền không để đắp chiếu là thật, RAM đắt hơn. Khi cài Ubuntu mà tự cài sẽ có phần phải chọn chia ổ cứng như nào, chia *swap space* nhiều nhiều chút.
 
 Nói cụ thể hơn, có 5 loại bộ nhớ: 
@@ -153,7 +153,7 @@ Kể cả khi không cần chuyển các khối dữ liệu giữa các bậc th
 
 Nếu bạn lập trình C, bạn sẽ bị "segfault" ám ảnh như tôi. Tức là segmentation fault hoặc core dumped. Đây chính trường hợp có một chương trình đòi truy nhập bộ nhớ ngoài khu trại hắn được phân cho. Khi đó chương trình sẽ bị cắt đột ngột tại chỗ. Thường là lỗi trong code. Khi đó dữ liệu sau lỗi cần phải được đọc để tìm lỗi ở chỗ nào. Để phân lập các chương trình, ngoài việc chia địa bàn hoạt động cho chúng, bạn cũng có thể hạn chế quyền truy nhập các tập tin. Các tập tin quan trọng của hệ thống sẽ bị hạn chế truy nhập (ví dụ chỉ được xem nếu là người dùng bình thường..)
 
-## Đĩa cứng<a name="đĩa-cứng"></a>
+## Đĩa cứng
 
 ![disk](https://cdn.mos.cms.futurecdn.net/49e311834574eddba8bc6cb5fa6298fa-1200-80.jpg)
 
@@ -183,7 +183,7 @@ Ví dụ thư mục aaa có chế độ cấp phép như sau: drwxr--r--, ta đ�
 ### Các thư mục hệ thống 
 Linux có nhiều phiên bản khác nhau tùy khẩu vị người dùng, tuy nhiên ở tầm căn bản chúng đều tổ chức theo chuẩn. Ví dụ máy nào cũng có mấy thư mục gốc root, var, dev, usr, bin..
 
-### Mã hóa thông tin<a name="mã-hóa-thông-tin">
+### Mã hóa thông tin
 
 Source: [Chap 7: Computer memory](http://statmath.wu.ac.at/courses/data-analysis/itdtHTML/node55.html)
 
@@ -280,7 +280,7 @@ Ta đổi chữ cái sang số như thế nào? Khá là đơn giản, tất c�
 
 Chuẩn ASCII không đủ lắm, to nhất hiện giờ là chuẩn Unicode, phiên bản phổ biến là UTF-8. Trong UTF thì các biểu tượng từ 0-127 là ASCII. Từ 128-255 là khác. Tại sao 255 là to nhất, vì thường chữ cái được lưu trong 1 byte (là 8 bit), mỗi bit có 2 trạng thái cho nên 8 bit sẽ lưu được 2^8 = 256 chữ cái. 255 là to nhất là do ta đếm từ số 0. Trong ngành máy tính người ta hay đếm từ số 0.
 
-## Ngôn ngữ máy tính<a name="ngôn-ngữ-máy-tính">
+## Ngôn ngữ máy tính
 
 Các bạn đã thấy là chương trình được chạy như thế nào. Mỗi chương trình đều phải chạy một chuỗi byte. Chuỗi byte này chính là nỗ lực giao tiếp với cái máy tính nhằm hướng dẫn nó làm nhiệm vụ mà mình bảo. Truyền thuyết kể rằng có những cao thủ giữa chúng ta đã luyện mắt thành thần và đọc được những chuỗi nhị phân này, thanh niên mua đĩa CD về dùng mắt thường quét ánh phản quang lại và đọc trực tiếp nhị phân trên những vòng lóng lánh của đĩa.
 
@@ -302,7 +302,7 @@ Kể từ 1990, ngôn ngữ p-code là giải pháp ở giữa hai cực trên. 
 
 P-code chạy nhanh gần như nhị phân được soạn sẵn (do người dịch của p-code rất dễ làm). Ví dụ nổi bật: Python, Perl, Java.
 
-## Mạng internet<a name="mạng-internet">
+## Mạng internet
 
 Tôi lấy ví dụ phổ biến đó là khi bạn chỉ phần mềm lướt mạng Firefox đến địa chỉ http://www.tldp.org/HOWTO/index.html. Tức là bảo hắn đi lấy tập tin index.html ở thư mục HOWTO trên máy chủ tên là www.tldp.org 
 

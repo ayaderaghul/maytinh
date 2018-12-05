@@ -30,7 +30,7 @@ Chương về Arc và Racket giống như một chương độc lập về cách
 
 Sau khi đã mài sắc công cụ và mài sắc tư duy, các bạn có khả năng tự đánh giá, và có khả năng chỉnh sửa và đóng góp vào chính dự án này. Đây là dự án cộng đồng, đăng trên github, tôi không giữ bản quyền, tất cả đóng góp đều được ghi nhận. Hoặc các bạn có thể bắt đầu làm luôn dự án của chính mình.
 
-## Mục lục<a name="mục-lục"></a>
+## Mục lục
 1. Hệ điều hành
    * Hệ điều hành mã nguồn mở.
    * Mã hóa thông tin 
@@ -57,7 +57,7 @@ Sau khi đã mài sắc công cụ và mài sắc tư duy, các bạn có khả 
 * [W3Schools](https://www.w3schools.com/)
 * [The Art of Unix Programming](http://www.catb.org/~esr/writings/taoup/html/index.html)
 
-## Disclaimer<a name="disclaimer">
+## Disclaimer
 
 Đây là kinh nghiệm cá nhân của tôi, với mục đích chia sẻ khiến mọi người hiểu rõ hơn về trường hợp của từng người. Mọi người sẽ phải tự tìm con đường đúng nhất cho mình.
 
@@ -66,7 +66,7 @@ This is an attempt to bring better technology to my rural hometown. The sources 
 All the screenshots was taken by me on my own device. In chapter 2, I use some general images from the internet to illustrate hardware pieces (for example, processor, case, bus, dns workflow..). It helps the reader because they don't have to vaguely imagine complicated stuff (which is the case because the computer is a complicated machine). I put the link to the images right below the images. If someone notices something wrong, please notice me, I would try to resolve right away.
 
 
-## Acknowledgement<a name="acknowledgement"></a>
+## Acknowledgement
 
 These people significantly change the course of my life for the better: Romas Vijeikis, Hoàng Minh Thắng, Mathias Felleisen. There are some others that I look up and try to learn from them too. I read Paul Graham extensively.
 
