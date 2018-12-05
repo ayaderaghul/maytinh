@@ -31,7 +31,7 @@ Chương về Arc và Racket giống như một chương độc lập về cách
 Sau khi đã mài sắc công cụ và mài sắc tư duy, các bạn có khả năng tự đánh giá, và có khả năng chỉnh sửa và đóng góp vào chính dự án này. Đây là dự án cộng đồng, đăng trên github, tôi không giữ bản quyền, tất cả đóng góp đều được ghi nhận. Hoặc các bạn có thể bắt đầu làm luôn dự án của chính mình.
 
 ## Mục lục
-1. Hệ điều hành
+1. [Hệ điều hành](he-dieu-hanh.md)
    * Hệ điều hành mã nguồn mở.
    * Mã hóa thông tin 
    * Cách nói chuyện với máy tính 
@@ -61,7 +61,7 @@ Sau khi đã mài sắc công cụ và mài sắc tư duy, các bạn có khả 
 
 Đây là kinh nghiệm cá nhân của tôi, với mục đích chia sẻ khiến mọi người hiểu rõ hơn về trường hợp của từng người. Mọi người sẽ phải tự tìm con đường đúng nhất cho mình.
 
-This is an attempt to bring better technology to my rural hometown. The sources are listed below. I declare this project to be in public domain under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/). You are welcome to edit and improve the code on [my github](https://github.com/ayaderaghul/phocaptinhoc). It should also be noted that this book describes my own experience, with the hope to help people. I do not hold any copyrights and I disclaim any responsibility.
+This is an attempt to bring better technology to my rural hometown. The sources are listed above. I declare this project to be in public domain under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/). You are welcome to edit and improve the code on [my github](https://github.com/ayaderaghul/phocaptinhoc). It should also be noted that this book describes my own experience, with the hope to help people. I do not hold any copyrights and I disclaim any responsibility.
 
 All the screenshots was taken by me on my own device. In chapter 2, I use some general images from the internet to illustrate hardware pieces (for example, processor, case, bus, dns workflow..). It helps the reader because they don't have to vaguely imagine complicated stuff (which is the case because the computer is a complicated machine). I put the link to the images right below the images. If someone notices something wrong, please notice me, I would try to resolve right away.
 
@@ -72,4 +72,4 @@ These people significantly change the course of my life for the better: Romas Vi
 
 Maintainer: Nguyễn Linh Chi (nguyenlinhchi09@gmail.com)
 
-Alpha testers: Nguyễn Diệu Thu, Trần Đình Khánh
+Alpha testers: Nguyễn Diệu Thu, Trần Đình Khánh, Đào Như Quỳnh, Nguyễn Mai Phương.
