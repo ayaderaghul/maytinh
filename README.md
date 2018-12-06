@@ -73,4 +73,4 @@ These people significantly change the course of my life for the better: Romas Vi
 
 Maintainer: Nguyễn Linh Chi (nguyenlinhchi09@gmail.com)
 
-Alpha testers: Nguyễn Diệu Thu, Trần Đình Khánh, Đào Như Quỳnh, Nguyễn Mai Phương.
+Alpha testers: Nguyễn Diệu Thu, Trần Đình Khánh, Đào Như Quỳnh, Nguyễn Mai Phương, Yến Yến, Nguyễn Đoan.
