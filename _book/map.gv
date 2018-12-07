@@ -1,0 +1,20 @@
+digraph M {
+
+main [label="Bắt đầu" ];
+arc [shape=box, label="Arc", style="filled", color="#f89554"];
+
+os [shape=box, label="Hệ điều hành"];
+install [shape=box, label="Bắt đầu cài"];
+cv [shape=box, label="CV và trang web đầu tiên"];
+racket [shape=box, label="Racket", color="#f89554"];
+more [shape=box, label="Hơn thế nữa"];
+
+main -> arc [style=dotted, label="tò mò?"];
+main -> os;
+os -> install;
+install -> cv;
+cv -> arc;
+arc -> racket;
+racket -> more;
+cv -> more [style=dotted]
+}

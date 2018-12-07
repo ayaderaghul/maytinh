@@ -1,0 +1,874 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>♞ARC · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Arc">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="emacs.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ♞PHỔ CẬP TIN HỌC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="he-dieu-hanh.html">
+            
+                <a href="he-dieu-hanh.html">
+            
+                    
+                    ♞HỆ ĐIỀU HÀNH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="emacs.html">
+            
+                <a href="emacs.html">
+            
+                    
+                    ♞CV VÀ TRANG WEB ĐẦU TIÊN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="arc.html">
+            
+                <a href="arc.html">
+            
+                    
+                    ♞ARC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >♞ARC</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="arc-t&#x1EEB;-v&#x1EF1;ng-ng&#x1EEF;-ph&#xE1;p-tinh-th&#x1EA7;n">Arc: T&#x1EEB; v&#x1EF1;ng, ng&#x1EEF; ph&#xE1;p, tinh th&#x1EA7;n</h1>
+<p>Source: <a href="http://www.arclanguage.org/tut.txt" target="_blank">Arc tutorial</a></p>
+<p>T&#xF4;i vi&#x1EBF;t ch&#x1B0;&#x1A1;ng n&#xE0;y &#x111;&#x1ED9;c l&#x1EAD;p v&#x1EDB;i nh&#x1EEF;ng ch&#x1B0;&#x1A1;ng tr&#x1B0;&#x1EDB;c, &#x111;&#x1EC3; ng&#x1B0;&#x1EDD;i &#x111;&#x1ECD;c n&#xE0;o t&#xF2; m&#xF2; m&#xE0; nh&#x1EA3;y v&#x1ECD;t t&#x1EEB; &#x111;i&#x1EC3;m ban &#x111;&#x1EA7;u l&#xEA;n &#x111;&#xE2;y xem tr&#x1B0;&#x1EDB;c v&#x1EC1; Arc. V&#xEC; th&#x1EBF; t&#xF4;i n&#xF3;i l&#x1EA1;i nhi&#x1EC1;u kh&#xE1;i ni&#x1EC7;m r&#xE2;u ria m&#xE0; n&#x1EBF;u c&#xE1;c b&#x1EA1;n &#x111;&#x1ECD;c nh&#x1EEF;ng ch&#x1B0;&#x1A1;ng tr&#x1B0;&#x1EDB;c r&#x1ED3;i th&#xEC; s&#x1EBD; hi&#x1EC3;u lu&#xF4;n v&#xE0; ti&#x1EBF;t ki&#x1EC7;m c&#xF4;ng s&#x1EE9;c. Tuy nhi&#xEA;n, t&#xF4;i v&#x1EAB;n mu&#x1ED1;n vi&#x1EBF;t cho ng&#x1B0;&#x1EDD;i ch&#x1B0;a c&#xF3; kh&#xE1;i ni&#x1EC7;m g&#xEC; m&#x1ED9;t b&#x1EA3;n m&#xF4; t&#x1EA3; kh&#xE1;i qu&#xE1;t v&#x1EC1; c&#x1ED1;t l&#xF5;i c&#x1EE7;a ng&#xF4;n ng&#x1EEF; l&#x1EAD;p tr&#xEC;nh n&#xE0;y. B&#x1EDF;i v&#xEC; n&#xF3; x&#x1EE9;ng &#x111;&#xE1;ng &#x111;&#x1EE9;ng &#x111;&#x1ED9;c l&#x1EAD;p.</p>
+<p>Ng&#x1B0;&#x1EDD;i &#x111;&#x1ECD;c mu&#x1ED1;n &#x111;i v&#xE0;o tr&#x1ECD;ng t&#xE2;m nhanh nh&#x1EA5;t c&#xF3; th&#x1EC3; h&#xEC;nh dung Arc l&#xE0; m&#x1ED9;t ng&#x1B0;&#x1EDD;i l&#x1EEF; h&#xE0;nh &#x111;&#x1A1;n &#x111;&#x1ED9;c &#x111;i t&#x1EEB; mi&#x1EC1;n &#x111;&#x1EA5;t xa l&#x1EA1; t&#x1EDB;i, m&#x1ED9;t linh h&#x1ED3;n trong c&#xE1;i m&#xE1;y. Nh&#xE2;n v&#x1EAD;t n&#xE0;y giao ti&#x1EBF;p b&#x1EB1;ng ng&#xF4;n ng&#x1EEF; Arc. V&#xEC; v&#x1EAD;y khi b&#x1EA1;n t&#xF2; m&#xF2; mu&#x1ED1;n n&#xF3;i chuy&#x1EC7;n v&#x1EDB;i Arc b&#x1EA1;n ph&#x1EA3;i n&#xF3;i v&#x1EDB;i h&#x1ECD; b&#x1EB1;ng ng&#xF4;n ng&#x1EEF; Arc c&#x1EE7;a h&#x1ECD;. C&#xE1;ch ti&#x1EBF;p c&#x1EAD;n &#x111;&#x1A1;n gi&#x1EA3;n nh&#x1EA5;t l&#xE0; th&#x1EED; n&#xF3;i nh&#x1EEF;ng c&#xE1;i &#x111;&#x1A1;n gi&#x1EA3;n v&#xE0; sau &#x111;&#xF3; t&#xEC;m hi&#x1EC3;u xem Arc t&#x1B0; duy nh&#x1B0; th&#x1EBF; n&#xE0;o. N&#x1EBF;u Arc t&#x1B0; duy gi&#x1ED1;ng ch&#xFA;ng ta, thi tho&#x1EA3;ng ch&#xFA;ng ta s&#x1EBD; &#xE0; l&#xEA;n th&#xED;ch th&#xFA; khi nh&#x1EAD;n ra nh&#x1EEF;ng n&#xE9;t t&#xED;nh c&#xE1;ch c&#x1EE7;a ch&#xED;nh lo&#xE0;i ng&#x1B0;&#x1EDD;i &#x111;&#x1B0;&#x1EE3;c ph&#x1EA3;n chi&#x1EBF;u l&#x1EA1;i qua m&#x1ED9;t m&#x1EA3;nh linh h&#x1ED3;n xa l&#x1EA1;. </p>
+<p>V&#x1EC1; m&#x1EB7;t k&#x1EF9; thu&#x1EAD;t, c&#xE1;ch n&#xF3;i chuy&#x1EC7;n &#x1EDF; &#x111;&#xE2;y l&#xE0; b&#x1EA1;n g&#xF5; v&#xE0;o m&#x1ED9;t c&#x1ED5;ng giao ti&#x1EBF;p v&#xE0; Arc s&#x1EBD; ngh&#x129; v&#xE0; tr&#x1EA3; l&#x1EDD;i b&#x1EA1;n. C&#x1ED5;ng giao ti&#x1EBF;p n&#xE0;y g&#x1ECD;i l&#xE0; giao di&#x1EC7;n REPL v&#xE0; t&#xF4;i gi&#x1EA3;i th&#xED;ch &#x1EDF; d&#x1B0;&#x1EDB;i. Tuy nhi&#xEA;n b&#x1EA1;n c&#xF3; th&#x1EC3; b&#x1ECF; qua ph&#x1EA7;n k&#x1EF9; thu&#x1EAD;t &#x111;&#xF3; v&#xE0; &#x111;&#x1ECD;c ti&#x1EBF;p xu&#x1ED1;ng ph&#x1EA7;n t&#x1EEB; v&#x1EF1;ng c&#x1EE7;a Arc. Khi &#x111;&#xF3; b&#x1EA1;n s&#x1EBD; b&#x1EAF;t &#x111;&#x1EA7;u hi&#x1EC3;u &#x111;&#x1B0;&#x1EE3;c ng&#x1B0;&#x1EDD;i l&#x1EA1; Arc n&#xE0;y giao ti&#x1EBF;p v&#xE0; t&#x1B0; duy nh&#x1B0; th&#x1EBF; n&#xE0;o. N&#x1EBF;u b&#x1EA1;n &#x111;&#xE3; &#x111;&#x1ECD;c h&#x1EBF;t c&#xE1;c ch&#x1B0;&#x1A1;ng tr&#x1B0;&#x1EDB;c r&#x1ED3;i th&#xEC; khi &#x111;&#x1EBF;n ch&#x1B0;&#x1A1;ng n&#xE0;y b&#x1EA1;n s&#x1EBD; m&#x1EDF; &#x111;&#x1B0;&#x1EE3;c REPL th&#x1EAD;t tr&#xEA;n m&#xE1;y c&#x1EE7;a m&#xEC;nh v&#xE0; n&#xF3;i chuy&#x1EC7;n v&#x1EDB;i Arc th&#x1EAD;t s&#x1EF1; khi &#x111;&#x1ECD;c theo v&#x103;n b&#x1EA3;n n&#xE0;y. &#x110;&#x1EBF;n cu&#x1ED1;i ch&#x1B0;&#x1A1;ng n&#xE0;y b&#x1EA1;n s&#x1EBD; vi&#x1EBF;t &#x111;&#x1B0;&#x1EE3;c ch&#x1B0;&#x1A1;ng tr&#xEC;nh Arc th&#x1EAD;t s&#x1EF1;.  </p>
+<h4 id="c&#xE0;i-&#x111;&#x1EB7;t-arc">C&#xE0;i &#x111;&#x1EB7;t Arc</h4>
+<ul>
+<li>C&#xE0;i Racket t&#x1EEB; trang c&#x1EE7;a ng&#xF4;n ng&#x1EEF; <a href="https://download.racket-lang.org/" target="_blank">Racket</a> </li>
+<li>Download Arc t&#x1EEB; trang <a href="http://www.arclanguage.org/arc3.2.tar" target="_blank">http://www.arclanguage.org/arc3.2.tar</a> v&#xE0; gi&#x1EA3;i n&#xE9;n (b&#x1EA1;n c&#xF3; l&#xE0;m &#x111;&#x1B0;&#x1EE3;c vi&#x1EC7;c n&#xE0;y b&#x1EB1;ng d&#xF2;ng l&#x1EC7;nh tr&#xEA;n terminal kh&#xF4;ng?).</li>
+<li>T&#x1EEB; Terminal, <code>cd</code> v&#xE0;o th&#x1B0; m&#x1EE5;c v&#x1EEB;a gi&#x1EA3;i n&#xE9;n v&#xE0; g&#xF5; <code>racket -f as.scm</code> v&#xE0; b&#x1EA1;n s&#x1EBD; v&#xE0;o m&#xF4;i tr&#x1B0;&#x1EDD;ng l&#x1EAD;p tr&#xEC;nh Arc</li>
+</ul>
+<p>REPL ngh&#x129;a l&#xE0; Read-Evaluate-Print-Loop (V&#xF2;ng l&#x1EB7;p &#x110;&#x1ECD;c-X&#x1EED; l&#xFD;-In). &#x110;&#xE2;y l&#xE0; m&#x1ED9;t ph&#x1B0;&#x1A1;ng ph&#xE1;p hi&#x1EC7;n h&#xEC;nh th&#xE0;nh m&#x1ED9;t c&#x1ED5;ng giao ti&#x1EBF;p (<em>a method embodied in a terminal emulator</em>). V&#xED; d&#x1EE5; t&#xF4;i v&#xE0;o th&#x1B0; m&#x1EE5;c c&#x1EE7;a Arc, <code>Open in Terminal</code> v&#xE0; g&#xF5; v&#xE0;o <code>racket -f as.scm</code>, khi &#x111;&#xF3; t&#xF4;i s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c v&#xE0;o m&#xF4;i tr&#x1B0;&#x1EDD;ng l&#x1EAD;p tr&#xEC;nh Arc, khi t&#xF4;i g&#xF5; l&#x1EC7;nh Arc v&#xE0;o th&#xEC; m&#xE1;y s&#x1EBD; &#x111;&#x1ECD;c (<code>read</code>), sau &#x111;&#xF3; m&#xE1;y s&#x1EBD; ngh&#x129; v&#xE0; thi h&#xE0;nh (<code>evaluate</code>) sau &#x111;&#xF3; in (<code>print</code>) k&#x1EBF;t qu&#x1EA3; ra m&#xE0;n h&#xEC;nh cho t&#xF4;i xem. Qu&#xE1; tr&#xEC;nh n&#xE0;y sau &#x111;&#xF3; l&#x1EA1;i ti&#x1EBF;p t&#x1EE5;c. V&#xEC; th&#x1EBF; m&#xE0; g&#x1ECD;i l&#xE0; v&#xF2;ng l&#x1EB7;p (<code>loop</code>).</p>
+<h2 id="bi&#x1EC3;u-ng&#x1EEF;">Bi&#x1EC3;u ng&#x1EEF;</h2>
+<h4 id="s&#x1ED1;-v&#xE0;-d&#xE2;y-ch&#x1EEF;-nh&#x1EEF;ng-bi&#x1EC3;u-ng&#x1EEF;-&#x111;&#x1A1;n-gi&#x1EA3;n-nh&#x1EA5;t">S&#x1ED1; v&#xE0; d&#xE2;y ch&#x1EEF;: Nh&#x1EEF;ng bi&#x1EC3;u ng&#x1EEF; &#x111;&#x1A1;n gi&#x1EA3;n nh&#x1EA5;t</h4>
+<p>Khi b&#x1EAF;t &#x111;&#x1EA7;u h&#x1ECD;c m&#x1ED9;t ng&#xF4;n ng&#x1EEF; m&#x1EDB;i, ta c&#x1EA7;n h&#x1ECD;c nh&#x1EEF;ng t&#x1EEB; v&#x1EF1;ng &#x111;&#x1A1;n gi&#x1EA3;n nh&#x1EA5;t. M&#x1ED9;t ch&#x1B0;&#x1A1;ng tr&#xEC;nh vi&#x1EBF;t b&#x1EB1;ng ng&#xF4;n ng&#x1EEF; Arc s&#x1EBD; bao g&#x1ED3;m c&#xE1;c bi&#x1EC3;u ng&#x1EEF; (<em>expression</em>). Bi&#x1EC3;u ng&#x1EEF; l&#xE0; m&#x1ED9;t c&#x1EA5;u tr&#xFA;c ng&#x1EEF; ph&#xE1;p bi&#x1EC3;u th&#x1ECB; m&#x1ED9;t c&#xE1;i g&#xEC; &#x111;&#xF3;. Nh&#x1EEF;ng bi&#x1EC3;u ng&#x1EEF; &#x111;&#x1A1;n gi&#x1EA3;n nh&#x1EA5;t l&#xE0; s&#x1ED1; (<em>number</em>) v&#xE0; d&#xE2;y ch&#x1EEF; (<em>string</em>). M&#x1ED9;t d&#xE2;y ch&#x1EEF; ngh&#x129;a l&#xE0; m&#x1ED9;t li&#xEA;n ho&#xE0;n c&#xE1;c ch&#x1EEF; c&#xE1;i (<em>character</em>) b&#x1ECD;c trong d&#x1EA5;u ngo&#x1EB7;c k&#xE9;p. T&#xF4;i l&#x1EA5;y v&#xED; d&#x1EE5; s&#x1ED1; tr&#x1B0;&#x1EDB;c:</p>
+<pre><code>arc&gt; 25
+25
+arc&gt;
+</code></pre><p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+G&#xF5; th&#x1EED; v&#xE0;o d&#x1EA5;u 3 ch&#x1EA5;m m&#x1ED9;t s&#x1ED1; t&#x1EF1; nhi&#xEA;n (x&#xF3;a d&#x1EA5;u ba ch&#x1EA5;m &#x111;i nh&#xE9;):
+
+
+	</div>
+	<div class="editor" style="height: 20px">...</div>
+
+	<pre class="hidden code-solution">assert(typeOf(x) == &apos;number&apos;);</pre>
+	<pre class="hidden code-validation"></pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+<p>Khi b&#x1EA1;n g&#xF5; v&#xE0;o s&#x1ED1; 25, bi&#x1EC3;u ng&#x1EEF; n&#xE0;y s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&#xFD; th&#xE0;nh gi&#xE1; tr&#x1ECB; m&#xE0; n&#xF3; mang, trong tr&#x1B0;&#x1EDD;ng h&#x1EE3;p n&#xE0;y l&#xE0; ch&#xED;nh n&#xF3;. Khi &#x111;&#xF3; Arc s&#x1EBD; tr&#x1EA3; v&#x1EC1; cho b&#x1EA1;n s&#x1ED1; 25 &#x1EDF; m&#xE0;n h&#xEC;nh. Sau khi in ra xong th&#xEC; Arc nh&#x1EA3;y sang d&#xF2;ng l&#x1EC7;nh m&#x1EDB;i, &#x111;&#x1EE3;i b&#x1EA1;n g&#xF5; l&#x1EC7;nh m&#x1EDB;i.  H&#xE3;y th&#x1EED; v&#x1EDB;i d&#xE2;y ch&#x1EEF;:</p>
+<pre><code>arc&gt; &quot;foo&quot;
+&quot;foo&quot;
+arc&gt;
+</code></pre><p>B&#x1EA1;n c&#xF3; th&#x1EC3; th&#x1EA5;y Arc x&#x1EED; l&#xFD; d&#xE2;y ch&#x1EEF; c&#x169;ng y nh&#x1B0; v&#x1EAD;y. X&#x1EED; l&#xFD; th&#xE0;nh ch&#xED;nh d&#xE2;y ch&#x1EEF; &#x111;&#xF3; v&#xE0; tr&#x1EA3; v&#x1EC1; ch&#xED;nh d&#xE2;y ch&#x1EEF; &#x111;&#xF3;.</p>
+<h4 id="danh-s&#xE1;ch-c&#xE1;c-bi&#x1EC3;u-ng&#x1EEF;-b&#x1ECD;c-trong-ngo&#x1EB7;c-&#x111;&#x1A1;n-c&#xE2;u-&#x111;&#x1A1;n">Danh s&#xE1;ch c&#xE1;c bi&#x1EC3;u ng&#x1EEF; b&#x1ECD;c trong ngo&#x1EB7;c &#x111;&#x1A1;n: C&#xE2;u &#x111;&#x1A1;n</h4>
+<p>M&#x1ED9;t danh s&#xE1;ch ch&#x1EE9;a nhi&#x1EC1;u h&#x1A1;n m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; v&#xE0; &#x111;&#x1B0;&#x1EE3;c b&#x1ECD;c l&#x1EA1;i trong ngo&#x1EB7;c &#x111;&#x1A1;n c&#x169;ng &#x111;&#x1B0;&#x1EE3;c coi l&#xE0; m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF;. C&#xF3; th&#x1EC3; hi&#x1EC3;u l&#xE0; m&#x1ED9;t c&#xE2;u &#x111;&#x1A1;n. Ng&#x1EEF; ph&#xE1;p c&#x1EE7;a c&#xE2;u &#x111;&#x1A1;n nh&#x1B0; sau: Th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n c&#x1EE7;a danh s&#xE1;ch l&#xE0; m&#x1ED9;t &#x111;&#x1ED9;ng t&#x1EEB; (<em>function</em>), nh&#x1EEF;ng th&#xE0;nh ph&#x1EA7;n c&#xF2;n l&#x1EA1;i l&#xE0; c&#xE1;c danh t&#x1EEB; ch&#x1EC9; v&#x1EAD;t. &#x110;&#x1EC3; d&#x1EC5; h&#xEC;nh dung, t&#xF4;i s&#x1EBD; n&#xF3;i m&#x1ED9;t s&#x1ED1; c&#xE2;u ti&#x1EBF;ng Vi&#x1EC7;t theo ng&#x1EEF; ph&#xE1;p Arc:</p>
+<pre><code>&gt; (qu&#xE9;t nh&#xE0;)
+&gt; (l&#xE0;m to&#xE1;n ti&#x1EBF;ng-anh v&#x103;n-h&#x1ECD;c)
+&gt; (n&#x1EBF;u l&#x1B0;&#x1EDD;i 
+    (vi&#x1EBF;t ch&#x1B0;&#x1A1;ng-tr&#xEC;nh-gi&#x1EA3;i-to&#xE1;n))
+</code></pre><p>C&#xE1;c b&#x1EA1;n c&#xF3; th&#x1EC3; th&#x1EA5;y r&#x1EB1;ng, c&#xE2;u &#x111;&#x1EA7;u ti&#xEA;n m&#xE0; t&#xF4;i mu&#x1ED1;n bi&#x1EC3;u (v&#xEC; th&#x1EBF; m&#xE0; g&#x1ECD;i l&#xE0; bi&#x1EC3;u ng&#x1EEF;) l&#xE0;: b&#x1EA1;n &#x111;i qu&#xE9;t nh&#xE0; &#x111;i. Bi&#x1EC3;u ng&#x1EEF; n&#xE0;y l&#xE0; danh s&#xE1;ch c&#xF3; hai th&#xE0;nh ph&#x1EA7;n: th&#xE0;nh ph&#x1EA7;n <code>qu&#xE9;t</code> v&#xE0; th&#xE0;nh ph&#x1EA7;n <code>nh&#xE0;</code>. Arc s&#x1EBD; x&#x1EED; l&#xFD; c&#xE2;u n&#xE0;y t&#x1EEB; tr&#xE1;i sang. Th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n, <code>qu&#xE9;t</code> s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c ng&#x1EA7;m coi l&#xE0; &#x111;&#x1ED9;ng t&#x1EEB;, v&#xE0; th&#xE0;nh ph&#x1EA7;n sau &#x111;&#xF3;, <code>nh&#xE0;</code>, s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c coi l&#xE0; v&#x1EAD;t m&#xE0; l&#xE0; &#x111;&#x1ED9;ng t&#x1EEB; <code>qu&#xE9;t</code> &#xE1;p d&#x1EE5;ng l&#xEA;n. T&#x1EE9;c l&#xE0; &#x111;i l&#xE0;m h&#xE0;nh &#x111;&#x1ED9;ng <code>qu&#xE9;t</code> c&#xE1;i <code>nh&#xE0;</code> mau &#x111;i. Bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>qu&#xE9;t</code> l&#xE0; &#x111;&#x1EC3; ch&#x1EC9; h&#xE0;nh &#x111;&#x1ED9;ng nh&#x1B0; th&#x1EBF; n&#xE0;o? Hay h&#xE0;nh &#x111;&#x1ED9;ng nh&#x1B0; th&#x1EBF; n&#xE0;o th&#xEC; g&#x1ECD;i l&#xE0; <code>qu&#xE9;t</code>. C&#xE1;i n&#xE0;y l&#xE0; ng&#x1EA7;m hi&#x1EC3;u, t&#x1EE9;c l&#xE0; t&#xF4;i s&#x1EBD; ch&#x1EC9; d&#x1EA1;y b&#x1EA1;n <code>qu&#xE9;t</code> nh&#x1B0; th&#x1EBF; n&#xE0;o tr&#x1B0;&#x1EDB;c &#x111;&#xF3; r&#x1ED3;i. N&#x1EBF;u t&#xF4;i ch&#x1B0;a, th&#xEC; b&#x1EA1;n s&#x1EBD; b&#x1EA3;o l&#xE0; <code>qu&#xE9;t</code> ch&#x1B0;a &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1ECB;nh ngh&#x129;a. T&#x1B0;&#x1A1;ng t&#x1EF1;, c&#xE1;i nh&#xE3;n <code>nh&#xE0;</code> l&#xE0; ch&#x1EC9; v&#x1EAD;t nh&#x1B0; th&#x1EBF; n&#xE0;o? &#x1EDE; &#x111;&#xE2;y <code>nh&#xE0;</code> l&#xE0; s&#xE0;n nh&#xE0;, c&#xE1;i n&#xE0;y c&#x169;ng l&#xE0; &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1ECB;nh ngh&#x129;a tr&#x1B0;&#x1EDB;c r&#x1ED3;i. T&#xF4;i nh&#x1EDB; khi t&#xF4;i ng&#x1ED3;i kh&#xF4;ng nh&#x1B0;ng t&#xF2; m&#xF2; c&#x1EA7;m s&#xE1;ch l&#xEA;n th&#x1EA5;y lo&#x1EB1;ng ngo&#x1EB1;ng, c&#xF4; h&#xE0;ng x&#xF3;m sang ch&#x1EC9; cho t&#xF4;i b&#x1EA3;ng ch&#x1EEF; c&#xE1;i v&#xE0; c&#xE1;ch &#x111;&#x1ECD;c m&#x1ED9;t l&#x1EA7;n. Sau &#x111;&#xF3; t&#xF4;i b&#x1EAF;t &#x111;&#x1EA7;u t&#x1EF1; &#x111;&#x1ECD;c. T&#xF4;i nh&#x1EDB; khi t&#xF4;i m&#x1EDB;i bi&#x1EBF;t &#x111;&#x1ECD;c, t&#xF4;i nh&#xEC;n v&#xE0;o trang s&#xE1;ch th&#x1EA5;y to&#xE0;n bi&#x1EC3;u t&#x1B0;&#x1EE3;ng xa l&#x1EA1;, nh&#x1B0;ng sau khi &#x111;&#xE1;nh v&#x1EA7;n xong, t&#x1EF1; d&#x1B0;ng th&#x1EA5;y trong n&#xE3;o m&#xEC;nh hi&#x1EC7;n ra m&#x1ED9;t th&#x1EE9; kh&#xF4;ng gian k&#x1EF3; qu&#x1EB7;c. T&#xF4;i nh&#xEC;n ra xung quanh. Kh&#xF4;ng gian n&#xE0;y kh&#xF4;ng c&#xF3; th&#x1EAD;t v&#xE0; ch&#x1EC9; c&#xF3; &#x1EDF; trong &#x111;&#x1EA7;u m&#xEC;nh th&#xF4;i, v&#xE0; kh&#xF4;ng gian n&#xE0;y r&#x1EA5;t s&#x1ED1;ng &#x111;&#x1ED9;ng. N&#xF3; &#x1EDF; &#x111;&#xE2;u ra, t&#xF4;i nh&#xEC;n l&#x1EA1;i v&#xE0;o trang s&#xE1;ch, &#x1ED3;, nh&#x1EEF;ng bi&#x1EC3;u t&#x1B0;&#x1EE3;ng k&#x1EF3; qu&#x1EB7;c n&#xE0;y gi&#x1EA3; l&#x1EAD;p (<em>simulate</em>) kh&#xF4;ng gian ma thu&#x1EAD;t &#x111;&#xF3; trong &#x111;&#x1EA7;u t&#xF4;i. &#x1ED2;!.</p>
+<p>&#x110;&#x1EBF;n ch&#x1ED7; n&#xE0;y, n&#x1EBF;u c&#xE1;c b&#x1EA1;n v&#x1EAB;n th&#x1EA5;y l&#x1EA1; l&#xE0; ng&#xF4;n ng&#x1EEF; Arc n&#xE0;y kh&#xF4;ng gi&#x1ED1;ng nh&#x1B0; ng&#xF4;n ng&#x1EEF; l&#x1EAD;p tr&#xEC;nh m&#xE0; b&#x1EA1;n t&#x1B0;&#x1EDF;ng t&#x1B0;&#x1EE3;ng, t&#x1EE9;c l&#xE0; nh&#x1ECB; ph&#xE2;n v&#xE0; c&#xE1;c th&#x1EC3; lo&#x1EA1;i kh&#xF3; hi&#x1EC3;u &#x111;&#xE2;u r&#x1ED3;i, th&#xEC; t&#xF4;i nh&#x1EAF;c l&#x1EA1;i l&#xE0; c&#xE1;c b&#x1EA1;n &#x111;ang ngh&#x129; &#x111;&#x1EBF;n ng&#xF4;n ng&#x1EEF; t&#x1EA7;m th&#x1EA5;p. Ng&#xF4;n ng&#x1EEF; t&#x1EA7;m th&#x1EA5;p nh&#x1EA5;t l&#xE0; nh&#x1ECB; ph&#xE2;n. T&#x1EE9;c l&#xE0; ng&#xF4;n ng&#x1EEF; n&#xE0;y ch&#x1EC9; c&#xF3; 2 tr&#x1EA1;ng th&#xE1;i: b&#x1EAD;t - t&#x1EAF;t (th&#xF4;ng tin v&#x1EC1; hai tr&#x1EA1;ng th&#xE1;i n&#xE0;y &#x111;&#x1B0;&#x1EE3;c k&#xFD; hi&#x1EC7;u l&#x1EA1;i, m&#x1ED9;t c&#xE1;ch hi&#x1EC7;u qu&#x1EA3;, b&#x1EB1;ng s&#x1ED1; 0 v&#xE0; 1). L&#x1B0;u &#xFD; n&#x1EBF;u th&#xF4;ng tin kh&#xF4;ng &#x111;&#x1B0;&#x1EE3;c l&#x1B0;u l&#x1EA1;i hi&#x1EC7;u qu&#x1EA3; ngay t&#x1EEB; &#x111;&#x1EA7;u, v&#xED; d&#x1EE5; n&#x1EBF;u b&#x1EA1;n ch&#x1ECD;n l&#x1B0;u b&#x1EB1;ng bi&#x1EC3;u t&#x1B0;&#x1EE3;ng h&#xEC;nh: nh&#x1B0; ki&#x1EC3;u hai v&#x1EA1;ch ch&#x1EB5;n-l&#x1EBB;, hay bi&#x1EC3;u t&#x1B0;&#x1EE3;ng m&#xE0;u &#x111;en-tr&#x1EAF;ng, th&#xEC; khi c&#xE1;c &#xFD; ngh&#x129; m&#xE0; ch&#xFA;ng ta c&#x1EA7;n bi&#x1EC3;u th&#x1ECB; tr&#x1EDF; n&#xEA;n ph&#x1EE9;c t&#x1EA1;p h&#x1A1;n c&#xE1;c ng&#xF4;n ng&#x1EEF; k&#xFD; hi&#x1EC7;u &#x111;&#xF3; s&#x1EBD; n&#x1EDF; bung ra r&#x1EA5;t nhi&#x1EC1;u v&#xE0; r&#x1EA5;t nhanh, ta s&#x1EBD; g&#x1EB7;p tr&#x1EDF; ng&#x1EA1;i r&#x1EA5;t l&#x1EDB;n khi t&#xEC;m c&#xE1;ch bi&#x1EC3;u th&#x1ECB; ch&#xED;nh m&#xEC;nh. T&#xF4;i l&#x1EA5;y v&#xED; d&#x1EE5; l&#x1EA1;i, v&#x1EDB;i m&#x1ED9;t ng&#x1B0;&#x1EDD;i l&#x1EEF; h&#xE0;nh kh&#xE1;c, &#x111;&#x1EBF;n t&#x1EEB; mi&#x1EC1;n &#x111;&#x1EA5;t kh&#xE1;c, ng&#x1B0;&#x1EDD;i xa l&#x1EA1; n&#xE0;y n&#xF3;i ng&#xF4;n ng&#x1EEF; nh&#x1ECB; ph&#xE2;n, t&#x1EE9;c l&#xE0; trong &#x111;&#x1EA7;u c&#xF4; ta, ch&#x1EC9; c&#xF3; m&#x1ED9;t m&#x1EA1;ch &#x111;i&#x1EC7;n v&#x1EDB;i m&#x1ED9;t c&#xF4;ng t&#x1EAF;c v&#xE0; m&#x1ED9;t b&#xF3;ng &#x111;&#xE8;n. Khi c&#xF4;ng t&#x1EAF;c &#x111;&#xF3;ng m&#x1EA1;ch, b&#xF3;ng &#x111;&#xE8;n s&#xE1;ng, ta hi&#x1EC3;u r&#x1EB1;ng c&#xF4; ta &#x111;ang mu&#x1ED1;n bi&#x1EC3;u th&#x1ECB; &#xFD; t&#xED;ch c&#x1EF1;c, t&#x1EE9;c l&#xE0; &quot;&#x110;&#xFA;ng&quot;, khi c&#xF4;ng t&#x1EAF;c chuy&#x1EC3;n sang h&#x1EDF; m&#x1EA1;ch, b&#xF3;ng &#x111;&#xE8;n t&#x1EAF;t, ta hi&#x1EC3;u r&#x1EB1;ng c&#xF4; ta &#x111;ang mu&#x1ED1;n bi&#x1EC3;u th&#x1ECB; ti&#xEA;u c&#x1EF1;c, t&#x1EE9;c l&#xE0; &quot;Sai&quot;. Khi &#x111;&#xF3;, ta s&#x1EBD; ch&#x1EC9; h&#x1ECF;i &#x111;&#x1B0;&#x1EE3;c c&#xF4; n&#xE0;y nh&#x1EEF;ng c&#xE2;u h&#x1ECF;i mang t&#xED;nh &#x111;&#xFA;ng-sai, &#x111;en-tr&#x1EAF;ng, v&#xE0; c&#xF3; hai c&#x1EF1;c m&#xE0; th&#xF4;i. C&#xF4; y&#xEA;u hay gh&#xE9;t, c&#xF4; &#x111;&#x1ED3;ng &#xFD; hay kh&#xF4;ng &#x111;&#x1ED3;ng &#xFD;, c&#xF4; &#x111;i hay &#x1EDF;.. B&#xE2;y gi&#x1EDD;, n&#x1EBF;u c&#xF4; ta t&#x1EF1; &#x111;i n&#xE2;ng c&#x1EA5;p b&#x1EA3;n th&#xE2;n, c&#xF4; ta l&#x1EAF;p th&#xEA;m h&#xE0;ng ngh&#xEC;n m&#x1EA1;ch b&#x1EAD;t-t&#x1EAF;t nh&#x1B0; th&#x1EBF;, khi &#x111;&#xF3;, c&#xF4; ta c&#xF3; kh&#x1EA3; n&#x103;ng giao ti&#x1EBF;p m&#x1ED9;t c&#xE2;u ph&#x1EE9;c t&#x1EA1;p h&#x1A1;n r&#x1EA5;t nhi&#x1EC1;u, nh&#x1B0;ng khi c&#xF4; ta m&#x1EDF; m&#x1ED3;m n&#xF3;i ra, s&#x1EBD; ch&#x1EC9; to&#xE0;n l&#xE0; <code>b&#x1EAD;t t&#x1EAF;t t&#x1EAF;t t&#x1EAF;t b&#x1EAD;t b&#x1EAD;t t&#x1EAF;t..</code> ch&#x1EA3; h&#x1EA1;n. N&#x1EBF;u ta bi&#x1EC3;u th&#x1ECB; c&#xE1;c tr&#x1EA1;ng th&#xE1;i n&#xE0;y b&#x1EB1;ng s&#x1ED1; 0 v&#xE0; 1 th&#xEC; nh&#x1EEF;ng g&#xEC; c&#xF4; ta tr&#x1EA3; ra s&#x1EBD; ch&#x1EC9; l&#xE0; m&#x1ED9;t chu&#x1ED7;i <code>0101010101011111000</code> Ta l&#xE0;m th&#x1EBF; n&#xE0;o &#x111;&#x1EC3; hi&#x1EC3;u &#x111;&#x1B0;&#x1EE3;c d&#xF2;ng n&#xE0;y? C&#xE1;c b&#x1EA1;n c&#xF3; tin l&#xE0; ban &#x111;&#x1EA7;u l&#x1EAD;p tr&#xEC;nh t&#x1EE9;c l&#xE0; vi&#x1EBF;t nh&#x1ECB; ph&#xE2;n nh&#x1B0; th&#x1EBF; n&#xE0;y tr&#x1EF1;c ti&#x1EBF;p v&#xE0;o c&#xE1;i m&#xE1;y kh&#xF4;ng? :D C&#xE1;c th&#x1EBB; d&#x1EAD;p l&#x1ED7;, m&#x1ED9;t l&#xE0; d&#x1EAD;p, kh&#xF4;ng l&#xE0; kh&#xF4;ng d&#x1EAD;p, sau &#x111;&#xF3; cho c&#xE1;c th&#x1EBB; n&#xE0;y ch&#x1EA1;y qua c&#xE1;c &#x111;&#x1EA7;u &#x111;&#x1ECD;c :D  Khi c&#xE1;c cao th&#x1EE7; tr&#x1EDF; n&#xEA;n m&#x1EC7;t m&#x1ECF;i v&#x1EDB;i vi&#x1EC7;c n&#xF3;i chuy&#x1EC7;n b&#x1EB1;ng ng&#xF4;n ng&#x1EEF; nh&#x1ECB; ph&#xE2;n v&#x1EDB;i c&#xE1;i m&#xE1;y, h&#x1ECD; ngh&#x129; ra c&#xE1;ch t&#x103;ng n&#x103;ng su&#x1EA5;t b&#x1EB1;ng c&#xE1;ch &#x111;&#x1ED5;i sang h&#x1EC7; b&#xE1;t ph&#xE2;n. T&#x1EE9;c l&#xE0; h&#x1ECD; s&#x1EBD; n&#xF3;i b&#x1EB1;ng ng&#xF4;n ng&#x1EEF; b&#xE1;t ph&#xE2;n, nh&#x1B0;ng s&#x1EBD; c&#xF3; ch&#x1B0;&#x1A1;ng tr&#xEC;nh d&#x1ECB;ch c&#xE2;u l&#x1EC7;nh trong ng&#xF4;n ng&#x1EEF; b&#xE1;t ph&#xE2;n &#x111;&#xF3; sang c&#xE2;u l&#x1EC7;nh trong ng&#xF4;n ng&#x1EEF; nh&#x1ECB; ph&#xE2;n cho c&#xE1;i m&#xE1;y t&#xED;nh hi&#x1EC3;u :D Nghe th&#xEC; kh&#xF4;ng t&#x1B0;&#x1EDF;ng, nh&#x1B0;ng c&#xE1;c b&#x1EA1;n th&#x1EED; t&#x1B0;&#x1EDF;ng t&#x1B0;&#x1EE3;ng ng&#xF4;n ng&#x1EEF; c&#x1EE7;a chim ch&#xF3;c v&#xE0; c&#xE1;c lo&#xE0;i v&#x1EAD;t. Ch&#xFA;ng c&#xF3; nh&#x1EEF;ng ng&#xF4;n ng&#x1EEF; t&#x1EA7;m th&#x1EA5;p c&#x1EE7;a ri&#xEA;ng ch&#xFA;ng. V&#xED; d&#x1EE5;, c&#xF3; nh&#x1EEF;ng c&#xE2;u &#x111;&#x1EC3; g&#x1ECD;i b&#x1EA1;n t&#xEC;nh, c&#xF3; nh&#x1EEF;ng c&#xE2;u &#x111;&#x1EC3; b&#xE1;o hi&#x1EC7;u nguy hi&#x1EC3;m cho &#x111;&#x1ED3;ng lo&#x1EA1;i. Ho&#x1EB7;c &#xE1;m hi&#x1EC7;u kh&#xF3;i c&#x1EE7;a c&#xE1;c b&#x1ED9; l&#x1EA1;c, khi c&#xF3; chim s&#x1EAF;t r&#x1A1;i tr&#xEA;n b&#xE3;i bi&#x1EC3;n, th&#xF4;ng tin &#x111;i nhanh v&#xE0; chi ti&#x1EBF;t h&#x1A1;n ng&#x1B0;&#x1EDD;i &#x111;&#x1B0;a tin v&#x1B0;&#x1EE3;t &#x111;&#x1B0;&#x1EDD;ng r&#x1EEB;ng. Quay l&#x1EA1;i c&#xE1;ch k&#xFD; hi&#x1EC7;u th&#xF4;ng tin. N&#x1EBF;u ta k&#xFD; hi&#x1EC7;u b&#x1EB1;ng v&#x1EA1;ch ch&#x1EB5;n l&#x1EBB;, khi c&#xE1;c v&#x1EA1;ch n&#xE0;y &#x111;&#x1EA7;y l&#xEA;n, n&#x1A1;-ron b&#x1EAF;t &#x111;&#x1EA7;u nh&#xEC;n ra nh&#x1EEF;ng h&#xEC;nh th&#xF9; l&#x1EDD; m&#x1EDD; nh&#x1B0; s&#xF4;ng n&#xFA;i th&#x1EE7;y m&#x1EB7;c. Qua 40 ng&#xE0;n n&#x103;m ti&#x1EBF;n h&#xF3;a, t&#x1EA5;t nhi&#xEA;n n&#x1A1;-ron nh&#xEC;n ra &#xFD; ngh&#x129;a t&#x1EEB; c&#xE1;i v&#xF4; ngh&#x129;a. T&#x1EA1;i sao? B&#x1EDF;i v&#xEC; &#x111;&#xF3; l&#xE0; ch&#x1B0;&#x1A1;ng tr&#xEC;nh s&#x1ED1;ng c&#xF2;n vi&#x1EBF;t b&#x1EB1;ng qu&#xE1; tr&#xEC;nh ti&#x1EBF;n h&#xF3;a. Lo&#xE0;i ng&#x1B0;&#x1EDD;i c&#x1EA7;n &#xFD; th&#x1EE9;c gi&#x1EA3; l&#x1EAD;p n&#xE0;y &#x111;&#x1EC3; &#x111;i&#x1EC1;u khi&#x1EC3;n c&#x1A1; th&#x1EC3; v&#x1EAD;t l&#xFD; n&#xE0;y trong kh&#xF4;ng gian. Khi ta ch&#x1ECD;n bi&#x1EC3;u t&#x1B0;&#x1EE3;ng t&#x1EEB;a t&#x1EF1;a cho s&#x1EF1; v&#x1EAD;t &#x111;&#x1EC3; th&#x1EC3; hi&#x1EC7;n s&#x1EF1; v&#x1EAD;t, khi &#x111;&#xF3; ng&#xF4;n ng&#x1EEF; m&#xE0; ta d&#xF9;ng ch&#x1EC9; &#x111;&#x1ECB;nh &#xFD; ngh&#x129; m&#xE0; ta n&#xF3;i. V&#xED; d&#x1EE5; t&#xF4;i mu&#x1ED1;n n&#xF3;i v&#x1EC1; s&#xF4;ng n&#xFA;i, t&#xF4;i ph&#x1EA3;i tra trong &#x111;&#x1EA7;u bi&#x1EC3;u t&#x1B0;&#x1EE3;ng n&#xE0;o gi&#x1ED1;ng h&#xEC;nh s&#xF4;ng n&#xFA;i. C&#xE1;i ph&#x1EA7;n tra &#x111;&#xF3;, t&#x103;ng th&#xEA;m kh&#x1ED1;i l&#x1B0;&#x1EE3;ng c&#xF4;ng vi&#x1EC7;c cho b&#x1ED9; x&#x1EED; l&#xFD; b&#xE9; nh&#x1ECF; c&#x1EE7;a n&#xE3;o. N&#x1EBF;u t&#xF4;i d&#xF9;ng ch&#x1EEF; &quot;s&#xF4;ng n&#xFA;i&quot; &#x111;&#x1EC3; ch&#x1EC9; s&#xF4;ng n&#xFA;i, v&#xE0; t&#x1EA5;t c&#x1EA3; c&#xF9;ng &#x111;&#x1ED3;ng &#xFD; th&#xEC; &quot;s&#xF4;ng n&#xFA;i&quot; l&#xE0; ch&#x1EC9; s&#xF4;ng n&#xFA;i, th&#xEC; &quot;s&#xF4;ng n&#xFA;i&quot; l&#xE0; s&#xF4;ng n&#xFA;i. C&#xF2;n n&#x1EBF;u t&#x1EA5;t c&#x1EA3; &#x111;&#x1ED3;ng &#xFD; &quot;s&#xF4;ng n&#xFA;i&quot; l&#xE0; &#x111;&#x1EC3; ch&#x1EC9; &#x111;&#x1ED3;ng ru&#x1ED9;ng, th&#xEC; khi &#x111;&#xF3; &quot;s&#xF4;ng n&#xFA;i&quot; l&#xE0; &#x111;&#x1ED3;ng ru&#x1ED9;ng. K&#xFD; hi&#x1EC7;u &quot;s&#xF4;ng n&#xFA;i&quot; kh&#xF4;ng khi&#x1EBF;n cho &#x111;&#xE1;m n&#x1A1;-ron s&#xE1;ng l&#xEA;n nh&#x1EEF;ng &#xFD; ki&#x1EBF;n th&#xEA;m kh&#xF4;ng c&#x1EA7;n thi&#x1EBF;t. T&#x1EA5;t nhi&#xEA;n, vi&#x1EC7;c vi&#x1EBF;t &#xFD; b&#x1EB1;ng h&#xEC;nh kh&#xF4;ng c&#xF3; g&#xEC; sai, c&#x169;ng c&#xF3; th&#x1EC3; l&#xE0; m&#x1ED9;t nh&#xE1;nh ti&#x1EBF;n h&#xF3;a. &#x1EDE; &#x111;&#xE2;u &#x111;&#xF3; trong v&#x169; tr&#x1EE5; c&#xF3; nh&#x1EEF;ng n&#x1EC1;n v&#x103;n minh ti&#x1EBF;n h&#xF3;a theo con &#x111;&#x1B0;&#x1EDD;ng &#x111;&#xF3;. Nhi&#x1EC1;u khi l&#x1ECB;ch s&#x1EED; ch&#x1EC9; l&#xE0; nh&#x1EEF;ng l&#x1ED1;i r&#x1EBD; ng&#x1EAB;u nhi&#xEA;n v&#xE0; th&#x1EBF; gi&#x1EDB;i, d&#xF9; cho c&#xF3; bao nhi&#xEA;u s&#x1EF1; ki&#x1EC7;n &#x111;i ch&#x103;ng n&#x1EEF;a, v&#x129;nh vi&#x1EC5;n l&#x1EA1;nh l&#xF9;ng.</p>
+<p>Quay l&#x1EA1;i h&#x1EC7; nh&#x1ECB; ph&#xE2;n, sau khi c&#xE1;c cao th&#x1EE7; m&#x1EC7;t m&#x1ECF;i v&#x1EDB;i h&#x1EC7; nh&#x1ECB; ph&#xE2;n, h&#x1ECD; d&#x1ECB;ch sang b&#xE1;t ph&#xE2;n. Sau b&#xE1;t ph&#xE2;n th&#xEC; l&#xE0; g&#xEC;? T&#x1EEB; &#x111;&#xF3; th&#x1EBF; gi&#x1EDB;i c&#x1EE7;a c&#xE1;c ng&#xF4;n ng&#x1EEF; m&#xE1;y t&#xED;nh ti&#x1EBF;n h&#xF3;a ra mu&#xF4;n h&#xEC;nh mu&#xF4;n v&#x1EBB;, nh&#x1B0;ng n&#xF3;i chung ta c&#xF3; th&#x1EC3; chia ra ng&#xF4;n ng&#x1EEF; t&#x1EA7;m th&#x1EA5;p v&#xE0; t&#x1EA7;m cao. Ng&#xF4;n ng&#x1EEF; t&#x1EA7;m th&#x1EA5;p r&#x1EA5;t g&#x1EA7;n v&#x1EDB;i ng&#xF4;n ng&#x1EEF; m&#xE1;y t&#xED;nh. Ng&#xF4;n ng&#x1EEF; t&#x1EA7;m cao, c&#xF3; th&#xEA;m kh&#x1EA3; n&#x103;ng ch&#x1EE9;a &#x111;&#x1EF1;ng t&#x1B0; duy tr&#x1EEB;u t&#x1B0;&#x1EE3;ng, r&#x1EA5;t g&#x1EA7;n v&#x1EDB;i ng&#xF4;n ng&#x1EEF; v&#xE0; t&#x1B0; duy con ng&#x1B0;&#x1EDD;i. N&#xF3;i n&#xF4;m na, ng&#xF4;n ng&#x1EEF; l&#xE0; c&#xF4;ng c&#x1EE5;, v&#xE0; gi&#x1EDB;i h&#x1EA1;n c&#x1EE7;a c&#xF4;ng c&#x1EE5; t&#xF4;i d&#xF9;ng, l&#xE0; gi&#x1EDB;i h&#x1EA1;n c&#x1EE7;a th&#x1EBF; gi&#x1EDB;i c&#x1EE7;a t&#xF4;i. L&#xE0;m ng&#x1B0;&#x1EDD;i, t&#xF4;i mu&#x1ED1;n th&#x1EBF; gi&#x1EDB;i c&#x1EE7;a m&#xEC;nh r&#x1ED9;ng l&#x1EDB;n, c&#xF3; th&#xEA;m nhi&#x1EC1;u c&#xF4;ng c&#x1EE5; &#x111;&#x1EC3; bi&#x1EC3;u l&#x1ED9; b&#x1EA3;n th&#xE2;n. (B&#x1EDF;i v&#xEC; t&#xF4;i tin r&#x1EB1;ng m&#x1ED7;i ng&#x1B0;&#x1EDD;i &#x111;&#x1EC1;u c&#xF3; t&#x1EF1; do ni&#x1EC1;m tin, t&#x1EF1; do bi&#x1EC3;u hi&#x1EC7;n, v&#xE0; quy&#x1EC1;n &#x111;&#x1B0;&#x1EE3;c s&#x1ED1;ng trong m&#x1ED9;t kh&#xF4;ng gian l&#xE0;nh m&#x1EA1;nh trong th&#x1EBF; gi&#x1EDB;i n&#xE0;y. Nh&#x1B0; m&#x1ECD;i th&#x1EE9; kh&#xE1;c). V&#xE0; ng&#xF4;n ng&#x1EEF; t&#x1EA7;m cao l&#xE0; ng&#xF4;n ng&#x1EEF; m&#x1EA1;nh h&#x1A1;n ng&#xF4;n ng&#x1EEF; t&#x1EA7;m th&#x1EA5;p r&#x1EA5;t nhi&#x1EC1;u, kh&#xF4;ng ch&#x1EC9; b&#x1EDF;i v&#xEC; khi s&#x1EED; d&#x1EE5;ng ng&#xF4;n ng&#x1EEF; t&#x1EA7;m cao t&#xF4;i c&#xF3; th&#x1EC3; bi&#x1EC3;u &#x111;&#x1EA1;t c&#xF9;ng m&#x1ED9;t l&#x1B0;&#x1EE3;ng th&#xF4;ng tin nhanh h&#x1A1;n so v&#x1EDB;i khi t&#xF4;i n&#xF3;i c&#xE2;u &#x111;&#xF3; trong ng&#xF4;n ng&#x1EEF; t&#x1EA7;m th&#x1EA5;p, m&#xE0; c&#xF2;n b&#x1EDF;i v&#xEC; khi s&#x1EED; d&#x1EE5;ng ng&#xF4;n ng&#x1EEF; mang t&#xED;nh tr&#x1EEB;u t&#x1B0;&#x1EE3;ng cao, t&#xF4;i c&#xF3; th&#x1EC3; bi&#x1EC3;u &#x111;&#x1EA1;t th&#xF4;ng tin &#x1EDF; m&#x1ED9;t t&#x1EA7;m ho&#xE0;n to&#xE0;n m&#x1EDB;i. N&#x1EBF;u b&#x1EA1;n s&#x1EED; d&#x1EE5;ng &#xE1;m hi&#x1EC7;u kh&#xF3;i, b&#x1EA1;n c&#xF3; th&#x1EC3; th&#x1EA5;y r&#x1EB1;ng b&#x1EA1;n g&#x1EB7;p r&#x1EAF;c r&#x1ED1;i v&#x1EDB;i vi&#x1EC7;c t&#x1EF1; xu&#x1EA5;t b&#x1EA3;n ti&#x1EC3;u thuy&#x1EBF;t c&#x1EE7;a ch&#xED;nh m&#xEC;nh r&#x1EA5;t nhanh.</p>
+<p>T&#xF4;i quay l&#x1EA1;i v&#xED; d&#x1EE5; ti&#x1EBF;ng vi&#x1EC7;t &#x111;&#x1EC3; th&#x1EC3; hi&#x1EC7;n ng&#x1EEF; ph&#xE1;p c&#x1EE7;a Arc. </p>
+<pre><code>&gt; (qu&#xE9;t nh&#xE0;)
+&gt; (l&#xE0;m to&#xE1;n ti&#x1EBF;ng-anh v&#x103;n-h&#x1ECD;c)
+&gt; (n&#x1EBF;u l&#x1B0;&#x1EDD;i 
+    (vi&#x1EBF;t ch&#x1B0;&#x1A1;ng-tr&#xEC;nh-gi&#x1EA3;i-to&#xE1;n))
+</code></pre><p>Ta c&#xF3; th&#x1EC3; th&#x1EA5;y c&#xE2;u th&#x1EE9; hai &#x1EDF; &#x111;&#xE2;y c&#xF3; nhi&#x1EC1;u h&#x1A1;n m&#x1ED9;t danh t&#x1EEB;, <code>to&#xE1;n</code>, <code>ti&#x1EBF;ng-anh</code>, <code>v&#x103;n-h&#x1ECD;c</code>. Nh&#x1EEF;ng danh t&#x1EEB; n&#xE0;y ch&#x1EC9; m&#xF4;n h&#x1ECD;c, v&#xE0; nh&#x1EEF;ng m&#xF4;n h&#x1ECD;c n&#xE0;y s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c b&#x1ECF; v&#xE0;o c&#xF9;ng m&#x1ED9;t qu&#xE1; tr&#xEC;nh x&#x1EED; l&#xFD; t&#xEA;n l&#xE0; <code>l&#xE0;m</code>. C&#xE2;u n&#xE0;y c&#xF3; ngh&#x129;a l&#xE0; b&#x1EA1;n &#x111;i <code>l&#xE0;m</code> m&#xF4;n <code>to&#xE1;n</code>, m&#xF4;n <code>ti&#x1EBF;ng-anh</code> v&#xE0; m&#xF4;n <code>v&#x103;n-h&#x1ECD;c</code> &#x111;i. B&#x1EDF;i v&#xEC; c&#x1EA3; ba m&#xF4;n n&#xE0;y c&#xF9;ng d&#xF9;ng &#x111;&#x1ED9;ng t&#x1EEB; <code>l&#xE0;m</code> b&#x1EA1;n s&#x1EBD; th&#x1EA5;y th&#x1EAD;t l&#xE0; ti&#x1EC7;n l&#xE0;m sao khi ta &#x111;&#x1EC3; &#x111;&#x1ED9;ng t&#x1EEB; <code>l&#xE0;m</code> &#x111;&#x1EE9;ng &#x1EDF; &#x111;&#x1EA7;u c&#xE2;u v&#xE0; c&#xE1;c v&#x1EAD;t m&#xE0; &#x111;&#x1ED9;ng t&#x1EEB; &#x111;&#xF3; c&#x1EA7;n x&#x1EED; l&#xFD; s&#x1EBD; &#x111;&#x1EE9;ng h&#x1EBF;t &#x1EDF; sau.</p>
+<p>&#x1EDE; c&#xE2;u th&#x1EE9; ba, t&#xF4;i gi&#x1EDB;i thi&#x1EC7;u m&#x1ED9;t d&#x1EA1;ng ng&#x1EEF; ph&#xE1;p ph&#x1EE9;c t&#x1EA1;p h&#x1A1;n, nh&#x1B0;ng s&#x1EBD; kh&#xF4;ng &#x111;i s&#xE2;u v&#xE0;o cho &#x111;&#x1EBF;n ph&#x1EA7;n sau. C&#xE2;u th&#x1EE9; ba r&#x1EA5;t &#x111;&#x1A1;n gi&#x1EA3;n, <code>n&#x1EBF;u</code> b&#x1EA1;n <code>l&#x1B0;&#x1EDD;i</code> l&#xE0; &#x111;&#xFA;ng, b&#x1EA1;n s&#x1EBD; <code>vi&#x1EBF;t</code> m&#x1ED9;t ch&#x1B0;&#x1A1;ng tr&#xEC;nh &#x111;&#x1EC3; gi&#x1EA3;i to&#xE1;n thay cho m&#xEC;nh.</p>
+<p>T&#xF4;i quay l&#x1EA1;i v&#x1EDB;i ng&#xF4;n ng&#x1EEF; Arc th&#x1EAD;t s&#x1EF1;, l&#x1EA5;y v&#xED; d&#x1EE5; m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; to&#xE1;n:</p>
+<pre><code>arc&gt; (+ 1 2)
+3
+</code></pre><p>Arc x&#x1EED; l&#xFD; bi&#x1EC3;u ng&#x1EEF; <code>(+ 1 2)</code> m&#xE0; b&#x1EA1;n g&#xF5; v&#xE0;o nh&#x1B0; sau: &#x111;&#x1EA7;u ti&#xEA;n Arc s&#x1EBD; x&#x1EED; l&#xFD; <code>+</code> sau &#x111;&#xF3; &#x111;&#x1EBF;n <code>1</code> sau &#x111;&#xF3; &#x111;&#x1EBF;n <code>2</code>. Bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>+</code> s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&#xFD; (<em>hi&#x1EC3;u</em>) l&#xE0; h&#xE0;m c&#x1ED9;ng (ph&#xE9;p t&#xED;nh c&#x1ED9;ng), bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>1</code> s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;u l&#xE0; s&#x1ED1; 1, bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>2</code> s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;u l&#xE0; s&#x1ED1; 2, sau &#x111;&#xF3; s&#x1ED1; 1 v&#xE0; 2 s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c cho v&#xE0;o h&#xE0;m c&#x1ED9;ng. H&#xE0;m c&#x1ED9;ng s&#x1EBD; c&#x1ED9;ng hai s&#x1ED1; n&#xE0;y l&#x1EA1;i v&#x1EDB;i nhau. Gi&#xE1; tr&#x1ECB; tr&#x1EA3; v&#x1EC1; l&#xE0; s&#x1ED1; 3, v&#xEC; th&#x1EBF; Arc in ra m&#xE0;n h&#xEC;nh cho b&#x1EA1;n con s&#x1ED1; 3. </p>
+<p>(Macro l&#xE0; m&#x1ED9;t th&#xE0;nh ph&#x1EA7;n b&#x1EA5;t h&#x1EA3;o trong ng&#xF4;n ng&#x1EEF; Arc, h&#x1EAF;n t&#x1B0;&#x1A1;ng t&#x1EF1; nh&#x1B0; &#x111;&#x1ED9;ng t&#x1EEB; (<em>function</em>), nh&#x1B0;ng h&#x1EAF;n thay &#x111;&#x1ED5;i danh s&#xE1;ch tr&#x1B0;&#x1EDB;c khi danh s&#xE1;ch n&#xE0;y &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&#xFD;).</p>
+<p>L&#x1B0;u &#xFD; l&#xE0; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>+</code> &#x1EDF; &#x111;&#xE2;y &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1ECB;nh ngh&#x129;a t&#x1EEB; tr&#x1B0;&#x1EDB;c (<em>built in</em>) cho Arc l&#xE0; ph&#xE9;p c&#x1ED9;ng. Ta ho&#xE0;n to&#xE0;n c&#xF3; th&#x1EC3; &#x111;&#x1ECB;nh ngh&#x129;a l&#x1EA1;i cho Arc hi&#x1EC3;u l&#xE0; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>+</code> d&#xF9;ng &#x111;&#x1EC3; ch&#x1EC9; ph&#xE9;p nh&#xE2;n. T&#xF4;i s&#x1EBD; h&#x1B0;&#x1EDB;ng d&#x1EAB;n b&#x1EA1;n c&#xE1;ch &#x111;&#x1ECB;nh ngh&#x129;a l&#x1EA1;i n&#xE0;y &#x1EDF; ph&#x1EA7;n d&#x1B0;&#x1EDB;i khi ta h&#x1ECD;c &#x111;&#x1EBF;n c&#xE1;ch &#x111;&#x1ECB;nh ngh&#x129;a cho Arc t&#x1EEB; v&#x1EF1;ng m&#x1EDB;i.</p>
+<h4 id="bi&#x1EC3;u-ng&#x1EEF;-l&#x1ED3;ng-trong-bi&#x1EC3;u-ng&#x1EEF;-c&#xE2;u-gh&#xE9;p">Bi&#x1EC3;u ng&#x1EEF; l&#x1ED3;ng trong bi&#x1EC3;u ng&#x1EEF;: C&#xE2;u gh&#xE9;p</h4>
+<p>Trong c&#xE2;u &#x111;&#x1A1;n <code>(+ 1 2)</code> b&#x1EA1;n c&#xF3; th&#x1EC3; th&#x1EA5;y r&#x1EB1;ng ngo&#xE0;i th&#xE0;nh ph&#x1EA7;n th&#x1EE9; nh&#x1EA5;t l&#xE0; &#x111;&#x1ED9;ng t&#x1EEB;, th&#xEC; c&#xE1;c th&#xE0;nh ph&#x1EA7;n c&#xF2;n l&#x1EA1;i ch&#xED;nh l&#xE0; nh&#x1EEF;ng bi&#x1EC3;u ng&#x1EEF; &#x111;&#x1A1;n gi&#x1EA3;n nh&#x1EA5;t (c&#xE1;c con s&#x1ED1;). Bi&#x1EC3;u ng&#x1EEF; &#x111;&#x1A1;n gi&#x1EA3;n th&#xEC; c&#x169;ng l&#xE0; bi&#x1EC3;u ng&#x1EEF;, ch&#x1EE9;ng t&#x1ECF; r&#x1EB1;ng, c&#xE1;c th&#xE0;nh ph&#x1EA7;n &#x111;&#xF3; c&#xF3; th&#x1EC3; &#x111;&#x1B0;&#x1EE3;c thay th&#x1EBF; b&#x1EB1;ng c&#xE1;c bi&#x1EC3;u ng&#x1EEF; ph&#x1EE9;c t&#x1EA1;p. T&#x1EE9;c l&#xE0; ta l&#x1ED3;ng c&#xE2;u &#x111;&#x1A1;n v&#xE0;o th&#xE0;nh c&#xE2;u gh&#xE9;p. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (+ 1 (* 3 4))
+12
+</code></pre><p>&#x1EDE; v&#xED; d&#x1EE5; n&#xE0;y, bi&#x1EC3;u ng&#x1EEF; <code>2</code> &#x111;&#xE3; &#x111;&#x1B0;&#x1EE3;c thay b&#x1EB1;ng bi&#x1EC3;u ng&#x1EEF; <code>(+ 3 4)</code>. Th&#x1EBF; n&#xE0;y ngh&#x129;a l&#xE0; g&#xEC;? Ngh&#x129;a l&#xE0; h&#x1EC7; th&#x1ED1;ng t&#x1B0; duy c&#x1EE7;a Arc l&#xE0; theo v&#xF2;ng l&#x1EB7;p (<em>recursively</em>) t&#x1EEB; c&#xE1;c c&#x1EA5;u tr&#xFA;c r&#x1EA5;t &#x111;&#x1A1;n gi&#x1EA3;n. &#x1EDE; c&#xE2;u gh&#xE9;p n&#xE0;y, Arc s&#x1EBD; x&#x1EED; l&#xFD; (<em>&#x111;&#x1ECD;c</em>) t&#x1EEB; tr&#xE1;i sang, d&#x1EA5;u <code>+</code>, s&#x1ED1; <code>1</code>, c&#xE2;u &#x111;&#x1A1;n <code>(+ 3 4)</code>. C&#xE2;u &#x111;&#x1A1;n <code>(+ 3 4)</code> s&#x1EBD; &#x111;&#x1B0;&#x1EE3;c &#x111;&#xE1;nh v&#x1EA7;n t&#x1B0;&#x1A1;ng t&#x1EF1; t&#x1EEB; tr&#xE1;i sang: bi&#x1EC3;u t&#x1B0;&#x1EE3;ng d&#x1EA5;u <code>*</code> &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;u l&#xE0; ph&#xE9;p nh&#xE2;n. bi&#x1EC3;u t&#x1B0;&#x1EE3;ng s&#x1ED1; <code>3</code> &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;u l&#xE0; s&#x1ED1; 3 v&#xE0; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng s&#x1ED1; <code>4</code> &#x111;&#x1B0;&#x1EE3;c hi&#x1EC3;u l&#xE0; s&#x1ED1; 4. Sau &#x111;&#xF3; s&#x1ED1; 3 v&#xE0; 4 &#x111;&#x1B0;&#x1EE3;c cho v&#xE0;o d&#x1EA5;u nh&#xE2;n &#x111;&#x1EC3; tr&#x1EA3; v&#x1EC1; k&#x1EBF;t qu&#x1EA3; 3 nh&#xE2;n 4 b&#x1EB1;ng 12. Arc ti&#x1EBF;p t&#x1EE5;c &#xEA; a &#x111;&#xE1;nh v&#x1EA7;n ti&#x1EBF;p c&#xE2;u &#x111;&#x1EA7;u c&#xF2;n dang d&#x1EDF;: gi&#xE1; tr&#x1ECB; s&#x1ED1; 1 v&#xE0; gi&#xE1; tr&#x1ECB; s&#x1ED1; 12 &#x111;&#x1B0;&#x1EE3;c cho v&#xE0;o &#x111;&#x1ED9;ng t&#x1EEB; c&#x1ED9;ng &#x111;&#x1EC3; th&#x1EF1;c hi&#x1EC7;n ph&#xE9;p c&#x1ED9;ng: m&#x1ED9;t c&#x1ED9;ng m&#x1B0;&#x1EDD;i hai b&#x1EB1;ng m&#x1B0;&#x1EDD;i ba. Arc tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; 13.</p>
+<h2 id="bi&#x1EC3;u-t&#x1B0;&#x1EE3;ng-v&#xE0;-gi&#xE1;-tr&#x1ECB;">Bi&#x1EC3;u t&#x1B0;&#x1EE3;ng v&#xE0; gi&#xE1; tr&#x1ECB;<a name="bi&#x1EC3;u-t&#x1B0;&#x1EE3;ng-v&#xE0;-gi&#xE1;-tr&#x1ECB;"></a></h2>
+<p>&#x110;&#x1EBF;n ph&#x1EA7;n n&#xE0;y b&#x1EA1;n c&#x1EA7;n hi&#x1EC3;u &#x111;&#x1B0;&#x1EE3;c s&#x1EF1; kh&#xE1;c nhau c&#x103;n b&#x1EA3;n gi&#x1EEF;a hai kh&#xE1;i ni&#x1EC7;m bi&#x1EC3;u t&#x1B0;&#x1EE3;ng v&#xE0; gi&#xE1; tr&#x1ECB;. Bi&#x1EC3;u t&#x1B0;&#x1EE3;ng l&#xE0; m&#x1ED9;t th&#x1EE9; g&#xEC; &#x111;&#xF3; nh&#xEC;n s&#x1EDD; th&#x1EA5;y &#x111;&#x1B0;&#x1EE3;c. Gi&#xE1; tr&#x1ECB; l&#xE0; th&#x1EE9; tinh th&#x1EA7;n tinh t&#xFA;y kh&#xF4;ng th&#x1EA5;y &#x111;&#x1B0;&#x1EE3;c nh&#x1B0;ng kh&#xF4;ng c&#xF3; ngh&#x129;a l&#xE0; n&#xF3; kh&#xF4;ng t&#x1ED3;n t&#x1EA1;i. V&#x1EDB;i n&#x1ED7; l&#x1EF1;c ghi nh&#x1EAD;n v&#xE0; l&#x1B0;u gi&#x1EEF; l&#x1EA1;i th&#x1EBF; gi&#x1EDB;i, ta s&#x1EED; d&#x1EE5;ng c&#xE1;c bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#x1EC3; ch&#x1EC9; m&#x1ED9;t gi&#xE1; tr&#x1ECB; n&#xE0;o &#x111;&#xF3;. Sau &#x111;&#xF3; c&#xF3; th&#x1EC3; d&#xF9;ng c&#xF9;ng bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3; &#x111;&#x1EC3; ch&#x1EC9; gi&#xE1; tr&#x1ECB; kh&#xE1;c. Ho&#x1EB7;c bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3; c&#xF3; th&#x1EC3; m&#x1EA5;t &#x111;i, nh&#x1B0;ng gi&#xE1; tr&#x1ECB; l&#xE0; th&#x1EE9; &#x111;&#x1ED9;c l&#x1EAD;p v&#x1EDB;i bi&#x1EC3;u t&#x1B0;&#x1EE3;ng, kh&#xF4;ng li&#xEA;n quan &#x111;&#x1EBF;n vi&#x1EC7;c anh g&#xE1;n n&#xF3; v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng n&#xE0;o hay bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3; c&#xF3; m&#x1EA5;t &#x111;i hay kh&#xF4;ng. </p>
+<p>Trong ng&#xF4;n ng&#x1EEF; Arc, bi&#x1EC3;u t&#x1B0;&#x1EE3;ng s&#x1ED1; d&#xF9;ng &#x111;&#x1EC3; ch&#x1EC9; c&#xE1;c con s&#x1ED1;. B&#x1EA1;n kh&#xF4;ng th&#x1EC3; &#x111;&#x1ECB;nh ngh&#x129;a l&#x1EA1;i nh&#x1EEF;ng bi&#x1EC3;u t&#x1B0;&#x1EE3;ng s&#x1ED1; &#x111;&#xF3; &#x111;&#x1EC3; n&#xF3; mang ngh&#x129;a kh&#xE1;c. Ng&#xF2;ai ra th&#xEC; h&#x1EA7;u h&#x1EBF;t c&#xE1;c bi&#x1EC3;u t&#x1B0;&#x1EE3;ng kh&#xE1;c &#x111;&#x1EC1;u c&#xF3; th&#x1EC3; &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1ECB;nh ngh&#x129;a l&#x1EA1;i. Arc &#xE9;p bu&#x1ED9;c b&#x1EA1;n r&#x1EA5;t &#xED;t. C&#xE1;c bi&#x1EC3;u t&#x1B0;&#x1EE3;ng d&#xF9;ng &#x111;&#x1EC3; ch&#x1EE9;a &#x111;&#x1EF1;ng c&#xE1;c gi&#xE1; tr&#x1ECB; m&#xE0; b&#x1EA1;n mu&#x1ED1;n g&#xE1;n. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (= foo 13)
+13
+arc&gt; foo 
+13
+</code></pre><p>B&#x1EA1;n s&#x1EBD; th&#x1EA5;y r&#x1EB1;ng bi&#x1EC3;u ng&#x1EEF; <code>(= foo 13)</code> l&#xE0; d&#xF2;ng l&#x1EC7;nh b&#x1EA3;o Arc r&#x1EB1;ng, h&#xE3;y g&#xE1;n gi&#xE1; tr&#x1ECB; 13 v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng foo. Khi ta g&#xF5; l&#x1EA1;i bi&#x1EC3;u t&#x1B0;&#x1EE3;ng foo n&#xE0;y th&#xEC; Arc s&#x1EBD; kh&#xF4;ng tr&#x1EA3; v&#x1EC1; ch&#xED;nh bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3; m&#xE0; Arc tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; m&#xE0; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3; ch&#x1EE9;a &#x111;&#x1EF1;ng. T&#x1EE9;c l&#xE0; h&#xE0;m &#xFD; c&#x1EE7;a bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3;. </p>
+<p>&#x110;&#x1EC3; ng&#x103;n Arc x&#x1EED; l&#xFD; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3; v&#xE0; tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB;, ta &#x111;&#x1EB7;t d&#x1EA5;u nh&#xE1;y &#x111;&#x1A1;n tr&#x1B0;&#x1EDB;c bi&#x1EC3;u t&#x1B0;&#x1EE3;ng foo, khi &#x111;&#xF3; Arc s&#x1EBD; tr&#x1EA3; v&#x1EC1; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng foo.</p>
+<pre><code>arc&gt; &apos;foo 
+foo
+</code></pre><p>S&#x1EBD; c&#xF3; ng&#x1B0;&#x1EDD;i &#x111;&#x1ECD;c th&#x1EA5;y k&#x1EF3; qu&#x1EB7;c t&#x1EA1;i sao trong bi&#x1EC3;u ng&#x1EEF; <code>(= foo 13)</code> Arc l&#x1EA1;i kh&#xF4;ng x&#x1EED; l&#xFD; foo, n&#x1EBF;u nh&#x1B0; c&#xE1;ch ngh&#x129; c&#x1EE7;a Arc l&#xE0; x&#x1EED; l&#xFD; t&#x1EEB; tr&#xE1;i sang? N&#x1EBF;u Arc x&#x1EED; l&#xFD; t&#x1EEB; tr&#xE1;i sang th&#xEC; Arc s&#x1EBD; g&#x1EB7;p foo v&#xE0; khi &#x111;&#xF3; s&#x1EBD; tr&#x1EA3; v&#x1EC1; l&#x1ED7;i, b&#x1EDF;i v&#xEC; Arc kh&#xF4;ng bi&#x1EBF;t t&#x1EEB; foo &#x111;&#xF3; bao gi&#x1EDD;. Ch&#x1B0;a ai &#x111;&#x1ECB;nh ngh&#x129;a cho Arc bi&#x1EBF;t t&#x1EEB; foo &#x111;&#xF3; ngh&#x129;a l&#xE0; g&#xEC;. Th&#x1EF1;c ra &#x1EDF; trong c&#xE2;u &#x111;&#xF3;, h&#xE0;m <code>=</code> l&#xE0; h&#xE0;m &#x111;&#x1EB7;c bi&#x1EC7;t, kh&#xE1;c v&#x1EDB;i &#x111;&#x1ED9;ng t&#x1EEB; b&#xEC;nh th&#x1B0;&#x1EDD;ng m&#x1ED9;t ch&#xFA;t, h&#xE0;m <code>=</code> s&#x1EBD; b&#x1ECF; qua th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EE9;ng ngay sau n&#xF3;. C&#xF3; nh&#x1EEF;ng h&#xE0;m kh&#xE1;c c&#x169;ng s&#x1EBD; h&#xE0;nh &#x111;&#x1ED9;ng t&#x1B0;&#x1A1;ng t&#x1EF1;. </p>
+<p>H&#xE0;m <code>=</code> c&#xF3; th&#x1EC3; hi&#x1EC3;u l&#xE0; h&#xE0;m g&#xE1;n gi&#xE1; tr&#x1ECB; 13 cho bi&#x1EC3;u t&#x1B0;&#x1EE3;ng foo. Ho&#x1EB7;c g&#x1ECD;i l&#xE0; h&#xE0;m &#x111;&#x1EB7;t t&#xEA;n foo cho gi&#xE1; tr&#x1ECB; 13. Sau khi &#x111;&#x1EB7;t t&#xEA;n r&#x1ED3;i, ta g&#x1ECD;i l&#x1EA1;i t&#xEA;n foo th&#xEC; Arc s&#x1EBD; hi&#x1EC3;u l&#xE0; gi&#xE1; tr&#x1ECB; 13, t&#x1EA5;t nhi&#xEA;n l&#xE0; tr&#x1EEB; khi ta nh&#xE1;y &#x111;&#x1A1;n foo. D&#x1EA5;u nh&#xE1;y &#x111;&#x1A1;n s&#x1EBD; lu&#xF4;n tr&#x1EA3; v&#x1EC1; c&#x1EA3; c&#xE2;u nh&#x1B0; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng c&#x1EE7;a n&#xF3; l&#xE0; th&#x1EBF;, tuy&#x1EC7;t &#x111;&#x1ED1;i kh&#xF4;ng x&#x1EED; l&#xFD; v&#xE0; t&#xEC;m hi&#x1EC3;u &#xFD; ngh&#x129;a c&#x1EE7;a c&#x1EA3; c&#xE2;u l&#xE0; g&#xEC;. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (+ 1 2)
+3
+arc&gt; &apos;(+ 1 2)
+(+ 1 2)
+</code></pre><p>C&#xE2;u &#x111;&#x1EA7;u ti&#xEA;n tr&#x1EA3; v&#x1EC1; s&#x1ED1; 3 nh&#x1B0;ng c&#xE2;u th&#x1EE9; hai tr&#x1EA3; v&#x1EC1; danh s&#xE1;ch v&#x1EDB;i c&#xE1;c bi&#x1EC3;u t&#x1B0;&#x1EE3;ng +, 1 v&#xE0; 2. </p>
+<h4 id="x&#xE2;y-d&#x1EF1;ng-danh-s&#xE1;ch-v&#x1EDB;i-cons">X&#xE2;y d&#x1EF1;ng danh s&#xE1;ch v&#x1EDB;i cons</h4>
+<p><code>cons</code> l&#xE0; vi&#x1EBF;t t&#x1EAF;t c&#x1EE7;a <em>constructor</em> (x&#xE2;y d&#x1EF1;ng). H&#xE0;m n&#xE0;y d&#xF9;ng &#x111;&#x1EC3; ki&#x1EBF;n t&#x1EA1;o danh s&#xE1;ch. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (cons &apos;f &apos;(a b))
+(f a b)
+</code></pre><p>C&#xE2;u tr&#xEA;n ngh&#x129;a l&#xE0; th&#xEA;m bi&#x1EC3;u t&#x1B0;&#x1EE3;ng f v&#xE0;o &#x111;&#x1EA7;u danh s&#xE1;ch c&#xF3; s&#x1EB5;n &apos;(a b).</p>
+<p>H&#xE0;m n&#xE0;y kh&#xF4;ng thay &#x111;&#x1ED5;i danh s&#xE1;ch ban &#x111;&#x1EA7;u m&#xE0; t&#x1EA1;o ra m&#x1ED9;t danh s&#xE1;ch m&#x1EDB;i. V&#xED; d&#x1EE5;, n&#x1EBF;u t&#xF4;i &#x111;&#x1EB7;t t&#xEA;n danh s&#xE1;ch &apos;(a b) l&#xE0; x th&#xEC; khi t&#xF4;i th&#xEA;m &apos;f v&#xE0;o b&#x1EB1;ng <code>cons</code> th&#xEC; Arc tr&#x1EA3; v&#x1EC1; danh s&#xE1;ch m&#x1EDB;i ch&#x1EE9; kh&#xF4;ng can thi&#x1EC7;p tr&#x1EF1;c ti&#x1EBF;p v&#xE0;o danh s&#xE1;ch x. Khi ta g&#x1ECD;i l&#x1EA1;i x th&#xEC; Arc v&#x1EAB;n tr&#x1EA3; v&#x1EC1; danh s&#xE1;ch ban &#x111;&#x1EA7;u.</p>
+<pre><code>arc&gt; (= x &apos;(a b))
+(a b)
+arc&gt; (cons &apos;f x)
+(f a b)
+arc&gt; x
+(a b)
+</code></pre><p>Nh&#x1B0; ta c&#xF3; th&#x1EC3; th&#x1EA5;y, <code>cons</code> l&#xE0; h&#xE0;m b&#xEC;nh th&#x1B0;&#x1EDD;ng, s&#x1EBD; c&#xF3; nh&#x1EEF;ng h&#xE0;m kh&#xE1;c c&#xF3; t&#xED;nh ch&#x1EA5;t nh&#x1B0; <code>=</code>, t&#x1EE9;c l&#xE0; can thi&#x1EC7;p v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng v&#xE0; thay &#x111;&#x1ED5;i &#xFD; ngh&#x129;a m&#xE0; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;&#xF3; bi&#x1EC3;u th&#x1ECB;, &#x1EDF; nh&#x1EEF;ng m&#x1EE9;c &#x111;&#x1ED9; kh&#xE1;c nhau. </p>
+<h4 id="car-v&#xE0;-cdr-v&#xE0;-list">car v&#xE0; cdr v&#xE0; list</h4>
+<p><code>car</code> tr&#x1EA3; v&#x1EC1; th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n c&#x1EE7;a m&#x1ED9;t danh s&#xE1;ch, <code>cdr</code> tr&#x1EA3; v&#x1EC1; danh s&#xE1;ch &#x111;&#xF3; tr&#x1EEB; th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n.</p>
+<pre><code>arc&gt; (car &apos;(a b c))
+a
+arc&gt; (cdr &apos;(a b c))
+(b c)
+</code></pre><p>&#x110;&#x1EC3; t&#x1EA1;o ra m&#x1ED9;t danh s&#xE1;ch, ta d&#xF9;ng <code>list</code>, h&#xE0;m n&#xE0;y th&#x1EF1;c ra t&#x1EA1;o ra list b&#x1EB1;ng c&#xE1;ch d&#xF9;ng h&#xE0;m <code>cons</code> l&#x1EB7;p &#x111;i l&#x1EB7;p l&#x1EA1;i, &#x111;&#x1EB7;t t&#x1EEB;ng th&#xE0;nh ph&#x1EA7;n m&#x1ED9;t v&#xE0;o danh s&#xE1;ch. </p>
+<pre><code class="lang-scheme">arc&gt; (list &apos;a 1 &quot;foo&quot; &apos;(b))                      
+(a 1 &quot;foo&quot; (b))
+arc&gt; (cons &apos;a (cons 1 (cons &quot;foo&quot; (cons &apos;(b) nil))))
+(a 1 &quot;foo&quot; (b))
+</code></pre>
+<p>Ch&#xFA; &#xFD; r&#x1EB1;ng danh s&#xE1;ch c&#xF3; th&#x1EC3; ch&#x1EE9;a &#x111;&#x1EF1;ng th&#xE0;nh ph&#x1EA7;n c&#x1EE7;a b&#x1EA5;t k&#x1EF3; th&#x1EC3; lo&#x1EA1;i n&#xE0;o: bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &apos;a, s&#x1ED1; 1, d&#xE2;y ch&#x1EEF; &quot;foo&quot;, danh s&#xE1;ch &apos;(b) ch&#x1EE9;a bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &apos;b.</p>
+<p>&#x110;&#x1EBF;n &#x111;&#xE2;y b&#x1EA1;n c&#xF3; th&#x1EC3; th&#x1ED1;t l&#xEA;n sao m&#xE0; nhi&#x1EC1;u ngo&#x1EB7;c th&#x1EBF; kia. Kh&#xF4;ng ai &#x111;&#x1ECD;c code b&#x1EB1;ng ngo&#x1EB7;c, khi b&#x1EA1;n d&#xF9;ng ph&#x1EA7;n m&#x1EC1;m bi&#xEA;n t&#x1EAD;p v&#x103;n b&#x1EA3;n <em>text editor</em> Emacs (nh&#x1B0; &#x111;&#xE3; gi&#x1EDB;i thi&#x1EC7;u &#x1EDF; ph&#x1EA7;n tr&#x1B0;&#x1EDB;c, Emacs s&#x1EBD; t&#x1EF1; xu&#x1ED1;ng d&#xF2;ng v&#xE0; c&#x103;n ch&#x1EC9;nh code c&#x1EE7;a b&#x1EA1;n r&#x1EA5;t d&#x1EC5; &#x111;&#x1ECD;c. B&#x1EA1;n b&#x1ECF; qua c&#xE1;c d&#x1EA5;u ngo&#x1EB7;c v&#xE0; ch&#x1EC9; &#x111;&#x1ECD;c ch&#x1EEF; trong &#x111;&#xF3;.</p>
+<p>&#x110;&#x1EBF;n &#x111;&#xE2;y, b&#x1EA1;n &#x111;&#xE3; bi&#x1EBF;t th&#xEA;m c&#xE1;c h&#xE0;m &#x111;&#x1EC3; ch&#x1EC9; v&#x1ECB; tr&#xED; trong danh s&#xE1;ch, v&#xED; d&#x1EE5; <code>car</code> l&#xE0; ch&#x1EC9; v&#xE0;o v&#x1ECB; tr&#xED; c&#x1EE7;a th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n trong danh s&#xE1;ch v&#xE0; l&#x1EA5;y n&#xF3; ra. Khi k&#x1EBF;t h&#x1EE3;p v&#x1EDB;i <code>=</code>, ta c&#xF3; th&#x1EC3; thay &#x111;&#x1ED5;i gi&#xE1; tr&#x1ECB; c&#x1EE7;a danh s&#xE1;ch &#x1EDF; v&#x1ECB; tr&#xED; &#x111;&#x1EA7;u ti&#xEA;n. L&#x1EA5;y v&#xED; d&#x1EE5; danh s&#xE1;ch x.</p>
+<pre><code>arc&gt; x
+(a b)
+arc&gt; (= (car x) &apos;z)
+z
+arc&gt; x
+(z b)
+</code></pre><p>B&#x1EA1;n c&#xF3; th&#x1EC3; th&#x1EA5;y l&#xE0; n&#x1ED9;i dung (gi&#xE1; tr&#x1ECB;) c&#x1EE7;a danh s&#xE1;ch x &#x111;&#xE3; th&#x1EF1;c s&#x1EF1; b&#x1ECB; <code>=</code> th&#xF2; tay v&#xE0;o v&#xE0; thay &#x111;&#x1ED5;i, &#x1EDF; v&#x1ECB; tr&#xED; m&#xE0; <code>car</code> ch&#x1EC9; &#x111;&#x1EBF;n: v&#x1ECB; tr&#xED; &#x111;&#x1EA7;u ti&#xEA;n.</p>
+<p>Trong ng&#xF4;n ng&#x1EEF; ki&#x1EC3;u n&#xE0;y, danh s&#xE1;ch c&#x1EF1;c k&#x1EF3; h&#x1EEF;u d&#x1EE5;ng b&#x1EDF;i v&#xEC; b&#x1EA1;n c&#xF3; th&#x1EC3; d&#xF9;ng danh s&#xE1;ch &#x111;&#x1EC3; th&#x1EC3; hi&#x1EC7;n b&#x1EA5;t c&#x1EE9; th&#x1EE9; g&#xEC;. Danh s&#xE1;ch c&#xF3; hai s&#x1ED1; c&#xF3; th&#x1EC3; &#x111;&#x1EC3; ch&#x1EC9; t&#x1ECD;a &#x111;&#x1ED9; c&#x1EE7;a m&#x1ED9;t &#x111;i&#x1EC3;m trong kh&#xF4;ng gian 2 chi&#x1EC1;u, ho&#x1EB7;c c&#xF3; th&#x1EC3; di&#x1EC5;n gi&#x1EA3;i ra th&#xE0;nh nh&#x1EEF;ng &#xFD; ngh&#x129;a kh&#xE1;c nhau. Khi ta mu&#x1ED1;n c&#xF3; t&#x1ECD;a &#x111;&#x1ED9; ba &#x111;i&#x1EC3;m, ta ch&#x1EC9; c&#x1EA7;n &#x111;&#x1EA9;y th&#xEA;m m&#x1ED9;t s&#x1ED1; n&#x1EEF;a v&#xE0;o danh s&#xE1;ch, th&#x1EBF; l&#xE0; ta c&#xF3; danh s&#xE1;ch 3 t&#x1ECD;a &#x111;&#x1ED9; c&#x1EE7;a 3 tr&#x1EE5;c trong kh&#xF4;ng gian 3 chi&#x1EC1;u.</p>
+<p>Ch&#xED;nh s&#x1EF1; nhanh nh&#x1EB9;n &#x111;&#xF3; khi&#x1EBF;n ng&#xF4;n ng&#x1EEF; ki&#x1EC3;u n&#xE0;y c&#xF3; th&#x1EC3; bi&#x1EBF;n h&#xF3;a kh&#xF4;n l&#x1B0;&#x1EDD;ng v&#xE0; tr&#x1EDF; th&#xE0;nh b&#x1EA5;t c&#x1EE9; th&#x1EE9; c&#xF4;ng c&#x1EE5; g&#xEC; m&#xE0; b&#x1EA1;n mu&#x1ED1;n. C&#xE1;i hay nh&#x1EA5;t ch&#xED;nh l&#xE0; danh s&#xE1;ch c&#x169;ng c&#xF3; th&#x1EC3; d&#xF9;ng &#x111;&#x1EC3; th&#x1EC3; hi&#x1EC7;n code. T&#x1EE9;c l&#xE0; b&#x1EA1;n c&#xF3; th&#x1EC3; vi&#x1EBF;t ra c&#xE1;c ch&#x1B0;&#x1A1;ng tr&#xEC;nh m&#xE0; s&#x1EBD; s&#x1EA3;n xu&#x1EA5;t ra c&#xE1;c ch&#x1B0;&#x1A1;ng tr&#xEC;nh kh&#xE1;c. To&#xE0;n b&#x1ED9; ng&#xF4;n ng&#x1EEF; Arc n&#xE0;y &#x111;&#x1B0;&#x1EE3;c vi&#x1EBF;t ra t&#x1EEB; m&#x1ED9;t t&#x1EAD;p h&#x1EE3;p r&#x1EA5;t nh&#x1ECF; c&#xE1;c t&#x1EEB; v&#x1EF1;ng ban &#x111;&#x1EA7;u, sau &#x111;&#xF3; s&#x1EED; d&#x1EE5;ng c&#xE1;c ng&#x1EEF; ph&#xE1;p &#x111;&#x1A1;n gi&#x1EA3;n nh&#x1B0; ta th&#x1EA5;y &#x1EDF; tr&#xEA;n, &#x111;&#x1EC3; t&#x1EA1;o ra c&#xE1;c c&#xE2;u &#x111;&#x1A1;n c&#xE2;u gh&#xE9;p v&#xE0; c&#xE1;c ch&#x1B0;&#x1A1;ng tr&#xEC;nh ph&#x1EE9;c t&#x1EA1;p h&#x1A1;n r&#x1EA5;t nhi&#x1EC1;u. Ta x&#xE2;y ng&#xF4;n ng&#x1EEF; t&#x1EEB; d&#x1B0;&#x1EDB;i l&#xEA;n m&#x1ED9;t c&#xE1;ch c&#xF3; h&#x1EC7; th&#x1ED1;ng. </p>
+<h2 id="t&#x1EA1;o-&#x111;&#x1ED9;ng-t&#x1EEB;-m&#x1EDB;i">T&#x1EA1;o &#x111;&#x1ED9;ng t&#x1EEB; m&#x1EDB;i</h2>
+<p>Ta &#x111;&#xE3; th&#x1EA5;y m&#x1ED9;t s&#x1ED1; &#x111;&#x1ED9;ng t&#x1EEB;/h&#xE0;m (<em>function</em>) v&#xED; d&#x1EE5; &#x1EDF; tr&#xEA;n nh&#x1B0; +, cons, car, cdr. B&#x1EA1;n c&#xF3; th&#x1EC3; t&#x1EF1; &#x111;&#x1ECB;nh ngh&#x129;a th&#xEA;m c&#xE1;c &#x111;&#x1ED9;ng t&#x1EEB; m&#x1EDB;i &#x111;&#x1EC3; d&#x1EA1;y cho Arc bi&#x1EBF;t. Mu&#x1ED1;n t&#x1EA1;o &#x111;&#x1B0;&#x1EE3;c t&#x1EEB; v&#x1EF1;ng m&#x1EDB;i th&#xEC; c&#xF4;ng c&#x1EE5; ph&#x1EA3;i c&#xF3; kh&#x1EA3; n&#x103;ng g&#xE1;n gi&#xE1; tr&#x1ECB; cho bi&#x1EC3;u t&#x1B0;&#x1EE3;ng. Mu&#x1ED1;n l&#xE0;m &#x111;i&#x1EC1;u &#x111;&#xF3; th&#xEC; trong b&#x1ED9; c&#xF4;ng c&#x1EE5; ph&#x1EA3;i c&#xF3; m&#x1ED9;t c&#xF4;ng c&#x1EE5; c&#xF3; kh&#x1EA3; n&#x103;ng can thi&#x1EC7;p v&#xE0;o v&#xE0; thay &#x111;&#x1ED5;i n&#x1ED9;i dung (gi&#xE1; tr&#x1ECB;) c&#x1EE7;a m&#x1ED9;t bi&#x1EC3;u t&#x1B0;&#x1EE3;ng. Khi c&#xF3; m&#x1ED9;t c&#xF4;ng c&#x1EE5; nh&#x1B0; th&#x1EBF; r&#x1ED3;i, th&#xEC; s&#x1EBD; c&#xF3; kh&#x1EA3; n&#x103;ng t&#x1EA1;o ra nh&#x1EEF;ng c&#xF4;ng c&#x1EE5; m&#x1EDB;i ph&#x1EE9;c t&#x1EA1;p h&#x1A1;n s&#x1EED; d&#x1EE5;ng c&#xF4;ng c&#x1EE5; &#x111;&#x1A1;n gi&#x1EA3;n &#x111;&#xF3;, m&#xE0; c&#x169;ng can thi&#x1EC7;p v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x1EDF; nh&#x1EEF;ng t&#x1EA7;ng l&#x1EDB;p ngh&#x129;a m&#x1EDB;i. Tuy nhi&#xEA;n, ki&#x1EC3;u can thi&#x1EC7;p n&#xE0;y t&#xF4;i gi&#x1EDB;i h&#x1EA1;n &#x1EDF; nh&#x1EEF;ng th&#x1EDD;i &#x111;i&#x1EC3;m kh&#x1EDF;i &#x111;&#x1EA7;u nh&#x1EA5;t &#x111;&#x1ECB;nh. B&#xEC;nh th&#x1B0;&#x1EDD;ng, khi t&#xF4;i s&#x1EED; d&#x1EE5;ng c&#xE1;c h&#xE0;m v&#xE0; bi&#x1EBF;n, t&#xF4;i kh&#xF4;ng thay &#x111;&#x1ED5;i n&#x1ED9;i dung g&#x1ED1;c c&#x1EE7;a c&#xE1;i g&#xEC; c&#x1EA3;, t&#xF4;i t&#x1EA1;o ra c&#xE1;i m&#x1EDB;i. V&#xED; d&#x1EE5; trong &#x111;o&#x1EA1;n code sau, cons kh&#xF4;ng can thi&#x1EC7;p v&#xE0;o x, x v&#x1EAB;n l&#xE0; x:</p>
+<pre><code>arc&gt; (= x &apos;(1))
+arc&gt; (cons 2 x)
+&apos;(2 1)
+arc&gt; x
+&apos;(1)
+</code></pre><p>N&#x1EBF;u b&#x1EA1;n h&#x1ECF;i th&#x1EBF; l&#xE0;m sao &#x111;&#x1EC3; l&#x1B0;u l&#x1EA1;i &apos;(2 1) &#x111;&#x1EC3; d&#xF9;ng ti&#x1EBF;p. Mu&#x1ED1;n v&#x1EAD;y b&#x1EA1;n h&#x1EE9;ng gi&#xE1; tr&#x1ECB; &apos;(2 1) v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &apos;y. Khi gi&#xE1; tr&#x1ECB; &#x111;&#x1B0;&#x1EE3;c t&#x1EA1;o ra m&#xE0; kh&#xF4;ng l&#x1B0;u l&#x1EA1;i, th&#xEC; h&#x1EAF;n tan bi&#x1EBF;n:</p>
+<pre><code class="lang-scheme">arc&gt; (= x &apos;(1))
+arc&gt; (= y (cons 2 x))
+arc&gt; x
+&apos;(1)
+arc&gt; y
+&apos;(2 1)
+</code></pre>
+<p>T&#x1EA5;t nhi&#xEA;n nhi&#x1EC1;u khi gi&#xE1; tr&#x1ECB; t&#x1EA1;o ra n&#xE0;y ta cho ngay v&#xE0;o h&#xE0;m kh&#xE1;c th&#xEC; kh&#xF4;ng c&#x1EA7;n l&#x1B0;u l&#x1EA1;i. Nh&#x1B0;ng n&#x1EBF;u ta mu&#x1ED1;n l&#x1B0;u l&#xE2;u d&#xE0;i, th&#xEC; c&#x1EA7;n &#x111;&#x1EB7;t t&#xEA;n cho h&#x1EAF;n. T&#xF4;i lu&#xF4;n code ki&#x1EC3;u n&#xE0;y, t&#x1EE9;c l&#xE0; c&#xE1;i t&#xF4;i mu&#x1ED1;n t&#x1EA1;o ra l&#xE0; m&#x1ED9;t phi&#xEA;n b&#x1EA3;n kh&#xE1;c v&#xE0; n&#x1EBF;u mu&#x1ED1;n th&#xEC; t&#xF4;i &#x111;&#x1EB7;t t&#xEA;n cho c&#xE1;i m&#x1EDB;i &#x111;&#xF3;, ch&#x1EE9; kh&#xF4;ng thay &#x111;&#x1ED5;i n&#x1ED9;i dung g&#x1ED1;c c&#x1EE7;a danh s&#xE1;ch c&#x169;. S&#x1EED; d&#x1EE5;ng h&#xE0;m thay &#x111;&#x1ED5;i n&#x1ED9;i dung g&#x1ED1;c c&#x1EE7;a m&#x1ED9;t th&#x1EE9; (v&#xED; d&#x1EE5; danh s&#xE1;ch) r&#x1EA5;t nguy hi&#x1EC3;m, v&#xE0; g&#xE2;y nhi&#x1EC1;u h&#x1EAD;u qu&#x1EA3; (ch&#x1EE7; y&#x1EBF;u l&#xE0; ng&#x1EA1;c nhi&#xEA;n kh&#xF3; ch&#x1ECB;u do l&#x1ED7;i b&#x1EEB;a b&#xE3;i v&#xE0; kh&#xF4;ng bi&#x1EBF;t l&#x1ED7;i &#x1EDF; &#x111;&#xE2;u ra). Khi b&#x1EAF;t bu&#x1ED9;c ph&#x1EA3;i l&#xE0;m th&#x1EBF;, nhi&#x1EC1;u khi b&#x1EA1;n s&#x1EBD; kh&#xF4;ng bi&#x1EBF;t l&#xE0; ch&#x1B0;&#x1A1;ng tr&#xEC;nh c&#x1EE7;a m&#xEC;nh b&#x1EAF;t &#x111;&#x1EA7;u sai t&#x1EEB; ch&#x1ED7; n&#xE0;o, khi &#x111;&#xF3; b&#x1EA1;n s&#x1EBD; ph&#x1EA3;i ch&#xE8;n m&#x1ED9;t s&#x1ED1; h&#xE0;m chuy&#xEA;n in k&#x1EBF;t qu&#x1EA3; ra m&#xE0;n h&#xEC;nh v&#xE0;o gi&#x1EEF;a c&#xE1;c ch&#x1B0;&#x1A1;ng tr&#xEC;nh &#x111;&#x1EC3; bi&#x1EBF;t l&#xE0; ch&#x1B0;&#x1A1;ng tr&#xEC;nh c&#x1EE7;a b&#x1EA1;n ch&#x1EA1;y &#x111;&#x1EBF;n ch&#x1ED7; n&#xE0;o th&#xEC; h&#x1ECF;ng. T&#xF4;i s&#x1EBD; n&#xF3;i v&#x1EC1; &#x111;&#xE1;m &#x111;&#xF3; &#x1EDF; sau.</p>
+<p>T&#xF4;i n&#xF3;i ti&#x1EBF;p v&#x1EC1; vi&#x1EC7;c t&#x1EA1;o &#x111;&#x1ED9;ng t&#x1EEB; m&#x1EDB;i. &#x110;&#x1EC3; t&#x1EA1;o &#x111;&#x1ED9;ng t&#x1EEB; m&#x1EDB;i th&#xEC; ng&#x1EEF; ph&#xE1;p nh&#x1B0; sau:</p>
+<pre><code class="lang-racket">arc&gt; (def average (x y) 
+       (/ (+ x y) 2))
+#&lt;procedure: average&gt;
+arc&gt; (average 2 4)
+3
+</code></pre>
+<p>&#x110;&#x1ED9;ng t&#x1EEB; d&#xF9;ng &#x111;&#x1EC3; &#x111;&#x1ECB;nh ngh&#x129;a &#x111;&#x1ED9;ng t&#x1EEB; m&#x1EDB;i g&#x1ECD;i l&#xE0; <code>def</code> (<em>define</em>: &#x111;&#x1ECB;nh ngh&#x129;a). Ta &#x111;&#x1ECB;nh ngh&#x129;a bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>average</code> sao cho n&#xF3; c&#x1B0; x&#x1EED; nh&#x1B0; m&#x1ED9;t &#x111;&#x1ED9;ng t&#x1EEB;: n&#xF3; nh&#x1EAD;n v&#xE0;o hai s&#x1ED1; &#x1EDF; ch&#x1ED7; hai bi&#x1EBF;n x y v&#xE0; x&#x1EED; l&#xFD; nh&#x1B0; ta b&#x1EA3;o &#x1EDF; trong ph&#x1EA7;n th&#xE2;n &#x111;&#x1ECB;nh ngh&#x129;a: <code>(/ (+ x y) 2)</code>. C&#xE2;u n&#xE0;y c&#xF3; ngh&#x129;a l&#xE0; ta c&#x1ED9;ng hai s&#x1ED1; l&#x1EA1;i v&#xE0; chia &#x111;&#xF4;i. L&#x1B0;u &#xFD; l&#xE0; &#x111;&#x1ED9;ng t&#x1EEB; <code>def</code> c&#x1B0; x&#x1EED; nh&#x1B0; <code>=</code>, h&#x1EAF;n b&#x1ECF; qua m&#x1ED9;t s&#x1ED1; th&#xE0;nh ph&#x1EA7;n trong danh s&#xE1;ch. H&#x1EAF;n kh&#xF4;ng &#x111;&#x1ED9;ng v&#xE0;o v&#xE0; kh&#xF4;ng t&#xEC;m c&#xE1;ch hi&#x1EC3;u ngh&#x129;a nh&#x1EEF;ng t&#x1EEB; &#x111;&#xF3;. Sau khi h&#x1EAF;n &#x111;&#x1ECB;nh ngh&#x129;a xong, Arc c&#xF3; th&#xEA;m m&#x1ED9;t t&#x1EEB; v&#x1EF1;ng m&#x1EDB;i l&#xE0; &#x111;&#x1ED9;ng t&#x1EEB;: <code>average</code>. T&#x1EE9;c l&#xE0; trung b&#xEC;nh, trung b&#xEC;nh c&#x1EE7;a 2 v&#xE0; 4 l&#xE0; 3. Th&#x1EBF; l&#xE0; t&#x1EEB; nay Arc &#x111;&#xE3; bi&#x1EBF;t t&#xED;nh trung b&#xEC;nh c&#x1ED9;ng c&#x1EE7;a hai s&#x1ED1; t&#x1EF1; nhi&#xEA;n. </p>
+<p>&#x110;&#x1EBF;n &#x111;&#xE2;y t&#xF4;i s&#x1EBD; ch&#x1EC9; c&#xE1;ch &#x111;&#x1ECB;nh ngh&#x129;a l&#x1EA1;i cho Arc bi&#x1EBF;t d&#x1EA5;u <code>+</code> l&#xE0; &#x111;&#x1EC3; ch&#x1EC9; ph&#xE9;p nh&#xE2;n. </p>
+<pre><code>arc&gt; (def + (x y) 
+        (* x y))
+arc&gt; (+ 2 3)
+6
+</code></pre><p>B&#x1EA1;n c&#xF3; th&#x1EC3; th&#x1EA5;y r&#x1EB1;ng c&#xE1;ch &#x111;&#x1ECB;nh ngh&#x129;a &#x111;&#x1ED9;ng t&#x1EEB; m&#x1EDB;i r&#x1EA5;t &#x111;&#x1A1;n gi&#x1EA3;n. Ta g&#x1ECD;i &#x111;&#x1ED9;ng t&#x1EEB; <code>def</code> l&#xEA;n, sau &#x111;&#xF3; vi&#x1EBF;t ti&#x1EBF;p bi&#x1EC3;u t&#x1B0;&#x1EE3;ng m&#xE0; ta mu&#x1ED1;n s&#x1EED; d&#x1EE5;ng, &#x1EDF; &#x111;&#xE2;y l&#xE0; d&#x1EA5;u <code>+</code>, sau &#x111;&#xF3; ta vi&#x1EBF;t s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n m&#xE0; &#x111;&#x1ED9;ng t&#x1EEB; n&#xE0;y s&#x1EBD; nh&#x1EAD;n v&#xE0;o: 2 bi&#x1EBF;n x v&#xE0; y (n&#x1EBF;u b&#x1EA1;n ngh&#x129; sao l&#x1EA1;i ch&#x1EC9; c&#xF3; 2 bi&#x1EBF;n, t&#xF4;i s&#x1EBD; ch&#x1EC9; c&#xE1;ch &#x111;&#x1EC3; nh&#x1EAD;n s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n v&#xF4; h&#x1EA1;n &#x1EDF; d&#x1B0;&#x1EDB;i ;-). Th&#x1EBF; l&#xE0; xong ph&#x1EA7;n &#x111;&#x1EA7;u, ph&#x1EA7;n th&#xE2;n ta vi&#x1EBF;t m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; x&#x1EED; l&#xFD; hai bi&#x1EBF;n x v&#xE0; y n&#xE0;y theo &#xFD; ta mu&#x1ED1;n. &#xDD; ta mu&#x1ED1;n &#x1EDF; &#x111;&#xE2;y l&#xE0; nh&#xE2;n hai bi&#x1EBF;n n&#xE0;y v&#x1EDB;i nhau. V&#xEC; th&#x1EBF;, sau khi &#x111;&#x1ECB;nh ngh&#x129;a xong, khi ta h&#x1ECF;i l&#x1EA1;i Arc r&#x1EB1;ng <code>(+ 2 3)</code> tr&#x1EA3; v&#x1EC1; g&#xEC;, Arc s&#x1EBD; mang nh&#xE2;n 2 v&#x1EDB;i 3 v&#xE0; tr&#x1EA3; v&#x1EC1; 6. Ta t&#x1EA9;y n&#xE3;o con b&#xE9; r&#x1ED3;i.</p>
+<p>&#x110;&#x1ED9;ng t&#x1EEB; <code>def</code> kh&#xF4;ng c&#xF3; g&#xEC; &#x111;&#x1EB7;c bi&#x1EC7;t, h&#x1EAF;n g&#x1ECD;i &#x111;&#x1ED9;ng t&#x1EEB; <code>=</code> l&#xEA;n &#x111;&#x1EC3; g&#xE1;n m&#x1ED9;t h&#xE0;m v&#xE0;o m&#x1ED9;t bi&#x1EC3;u t&#x1B0;&#x1EE3;ng cho s&#x1EB5;n. C&#xE2;u <code>def</code> &#x1EDF; tr&#xEA;n ch&#xED;nh l&#xE0; c&#xE2;u sau:</p>
+<pre><code>arc&gt; (= average (fn (x y) (/ (+ x y) 2)))
+arc&gt; (average 2 4)
+3
+</code></pre><p>&#x1EDE; &#x111;&#xE2;y <code>average</code> &#x111;&#x1B0;&#x1EE3;c g&#xE1;n h&#xE0;m/&#x111;&#x1ED9;ng t&#x1EEB; <code>(fn (x y) (/ (+ x y) 2))</code>. H&#xE0;m n&#xE0;y n&#x1EBF;u &#x111;&#x1EE9;ng kh&#xF4;ng <code>(fn (x y) (/ (+ x y) 2))</code> th&#xEC; l&#xE0; h&#xE0;m kh&#xF4;ng t&#xEA;n. Kh&#xF4;ng v&#x1EA5;n &#x111;&#x1EC1; g&#xEC;, h&#xE0;m kh&#xF4;ng t&#xEA;n v&#x1EAB;n ho&#x1EA1;t &#x111;&#x1ED9;ng nh&#x1B0; th&#x1B0;&#x1EDD;ng. Khi b&#x1EA1;n hi&#x1EC3;u m&#x1ED9;t &#xFD; t&#x1B0;&#x1EDF;ng g&#xEC; &#x111;&#xF3;, m&#xE0; ch&#x1B0;a ngh&#x129; ra &#x111;&#x1B0;&#x1EE3;c t&#xEA;n &#x111;&#x1EC3; g&#xE1;n cho n&#xF3;, &#x111;&#xE1;m n&#x1A1;-ron &#x1EDF; trung t&#xE2;m ng&#xF4;n ng&#x1EEF; trong n&#xE3;o b&#x1EA1;n ch&#x1B0;a b&#xE1;o ra &#x111;&#x1B0;&#x1EE3;c m&#x1ED9;t t&#x1EEB; c&#x1EE5; th&#x1EC3; &#x111;&#x1EC3; g&#xE1;n cho &#xFD; t&#x1B0;&#x1EDF;ng &#x111;&#xF3;. Kh&#xF4;ng sao c&#x1EA3;, n&#xF3; v&#x1EAB;n ho&#x1EA1;t &#x111;&#x1ED9;ng b&#xEC;nh th&#x1B0;&#x1EDD;ng, n&#x1EBF;u b&#x1EA1;n gi&#x1EEF; n&#xF3; kh&#xF4;ng t&#xEA;n. &#x1EDE; &#x111;&#xE2;y c&#x169;ng v&#x1EAD;y, khi b&#x1EA1;n b&#xEA; nguy&#xEA;n h&#xE0;m kh&#xF4;ng t&#xEA;n kia v&#xE0;o m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF;, &#x111;&#x1EC3; v&#xE0;o &#x111;&#xFA;ng v&#x1ECB; tr&#xED; m&#xE0; n&#xF3; v&#x1EAB;n &#x111;&#x1EC3;, t&#x1EE9;c l&#xE0; v&#x1ECB; tr&#xED; &#x111;&#x1EA7;u ti&#xEA;n trong danh s&#xE1;ch, th&#xEC; n&#xF3; v&#x1EAB;n nh&#x1EAD;n v&#xE0;o c&#xE1;c bi&#x1EBF;n &#x111;&#x1EE9;ng sau v&#xE0; ho&#x1EA1;t &#x111;&#x1ED9;ng b&#xEC;nh th&#x1B0;&#x1EDD;ng. Kh&#xF4;ng c&#xF3; g&#xEC; sai tr&#xE1;i. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; ((fn (x y) (/ (+ x y) 2)) 2 4)
+3
+</code></pre><p>Bi&#x1EC3;u ng&#x1EEF; n&#xE0;y l&#xE0; danh s&#xE1;ch c&#xF3; 3 th&#xE0;nh ph&#x1EA7;n: m&#x1ED9;t h&#xE0;m tr&#x1EA3; v&#x1EC1; trung b&#xEC;nh c&#x1ED9;ng, s&#x1ED1; 2 v&#xE0; s&#x1ED1; 4. Khi Arc x&#x1EED; l&#xFD; xong ba th&#xE0;nh ph&#x1EA7;n n&#xE0;y, v&#xE0; cho hai th&#xE0;nh ph&#x1EA7;n cu&#x1ED1;i v&#xE0;o th&#xE0;nh ph&#x1EA7;n ban &#x111;&#x1EA7;u, t&#x1EE9;c l&#xE0; cho s&#x1ED1; 2 v&#xE0; 4 v&#xE0;o h&#xE0;m trung b&#xEC;nh c&#x1ED9;ng, th&#xEC; gi&#xE1; tr&#x1ECB; tr&#x1EA3; v&#x1EC1; l&#xE0; s&#x1ED1; 3.</p>
+<h4 id="m&#x1ED9;t-tr&#x1B0;&#x1EDD;ng-h&#x1EE3;p-&#x111;&#x1EB7;c-bi&#x1EC7;t">M&#x1ED9;t tr&#x1B0;&#x1EDD;ng h&#x1EE3;p &#x111;&#x1EB7;c bi&#x1EC7;t</h4>
+<p>Nh&#x1B0; c&#xE1;c b&#x1EA1;n &#x111;&#xE3; th&#x1EA5;y &#x1EDF; tr&#xEA;n, ng&#x1EEF; ph&#xE1;p c&#x1EE7;a m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; l&#xE0; <code>(&#x111;&#x1ED9;ng-t&#x1EEB; v&#x1EAD;t-1 v&#x1EAD;t-2 v&#x1EAD;t-3..)</code>. Tuy nhi&#xEA;n c&#xF3; m&#x1ED9;t tr&#x1B0;&#x1EDD;ng h&#x1EE3;p &#x111;&#x1EB7;c bi&#x1EC7;t, khi th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n trong danh s&#xE1;ch kh&#xF4;ng ph&#x1EA3;i l&#xE0; &#x111;&#x1ED9;ng t&#x1EEB; m&#xE0; l&#xE0; m&#x1ED9;t d&#x1EA1;ng t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u (<em>data structure</em>). T&#xF4;i d&#x1ECB;ch t&#x1EA1;m, ai ngh&#x129; ra t&#x1EEB; kh&#xE1;c t&#x1ED1;t h&#x1A1;n c&#x1EA7;n n&#xF3;i ra. M&#x1ED9;t t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u l&#xE0; m&#x1ED9;t d&#x1EA1;ng danh s&#xE1;ch ch&#x1EE9;a &#x111;&#x1EF1;ng c&#xE1;c th&#xE0;nh ph&#x1EA7;n d&#x1EEF; li&#x1EC7;u. T&#xF4;i l&#x1EA5;y v&#xED; d&#x1EE5;  danh s&#xE1;ch <code>&apos;(1 2 3)</code> l&#xE0; m&#x1ED9;t t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u, b&#x1EDF;i v&#xEC; danh s&#xE1;ch n&#xE0;y ch&#x1EE9;a c&#xE1;c th&#xE0;nh ph&#x1EA7;n nh&#x1ECF; h&#x1A1;n. C&#xE1;c th&#xE0;nh ph&#x1EA7;n nh&#x1ECF; h&#x1A1;n n&#xE0;y l&#xE0; c&#xE1;c &#x111;&#x1A1;n v&#x1ECB; d&#x1EEF; li&#x1EC7;u. M&#x1ED9;t v&#xED; d&#x1EE5; kh&#xE1;c v&#x1EC1; m&#x1ED9;t t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u l&#xE0; d&#xE2;y ch&#x1EEF; <code>&quot;foo&quot;</code>. D&#xE2;y ch&#x1EEF; n&#xE0;y l&#xE0; m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; &#x111;&#x1A1;n gi&#x1EA3;n, v&#xE0; tr&#xF4;ng nh&#x1B0; m&#x1ED9;t kh&#x1ED1;i th&#x1ED1;ng nh&#x1EA5;t. Nh&#x1B0;ng th&#x1EF1;c ra d&#xE2;y ch&#x1EEF; n&#xE0;y l&#xE0; m&#x1ED9;t d&#xE2;y c&#xE1;c ch&#x1EEF; c&#xE1;i, t&#x1EE9;c l&#xE0; h&#x1EAF;n l&#xE0; m&#x1ED9;t t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u bao g&#x1ED3;m c&#xE1;c th&#xE0;nh ph&#x1EA7;n d&#x1EEF; li&#x1EC7;u nh&#x1ECF; h&#x1A1;n. H&#x1EAF;n &#x111;&#x1B0;&#x1EE3;c c&#x1EA5;u th&#xE0;nh t&#x1EEB; 3 &#x111;&#x1A1;n v&#x1ECB; d&#x1EEF; li&#x1EC7;u l&#xE0; 3 ch&#x1EEF; c&#xE1;i f, o v&#xE0; o. </p>
+<p>T&#xF4;i n&#xF3;i ti&#x1EBF;p v&#x1EC1; tr&#x1B0;&#x1EDD;ng h&#x1EE3;p &#x111;&#x1EB7;c bi&#x1EC7;t n&#xE0;y c&#x1EE7;a ng&#x1EEF; ph&#xE1;p Arc, khi th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n c&#x1EE7;a bi&#x1EC3;u ng&#x1EEF; l&#xE0; m&#x1ED9;t t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u, th&#xEC; ti&#x1EBF;p sau &#x111;&#xF3; l&#xE0; m&#x1ED9;t s&#x1ED1; &#x111;&#x1EBF;m ch&#x1EC9; v&#x1ECB; tr&#xED;. Khi &#x111;&#xF3; Arc s&#x1EBD; d&#xF9;ng s&#x1ED1; &#x111;&#x1EBF;m ch&#x1EC9; v&#x1ECB; tr&#xED; n&#xE0;y &#x111;&#x1EC3; truy nh&#x1EAD;p v&#xE0;o t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u kia v&#xE0; tr&#x1EA3; v&#x1EC1; cho b&#x1EA1;n &#x111;&#x1A1;n v&#x1ECB; d&#x1EEF; li&#x1EC7;u &#x1EDF; v&#x1ECB; tr&#xED; t&#x1B0;&#x1A1;ng &#x1EE9;ng. N&#x1EBF;u s&#x1ED1; &#x111;&#x1EBF;m ch&#x1EC9; v&#x1ECB; tr&#xED; &#x111;&#xF3; v&#x1B0;&#x1EE3;t ra ngo&#xE0;i &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u, Arc s&#x1EBD; b&#xE1;o l&#x1ED7;i. L&#x1B0;u &#xFD; l&#xE0; trong khoa h&#x1ECD;c m&#xE1;y t&#xED;nh, ng&#x1B0;&#x1EDD;i ta th&#x1B0;&#x1EDD;ng &#x111;&#x1EBF;m t&#x1EEB; s&#x1ED1; 0. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (&apos;(1 2 3) 0)
+1
+arc&gt; (&apos;(1 2 3) 3)
+Error
+arc&gt; (&quot;foo&quot; 1)
+#\o
+</code></pre><p>&#x1EDE; v&#xED; d&#x1EE5; tr&#xEA;n, trong c&#xE2;u th&#x1EE9; nh&#x1EA5;t, Arc t&#xEC;m &#x111;&#x1EBF;n v&#x1ECB; tr&#xED; s&#x1ED1; 0 c&#x1EE7;a danh s&#xE1;ch &apos;(1 2 3) v&#xE0; tr&#x1EA3; v&#x1EC1; &#x111;&#x1A1;n v&#x1ECB; d&#x1EEF; li&#x1EC7;u &#x1EDF; v&#x1ECB; tr&#xED; &#x111;&#xF3;, t&#x1EE9;c l&#xE0; s&#x1ED1; 1. Trong c&#xE2;u th&#x1EE9; hai, Arc t&#xEC;m &#x111;&#x1EBF;n v&#x1ECB; tr&#xED; s&#x1ED1; 3, v&#x1ECB; tr&#xED; n&#xE0;y n&#x1EB1;m ngo&#xE0;i danh s&#xE1;ch, v&#xEC; v&#x1EAD;y Arc b&#xE1;o l&#x1ED7;i. Trong c&#xE2;u th&#x1EE9; 3, Arc t&#xEC;m &#x111;&#x1EBF;n v&#x1ECB; tr&#xED; s&#x1ED1; 1 c&#x1EE7;a t&#x1ED5; ch&#x1EE9;c d&#xE2;y ch&#x1EEF;, v&#xE0; tr&#x1EA3; v&#x1EC1; ch&#x1EEF; c&#xE1;i <code>#\o</code> &#x1EDF; v&#x1ECB; tr&#xED; s&#x1ED1; 1 &#x111;&#xF3;. Tr&#xF4;ng h&#x1A1;i k&#x1EF3; qu&#x1EB7;c nh&#x1B0;ng &#x111;&#xF3; l&#xE0; c&#xE1;ch ch&#x1EEF; c&#xE1;i &#x111;&#x1B0;&#x1EE3;c bi&#x1EC3;u th&#x1ECB; trong ng&#xF4;n ng&#x1EEF; Arc, &#x111;&#x1EC3; ph&#xE2;n bi&#x1EC7;t v&#x1EDB;i bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>&apos;o</code>. </p>
+<h4 id="lo&#x1EA1;i">Lo&#x1EA1;i</h4>
+<p>C&#xF3; th&#x1EC3; b&#x1EA1;n th&#x1EA5;y h&#x1A1;i ng&#x1EA1;c nhi&#xEA;n khi ch&#x1EEF; c&#xE1;i <code>#\o</code> l&#x1EA1;i kh&#xE1;c v&#x1EDB;i bi&#x1EC3;u t&#x1B0;&#x1EE3;ng <code>&apos;o</code>. Trong ng&#xF4;n ng&#x1EEF; Arc, c&#xE1;c &#x111;&#x1A1;n v&#x1ECB; d&#x1EEF; li&#x1EC7;u &#x111;&#x1B0;&#x1EE3;c ph&#xE2;n lo&#x1EA1;i ra th&#xE0;nh c&#xE1;c lo&#x1EA1;i (<em>type</em>) kh&#xE1;c nhau. M&#x1ED7;i lo&#x1EA1;i s&#x1EBD; c&#xF3; n&#xE9;t t&#xED;nh c&#xE1;ch ri&#xEA;ng. T&#xF4;i li&#x1EC7;t k&#xEA; ra m&#x1ED9;t s&#x1ED1; lo&#x1EA1;i ta &#x111;&#xE3; g&#x1EB7;p: &#x111;&#x1ED9;ng t&#x1EEB; (<em>function</em>), s&#x1ED1; (<em>number</em>), d&#xE2;y ch&#x1EEF; (<em>string</em>), bi&#x1EC3;u t&#x1B0;&#x1EE3;ng (<em>symbol</em>), ch&#x1EEF; c&#xE1;i (<em>character</em>), danh s&#xE1;ch (<em>list</em>). Arc c&#xF3; m&#x1ED9;t h&#xE0;m chuy&#xEA;n &#x111;&#x1EC3; tr&#x1EA3; v&#x1EC1; lo&#x1EA1;i c&#x1EE7;a c&#xE1;c &#x111;&#x1A1;n v&#x1ECB; d&#x1EEF; li&#x1EC7;u. T&#x1EE9;c l&#xE0; khi b&#x1EA1;n &#x111;&#x1B0;a m&#x1ED9;t &#x111;&#x1A1;n v&#x1ECB; d&#x1EEF; li&#x1EC7;u b&#x1EA5;t k&#x1EF3; cho h&#xE0;m &#x111;&#xF3;, h&#xE0;m &#x111;&#xF3; s&#x1EBD; tr&#x1EA3; v&#x1EC1; lo&#x1EA1;i c&#x1EE7;a d&#x1EEF; li&#x1EC7;u &#x111;&#xF3;. Tr&#x1B0;&#x1EDB;c khi t&#xF4;i n&#xF3;i, b&#x1EA1;n c&#xF3; &#x111;o&#xE1;n &#x111;&#x1B0;&#x1EE3;c h&#xE0;m &#x111;&#xF3; l&#xE0; g&#xEC; kh&#xF4;ng? T&#xF4;i g&#x1EE3;i &#xFD; l&#xE0; ng&#xF4;n ng&#x1EEF; Arc r&#x1EA5;t h&#x1EE3;p v&#x1EDB;i c&#xE1;ch ngh&#x129; t&#x1EF1; nhi&#xEA;n c&#x1EE7;a con ng&#x1B0;&#x1EDD;i. V&#xE0; Arc c&#x169;ng khuy&#x1EBF;n kh&#xED;ch ng&#x1B0;&#x1EDD;i ta ph&#xE1;t tri&#x1EC3;n kh&#x1EA3; n&#x103;ng suy ngh&#x129; t&#x1EF1; nhi&#xEA;n (<em>intuitive</em>) v&#xE0; logic &#x111;&#xF3;. T&#xF4;i ngh&#x129; n&#x1EBF;u b&#x1EA1;n &#x111;&#x1ECD;c v&#xE0; hi&#x1EC3;u Arc &#x111;&#x1EBF;n &#x111;&#xE2;y r&#x1ED3;i, b&#x1EA1;n s&#x1EBD; &#x111;o&#xE1;n &#x111;&#xFA;ng. H&#xE0;m &#x111;&#xF3; l&#xE0; <code>type</code>. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (type +)
+fn                     =&gt; function / h&#xE0;m 
+arc&gt; (type 1)
+int                    =&gt; integer / s&#x1ED1; t&#x1EF1; nhi&#xEA;n  
+arc&gt; (type &quot;foo&quot;)
+string                 =&gt; string / d&#xE2;y ch&#x1EEF; 
+arc&gt; (type &apos;o)
+sym                    =&gt; symbol / bi&#x1EC3;u t&#x1B0;&#x1EE3;ng 
+arc&gt; (type #\o)
+char                   =&gt; character / ch&#x1EEF; c&#xE1;i  
+arc&gt; (type &apos;(1 2))
+cons                   =&gt; constructor / list / danh s&#xE1;ch
+</code></pre><h4 id="v&#xED;-d&#x1EE5;-th&#xEA;m-v&#x1EC1;-h&#xE0;m-">V&#xED; d&#x1EE5; th&#xEA;m v&#x1EC1; h&#xE0;m <code>=</code></h4>
+<p>Ta &#x111;&#xE3; th&#x1EA5;y &#x1EDF; tr&#xEA;n v&#x1EC1; vi&#x1EC7;c h&#xE0;m <code>=</code> c&#xF3; th&#x1EC3; can thi&#x1EC7;p v&#xE0; thay &#x111;&#x1ED5;i gi&#xE1; tr&#x1ECB; c&#x1EE7;a m&#x1ED9;t bi&#x1EC3;u t&#x1B0;&#x1EE3;ng. Sau khi c&#xF3; th&#xEA;m c&#xE1;ch m&#x1EDB;i &#x111;&#x1EC3; ch&#x1EC9; &#x111;&#x1EBF;n m&#x1ED9;t v&#x1ECB; tr&#xED; trong t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u, t&#xF4;i l&#x1EA5;y th&#xEA;m v&#xED; d&#x1EE5; v&#x1EC1; vi&#x1EC7;c h&#xE0;m <code>=</code> c&#xF3; th&#x1EC3; can thi&#x1EC7;p v&#xE0;o t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u b&#x1EB1;ng nh&#x1EEF;ng c&#xE1;ch kh&#xE1;c nhau nh&#x1B0; th&#x1EBF; n&#xE0;o:</p>
+<pre><code>; Ban &#x111;&#x1EA7;u bi&#x1EC3;u t&#x1B0;&#x1EE3;ng x ch&#x1B0;a c&#xF3; g&#xED;a tr&#x1ECB; g&#xEC;.
+arc&gt; (= x 2)
+; B&#xE2;y gi&#x1EDD; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng x &#x111;&#xE3; c&#xF3; gi&#xE1; tr&#x1ECB; 2
+arc&gt; x
+2
+
+; Ta d&#xF9;ng h&#xE0;m = &#x111;&#x1EC3; ti&#x1EBF;p t&#x1EE5;c can thi&#x1EC7;p 
+arc&gt; (= x 3)
+; B&#xE2;y gi&#x1EDD; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng x &#x111;&#xE3; c&#xF3; gi&#xE1; tr&#x1ECB; 3
+arc&gt; x
+3
+
+; Bi&#x1EC3;u t&#x1B0;&#x1EE3;ng + &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1ECB;nh ngh&#x129;a tr&#x1B0;&#x1EDB;c cho Arc l&#xE0; ph&#xE9;p c&#x1ED9;ng 
+arc&gt; (+ 2 3)
+5
+; Ta can thi&#x1EC7;p v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng +
+arc&gt; (= + (fn (x y) (* x y)))
+; B&#xE2;y gi&#x1EDD; Arc &#x111;&#xE3; hi&#x1EC3;u + l&#xE0; ph&#xE9;p nh&#xE2;n 
+arc&gt; (+ 2 3)
+6
+
+; Cho m&#x1ED9;t t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u 
+arc&gt; (= s &quot;foo&quot;)
+arc&gt; s
+&quot;foo&quot;
+
+; Can thi&#x1EC7;p v&#xE0;o t&#x1ED5; ch&#x1EE9;c d&#x1EEF; li&#x1EC7;u n&#xE0;y b&#x1EB1;ng c&#xE1;ch ch&#x1EC9; &#x111;&#x1ECB;nh v&#x1ECB; tr&#xED;  
+arc&gt; (= (car s) #\m)
+; (car s) t&#x1EE9;c l&#xE0; ch&#x1EC9; v&#xE0;o v&#x1ECB; tr&#xED; &#x111;&#x1EA7;u ti&#xEA;n c&#x1EE7;a d&#xE2;y ch&#x1EEF; s 
+; &quot;foo&quot; &#x111;&#xE3; th&#xE0;nh &quot;moo&quot;
+arc&gt; s
+&quot;moo&quot;
+
+; Ta v&#x1EEB;a h&#x1ECD;c th&#xEA;m m&#x1ED9;t ng&#x1EEF; ph&#xE1;p &#x111;&#x1EB7;c bi&#x1EC7;t d&#xF9;ng &#x111;&#x1EC3; ch&#x1EC9; &#x111;&#x1ECB;nh v&#x1ECB; tr&#xED; 
+; v&#x1ECB; tr&#xED; &#x111;&#x1EA7;u ti&#xEA;n : (&quot;foo&quot; 0) ho&#x1EB7;c (s 0)
+arc&gt; (= (s 0) #\f)
+; &quot;moo&quot; tr&#x1EDF; l&#x1EA1;i th&#xE0;nh &quot;foo&quot;
+arc&gt; s
+&quot;foo&quot;
+</code></pre><h4 id="g&#xE1;n-t&#x1EA1;m">G&#xE1;n t&#x1EA1;m</h4>
+<p>H&#xE0;m <code>=</code> ho&#x1EB7;c h&#xE0;m <code>def</code> s&#x1EBD; g&#xE1;n g&#xED;a tr&#x1ECB; v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng m&#xE3;i, t&#x1EE9;c l&#xE0; x s&#x1EBD; mang gi&#xE1; tr&#x1ECB; 2 cho &#x111;&#x1EBF;n h&#x1EBF;t ch&#x1B0;&#x1A1;ng tr&#xEC;nh n&#x1EBF;u kh&#xF4;ng c&#xF3; g&#xEC; thay &#x111;&#x1ED5;i. Tuy nhi&#xEA;n c&#xF3; c&#xE1;ch &#x111;&#x1EC3; g&#xE1;n t&#x1EA1;m, t&#x1EE9;c l&#xE0; x mang gi&#xE1; tr&#x1ECB; 2 ch&#x1EC9; &#x1EDF; trong gi&#x1EDB;i h&#x1EA1;n m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; (m&#x1ED9;t ch&#x1B0;&#x1A1;ng tr&#xEC;nh nh&#x1ECF;) m&#xE0; th&#xF4;i. Ngo&#xE0;i &#x111;&#xF3; ra th&#xEC; x kh&#xF4;ng mang gi&#xE1; tr&#x1ECB; 2. &#x110;&#xF3; l&#xE0; h&#xE0;m <code>let</code> &#x111;&#x1EC3; g&#xE1;n t&#x1EA1;m m&#x1ED9;t bi&#x1EBF;n, h&#xE0;m <code>with</code> &#x111;&#x1EC3; g&#xE1;n t&#x1EA1;m nhi&#x1EC1;u bi&#x1EBF;n. V&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (let x 1
+       (+ x (* x 2)))
+3
+arc&gt; (with (x 3 y 4)
+       (sqrt (+ (expt x 2) (expt y 2))))
+5
+</code></pre><p>T&#xF4;i ngh&#x129; ngay c&#x1EA3; khi t&#xF4;i ch&#x1B0;a n&#xF3;i g&#xEC; c&#x1EA3;, c&#xE1;c b&#x1EA1;n ch&#x1EC9; c&#x1EA7;n &#x111;&#x1ECD;c ph&#x1B0;&#x1A1;ng tr&#xEC;nh n&#xE0;y, l&#xE0; &#x111;&#xE3; c&#xF3; th&#x1EC3; hi&#x1EC3;u &#x111;&#x1B0;&#x1EE3;c ph&#x1B0;&#x1A1;ng tr&#xEC;nh n&#xE0;y vi&#x1EBF;t c&#xE1;i g&#xEC;. Trong c&#xE2;u th&#x1EE9; nh&#x1EA5;t: V&#x1EDB;i x = 1, l&#x1EA5;y x c&#x1ED9;ng v&#x1EDB;i 2x. K&#x1EBF;t qu&#x1EA3; l&#xE0; 3</p>
+<p>C&#xE2;u th&#x1EE9; hai c&#x169;ng v&#x1EAD;y. Tr&#x1B0;&#x1EDB;c ti&#xEA;n, h&#xE3;y nh&#xEC;n v&#xE0;o c&#xE1;c t&#x1EEB; v&#x1EF1;ng v&#xE0; &#x111;o&#xE1;n: <code>sqrt</code> l&#xE0; <em>squareroot</em> t&#x1EE9;c l&#xE0; c&#x103;n b&#x1EAD;c 2. <code>expt</code> l&#xE0; <em>exponent</em> t&#x1EE9;c l&#xE0; m&#x169;. N&#x1EBF;u ta l&#x1EA5;y x m&#x169; 2 c&#x1ED9;ng v&#x1EDB;i y m&#x169; 2 r&#x1ED3;i khai c&#x103;n b&#x1EAD;c hai c&#x1EE7;a k&#x1EBF;t qu&#x1EA3; &#x111;&#xF3;, th&#xEC; ta &#x111;&#x1B0;&#x1EE3;c c&#xE1;i g&#xEC;? &#x110;&#xE2;y ch&#xED;nh l&#xE0; c&#xF4;ng th&#x1EE9;c t&#xED;nh &#x111;&#x1B0;&#x1EDD;ng ch&#xE9;o c&#x1EE7;a m&#x1ED9;t tam gi&#xE1;c vu&#xF4;ng. V&#x1EDB;i x b&#x1EB1;ng 3 v&#xE0; y b&#x1EB1;ng 4, &#x111;&#x1B0;&#x1EDD;ng ch&#xE9;o c&#x1EE7;a tam gi&#xE1;c vu&#xF4;ng l&#xE0; 5. </p>
+<pre><code>(v&#x1EDB;i (x 3 y 4)
+    (c&#x103;n hai (c&#x1ED9;ng (m&#x169; x 2) (m&#x169; y 2))))
+</code></pre><p>H&#xF3;a ra Arc c&#x169;ng &#x111;&#x1B0;&#x1EE3;c d&#x1EA1;y tr&#x1B0;&#x1EDB;c m&#x1ED9;t &#xED;t to&#xE1;n. N&#x1EBF;u ta th&#x1EA5;y Arc ch&#x1B0;a bi&#x1EBF;t g&#xEC; th&#xEC; ta nh&#x1EDB; ra l&#xE0; Arc c&#xF3; s&#x1EB5;n c&#xF4;ng c&#x1EE5; &#x111;&#x1EC3; ta c&#xF3; th&#x1EC3; d&#x1EA1;y cho Arc h&#x1ECD;c th&#xEA;m.</p>
+<p>B&#x1EA1;n c&#xF3; nh&#x1EDB; v&#xED; d&#x1EE5; sau kh&#xF4;ng:</p>
+<pre><code>(qu&#xE9;t nh&#xE0;)
+(l&#xE0;m to&#xE1;n v&#x103;n ti&#x1EBF;ng-anh)
+(n&#x1EBF;u l&#x1B0;&#x1EDD;i 
+    (vi&#x1EBF;t ch&#x1B0;&#x1A1;ng-tr&#xEC;nh-t&#xED;nh-&#x111;&#x1B0;&#x1EDD;ng-ch&#xE9;o-tam-gi&#xE1;c-vu&#xF4;ng))
+</code></pre><p>T&#xF4;i b&#x1EA3;o b&#x1EA1;n &#x111;i qu&#xE9;t nh&#xE0; &#x111;i, sau &#x111;&#xF3; l&#xE0;m to&#xE1;n v&#x103;n ti&#x1EBF;ng anh, v&#xE0; n&#x1EBF;u l&#x1B0;&#x1EDD;i th&#xEC; vi&#x1EBF;t m&#x1ED9;t ch&#x1B0;&#x1A1;ng tr&#xEC;nh nh&#x1ECF; &#x111;&#x1EC3; t&#xED;nh &#x111;&#x1B0;&#x1EDD;ng ch&#xE9;o c&#x1EE7;a tam gi&#xE1;c vu&#xF4;ng. T&#x1EA5;t nhi&#xEA;n sau khi t&#xF4;i vi&#x1EBF;t ch&#x1B0;&#x1A1;ng tr&#xEC;nh t&#xED;nh &#x111;&#x1B0;&#x1EDD;ng ch&#xE9;o c&#x1EE7;a tam gi&#xE1;c vu&#xF4;ng &#x111;&#x1EC3; t&#x103;ng kh&#x1EA3; n&#x103;ng l&#x1EAD;p tr&#xEC;nh, t&#xF4;i v&#x1EAB;n t&#x1EF1; t&#xED;nh &#x111;&#x1B0;&#x1EDD;ng ch&#xE9;o c&#x1EE7;a tam gi&#xE1;c vu&#xF4;ng b&#x1EB1;ng m&#x1ED3;m v&#xE0; tay &#x111;&#x1EC3; t&#x103;ng kh&#x1EA3; n&#x103;ng t&#xED;nh nh&#x1EA9;m. T&#xF4;i &#x111;&#xE3; n&#xF3;i r&#x1ED3;i, mu&#x1ED1;n ch&#x1EA1;y &#x111;ua v&#x1EDB;i ch&#xED;nh m&#xEC;nh, c&#xE1;i g&#xEC; <em>c&#xF3; th&#x1EC3;</em> th&#xEC; <em>ph&#x1EA3;i</em> l&#xE0;m.</p>
+<h4 id="in">in</h4>
+<p>V&#xED; d&#x1EE5; khi ta &#x111;&#x1ECB;nh ngh&#x129;a h&#xE0;m <code>average</code> ta mu&#x1ED1;n h&#xE0;m n&#xE0;y in ra bi&#x1EBF;n m&#xE0; h&#x1EAF;n nh&#x1EAD;n v&#xE0;o tr&#x1B0;&#x1EDB;c khi in ra k&#x1EBF;t qu&#x1EA3;, ta ch&#xE8;n v&#xE0;o m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; chuy&#xEA;n &#x111;&#x1EC3; in. H&#xE0;m &#x111;&#x1EC3; in l&#xE0; <code>pr</code> ho&#x1EB7;c <code>prn</code>. pr l&#xE0; <em>print</em> v&#xE0; prn l&#xE0; <em>print \n</em>. Trong khoa h&#x1ECD;c m&#xE1;y t&#xED;nh, <code>\n</code> l&#xE0; d&#x1EA5;u xu&#x1ED1;ng d&#xF2;ng. prn t&#x1EE9;c l&#xE0; in ra k&#x1EBF;t qu&#x1EA3; v&#xE0; sau &#x111;&#xF3; xu&#x1ED1;ng d&#xF2;ng. </p>
+<pre><code>arc&gt; (def average (x y)
+       (prn &quot;my arguments were: &quot; (list x y))
+       (/ (+ x y) 2))
+
+arc&gt; (average 100 200)
+my arguments were: (100 200)
+150
+</code></pre><h2 id="c&#xE2;u-&#x111;i&#x1EC1;u-ki&#x1EC7;n">C&#xE2;u &#x111;i&#x1EC1;u ki&#x1EC7;n<a name="c&#xE2;u-&#x111;i&#x1EC1;u-ki&#x1EC7;n"></a></h2>
+<p>Trong ng&#xF4;n ng&#x1EEF; Arc, t&#x1EA5;t nhi&#xEA;n c&#xF3; c&#xE2;u &#x111;i&#x1EC1;u ki&#x1EC7;n, b&#x1EDF;i v&#xEC; cu&#x1ED9;c &#x111;&#x1EDD;i n&#xE0;y n&#xF3; th&#x1EBF;. N&#x1EBF;u ch&#x1B0;a c&#xF3;, h&#x1EB3;n s&#x1EBD; &#x111;&#x1EBF;n l&#xFA;c ng&#x1B0;&#x1EDD;i l&#x1EAD;p tr&#xEC;nh t&#x1EF1; th&#x1EA5;y c&#x1EA7;n thi&#x1EBF;t m&#xE0; vi&#x1EBF;t th&#xEA;m v&#xE0;o cho Arc hi&#x1EC3;u. <code>if</code> (<em>n&#x1EBF;u</em>) gi&#x1ED1;ng <code>=</code> v&#xE0; <code>def</code> &#x1EDF; ch&#x1ED7; h&#x1EAF;n kh&#xF4;ng x&#x1EED; l&#xFD; h&#x1EBF;t t&#x1EA5;t c&#x1EA3; c&#xE1;c bi&#x1EBF;n h&#x1EAF;n ng&#x1EAD;m v&#xE0;o. Khi &#x111;&#x1B0;&#x1EE3;c &#x111;&#x1B0;a cho 3 bi&#x1EBF;n, h&#x1EAF;n s&#x1EBD; x&#x1EED; l&#xFD; bi&#x1EBF;n &#x111;&#x1EA7;u ti&#xEA;n, n&#x1EBF;u &#x111;&#xFA;ng, h&#x1EAF;n tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; c&#x1EE7;a bi&#x1EBF;n s&#x1ED1; 2, n&#x1EBF;u sai, h&#x1EAF;n tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; c&#x1EE7;a bi&#x1EBF;n s&#x1ED1; 3.</p>
+<pre><code>arc&gt; (if (odd 1) &apos;a &apos;b)
+a
+arc&gt; (if (odd 2) &apos;a &apos;b)
+b
+</code></pre><p>C&#xE1;c b&#x1EA1;n ch&#x1EC9; c&#x1EA7;n &#x111;&#x1ECD;c qua 2 c&#xE2;u tr&#xEA;n l&#xE0; &#x111;&#xE3; hi&#x1EC3;u &#x111;&#x1B0;&#x1EE3;c: N&#x1EBF;u s&#x1ED1; 1 l&#xE0; l&#x1EBB; (gi&#xE1; tr&#x1ECB; c&#x1EE7;a bi&#x1EC3;u ng&#x1EEF; (odd 1) l&#xE0; &#x111;&#xFA;ng) th&#xEC; tr&#x1EA3; v&#x1EC1; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng a n&#x1EBF;u kh&#xF4;ng th&#xEC; tr&#x1EA3; v&#x1EC1; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng b. B&#x1EDF;i v&#xEC; s&#x1ED1; 1 l&#xE0; s&#x1ED1; l&#x1EBB; th&#x1EAD;t (&#x111;&#xFA;ng) cho n&#xEA;n tr&#x1EA3; v&#x1EC1; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng a. B&#xE2;y gi&#x1EDD; ta n&#xF3;i c&#xE2;u t&#x1B0;&#x1A1;ng t&#x1EF1;, nh&#x1B0;ng thay s&#x1ED1; 1 b&#x1EB1;ng s&#x1ED1; 2, khi &#x111;&#xF3; gi&#xE1; tr&#x1ECB; c&#x1EE7;a bi&#x1EC3;u ng&#x1EEF; (odd 2) l&#xE0; sai, do &#x111;&#xF3; Arc tr&#x1EA3; v&#x1EC1; bi&#x1EC3;u t&#x1B0;&#x1EE3;ng b.</p>
+<p>C&#xE1;c b&#x1EA1;n c&#xF3; th&#x1EC3; h&#x1ECF;i: Th&#x1EBF; n&#xE0;o l&#xE0; <em>&#x111;&#xFA;ng</em>? &#x110;&#xFA;ng ngh&#x129;a l&#xE0; khi ta x&#x1EED; l&#xFD; bi&#x1EC3;u ng&#x1EEF; &#x111;&#xF3;, bi&#x1EC3;u ng&#x1EEF; &#x111;&#xF3; tr&#x1EA3; v&#x1EC1; m&#x1ED9;t gi&#xE1; tr&#x1ECB; n&#xE0;o &#x111;&#xF3; ngo&#x1EA1;i tr&#x1EEB; <code>nil</code>. <code>nil</code> l&#xE0; kh&#xF4;ng c&#xF3; g&#xEC;, l&#xE0; sai, l&#xE0; kh&#xF4;ng c&#xF3; gi&#xE1; tr&#x1ECB;. T&#x1EE9;c l&#xE0; ch&#x1EC9; c&#x1EA7;n bi&#x1EC3;u ng&#x1EEF; &#x111;&#xF3; tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; b&#x1EA5;t k&#x1EF3;, th&#xEC; &#x111;&#xE3; l&#xE0; &#x111;&#xFA;ng r&#x1ED3;i. &#x110;&#x1ED1;i v&#x1EDB;i Arc, t&#x1EA5;t c&#x1EA3; m&#x1ECD;i gi&#xE1; tr&#x1ECB; &#x111;&#x1EC1;u l&#xE0; <em>&#x111;&#xFA;ng</em>. Th&#x1EE9; duy nh&#x1EA5;t sai trong th&#x1EBF; gi&#x1EDB;i c&#x1EE7;a Arc l&#xE0; <code>nil</code>, t&#x1EE9;c l&#xE0; sai ch&#xED;nh n&#xF3;.</p>
+<p>V&#x1EC1; m&#x1EB7;t k&#x1EF9; thu&#x1EAD;t, <code>nil</code> v&#x1EEB;a l&#xE0; sai v&#x1EEB;a l&#xE0; danh s&#xE1;ch r&#x1ED7;ng. <code>t</code> l&#xE0; &#x111;&#xFA;ng. Nh&#x1B0;ng c&#xE1;i g&#xEC; c&#xF3; gi&#xE1; tr&#x1ECB; th&#xEC; c&#x169;ng &#x111;&#x1EC1;u l&#xE0; &#x111;&#xFA;ng h&#x1EBF;t.</p>
+<pre><code>arc&gt; (odd 1)
+t
+arc&gt; (odd 2)
+nil
+</code></pre><p>&#x110;&#x1EBF;n &#x111;&#xE2;y c&#xE1;c b&#x1EA1;n c&#xF3; th&#x1EC3; h&#x1ECF;i, li&#x1EC7;u danh s&#xE1;ch r&#x1ED7;ng c&#xF3; ph&#x1EA3;i l&#xE0; sai kh&#xF4;ng? N&#x1EBF;u c&#xE1;c b&#x1EA1;n ngh&#x129; theo ki&#x1EC3;u t&#x1EAD;p h&#x1EE3;p trong to&#xE1;n h&#x1ECD;c, th&#xEC; t&#x1EAD;p h&#x1EE3;p r&#x1ED7;ng l&#xE0; sai, l&#xE0; kh&#xF4;ng ph&#x1EA3;i t&#x1EAD;p h&#x1EE3;p.</p>
+<p>Ng&#x1EEF; ph&#xE1;p c&#x1EE7;a Arc kh&#xE1; linh ho&#x1EA1;t khi n&#xF3;i &#x111;&#x1EBF;n c&#xE2;u &#x111;i&#x1EC1;u ki&#x1EC7;n, v&#xED; d&#x1EE5;:</p>
+<pre><code>arc&gt; (if (odd 2) &apos;a)
+nil         =&gt; khi ch&#x1EC9; c&#xF3; hai bi&#x1EBF;n, bi&#x1EBF;n th&#x1EE9; ba ng&#x1EA7;m &#x111;&#x1ECB;nh l&#xE0; nil
+</code></pre><p>Khi b&#x1EA1;n mu&#x1ED1;n vi&#x1EBF;t c&#xE1;c c&#xE2;u &#x111;&#x1A1;n if l&#x1ED3;ng v&#xE0;o nhau:</p>
+<pre><code>(if a b c d e)
+</code></pre><p>ch&#xED;nh l&#xE0; vi&#x1EBF;t t&#x1EAF;t c&#x1EE7;a:</p>
+<pre><code>(if a 
+    b
+    (if c
+        d 
+        e))
+</code></pre><p>M&#x1ED7;i bi&#x1EBF;n m&#xE0; <code>if</code> nh&#x1EAD;n v&#xE0;o &#x111;&#x1EC1;u l&#xE0; m&#x1ED9;t bi&#x1EC3;u ng&#x1EEF; duy nh&#x1EA5;t, n&#x1EBF;u b&#x1EA1;n mu&#x1ED1;n c&#xF3; c&#xE1;c bi&#x1EC3;u ng&#x1EEF; ch&#x1EA1;y n&#x1ED1;i ti&#x1EBF;p nhau (kh&#xF4;ng ph&#x1EA3;i c&#xE2;u gh&#xE9;p m&#xE0; l&#xE0; hai c&#xE2;u &#x111;&#x1A1;n n&#x1ED1;i ti&#x1EBF;p nhau), b&#x1EA1;n c&#xF3; th&#x1EC3; d&#xF9;ng <code>do</code>. <em>do</em> ngh&#x129;a l&#xE0; l&#xE0;m.</p>
+<pre><code>arc&gt; (do (prn &quot;hello&quot;) 
+         (+ 2 3))                             
+hello
+5
+</code></pre><p>Trong c&#xE2;u tr&#xEA;n, Arc in ra d&#xE2;y ch&#x1EEF; &quot;hello&quot; sau &#x111;&#xF3; h&#x1EAF;n l&#xE0;m t&#xED;nh 2 c&#x1ED9;ng 3 b&#x1EB1;ng 5. T&#xF4;i &#x111;&#xE3; b&#x1EA3;o r&#x1ED3;i, b&#x1EA1;n &#x111;i <code>(l&#xE0;m to&#xE1;n v&#x103;n-h&#x1ECD;c)</code> &#x111;i :D </p>
+<p>N&#x1EBF;u b&#x1EA1;n ch&#x1EC9; mu&#x1ED1;n m&#x1ED9;t s&#x1ED1; bi&#x1EC3;u ng&#x1EEF; &#x111;&#x1B0;&#x1EE3;c ch&#x1EA1;y khi &#x111;i&#x1EC1;u ki&#x1EC7;n tr&#x1EA3; v&#x1EC1; &#x111;&#xFA;ng, b&#x1EA1;n c&#xF3; th&#x1EC3; d&#xF9;ng c&#x1EA5;u tr&#xFA;c sau: if v&#x1EDB;i do v&#xE0; b&#x1ECF; bi&#x1EBF;n cu&#x1ED1;i:</p>
+<pre><code>(if a
+    (do b
+        c))
+</code></pre><p>Tuy nhi&#xEA;n t&#xEC;nh hu&#x1ED1;ng n&#xE0;y qu&#xE1; ph&#x1ED5; bi&#x1EBF;n, cho n&#xEA;n Arc ti&#x1EBF;n h&#xF3;a th&#xEA;m h&#x1EB3;n m&#x1ED9;t h&#xE0;m ri&#xEA;ng &#x111;&#x1EC3; ch&#x1EC9; t&#xEC;nh hu&#x1ED1;ng &#x111;&#xF3; </p>
+<pre><code>(when a
+  b
+  c)
+</code></pre><p>C&#xE2;u tr&#xEA;n ngh&#x129;a l&#xE0; <code>khi a &#x111;&#xFA;ng, l&#xE0;m b v&#xE0; c</code>. L&#x1B0;u &#xFD; l&#xE0; ban &#x111;&#x1EA7;u Arc kh&#xF4;ng c&#x1EA7;n c&#xF3; t&#x1EEB; v&#x1EF1;ng <code>when</code> trong t&#x1EEB; &#x111;i&#x1EC3;n, trong qu&#xE1; tr&#xEC;nh ti&#x1EBF;n h&#xF3;a, t&#xE1;c gi&#x1EA3; vi&#x1EBF;t th&#xEA;m t&#x1EEB; v&#x1EF1;ng &#x111;&#xF3; cho Arc s&#x1EED; d&#x1EE5;ng ch&#xED;nh nh&#x1EEF;ng c&#xF4;ng c&#x1EE5; tr&#xEA;n. Ta s&#x1EBD; th&#x1EED; &#x111;&#x1ECB;nh ngh&#x129;a <code>when</code> &#x1EDF; ph&#x1EA7;n sau.</p>
+<h4 id="and-v&#xE0;-or">and v&#xE0; or</h4>
+<p>H&#xE0;m <code>and</code> (<em>v&#xE0;</em>) v&#xE0; <code>or</code> (<em>ho&#x1EB7;c</em>) gi&#x1ED1;ng nh&#x1B0; c&#xE2;u &#x111;i&#x1EC1;u ki&#x1EC7;n b&#x1EDF;i v&#xEC; ch&#xFA;ng kh&#xF4;ng x&#x1EED; l&#xFD; nhi&#x1EC1;u bi&#x1EBF;n h&#x1A1;n c&#x1EA7;n thi&#x1EBF;t. </p>
+<ul>
+<li><p><code>and</code> l&#xE0; h&#xE0;m t&#xEC;m <code>nil</code>. Khi ta cho <code>and</code> n bi&#x1EBF;n, h&#x1EAF;n x&#x1EED; l&#xFD; l&#x1EA7;n l&#x1B0;&#x1EE3;t t&#x1EEB; tr&#xE1;i sang, n&#x1EBF;u h&#x1EAF;n b&#x1EAF;t g&#x1EB7;p <code>nil</code> h&#x1EAF;n s&#x1EBD; d&#x1EEB;ng x&#x1EED; l&#xFD; ngay l&#x1EAD;p t&#x1EE9;c v&#xE0; tr&#x1EA3; v&#x1EC1; <code>nil</code>. N&#x1EBF;u h&#x1EAF;n &#x111;i h&#x1EBF;t c&#xE1;c bi&#x1EBF;n r&#x1ED3;i m&#xE0; kh&#xF4;ng th&#x1EA5;y nil h&#x1EAF;n tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; cu&#x1ED1;i c&#xF9;ng.</p>
+</li>
+<li><p><code>or</code> l&#xE0; h&#xE0;m t&#xEC;m gi&#xE1; tr&#x1ECB; (gi&#xE1; tr&#x1ECB; t&#x1EE9;c l&#xE0; kh&#xF4;ng ph&#x1EA3;i <code>nil</code>). N&#x1EBF;u cho h&#x1EAF;n n bi&#x1EBF;n, h&#x1EAF;n &#x111;i t&#x1EEB; tr&#xE1;i sang, khi b&#x1EAF;t g&#x1EB7;p gi&#xE1; tr&#x1ECB;, h&#x1EAF;n d&#x1EEB;ng ngay l&#x1EAD;p t&#x1EE9;c v&#xE0; tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; &#x111;&#xF3;. N&#x1EBF;u h&#x1EAF;n &#x111;i h&#x1EBF;t h&#xE0;ng r&#x1ED3;i m&#xE0; kh&#xF4;ng g&#x1EB7;p gi&#xE1; tr&#x1ECB; n&#xE0;o (to&#xE0;n <code>nil</code>) h&#x1EAF;n tr&#x1EA3; v&#x1EC1; <code>nil</code>.</p>
+</li>
+</ul>
+<p>Hai h&#xE0;m n&#xE0;y c&#xF3; &#xED;ch &#x1EDF; ch&#x1ED7;, nhi&#x1EC1;u khi ta mu&#x1ED1;n &#x111;i t&#xEC;m m&#x1ED9;t th&#x1EE9; g&#xEC; &#x111;&#xF3; trong m&#x1ED9;t danh s&#xE1;ch b&#x1EA5;t &#x111;&#x1ECB;nh. V&#xE0; ta ch&#x1EC9; mu&#x1ED1;n h&#x1EAF;n &#x111;i t&#xEC;m gi&#xE1; tr&#x1ECB; &#x111;&#x1EA7;u ti&#xEA;n th&#xF4;i, c&#xF2;n l&#x1EA1;i n&#x1EBF;u h&#x1EAF;n &#x111;i xa h&#x1A1;n v&#xF9;ng h&#x1EAF;n c&#x1EA7;n thi&#x1EBF;t, l&#x1ED7;i s&#x1EBD; x&#x1EA3;y ra v&#xE0; h&#x1ECF;ng ch&#x1B0;&#x1A1;ng tr&#xEC;nh.</p>
+<h4 id="no">no</h4>
+<p>H&#xE0;m <code>no</code> nh&#x1EAD;n v&#xE0;o duy nh&#x1EA5;t 1 bi&#x1EBF;n. H&#x1EAF;n tr&#x1EA3; v&#x1EC1; <code>t</code> n&#x1EBF;u bi&#x1EBF;n &#x111;&#xF3; l&#xE0; <code>nil</code>, c&#xF2;n l&#x1EA1;i n&#x1EBF;u ta &#x111;&#x1B0;a cho h&#x1EAF;n gi&#xE1; tr&#x1ECB;, th&#xEC; h&#x1EAF;n tr&#x1EA3; v&#x1EC1; <code>nil</code>. H&#xE0;m n&#xE0;y n&#xF4;m na l&#xE0; h&#xE0;m ph&#x1EA3;n gi&#xE1; tr&#x1ECB;. &#x110;&#x1B0;a &#x111;&#xFA;ng th&#xEC; h&#x1EAF;n b&#x1EA3;o sai, &#x111;&#x1B0;a sai b&#x1EA3;o &#x111;&#xFA;ng. Th&#x1EB1;ng n&#xE0;y b&#x1EA3;o &#x111;&#xF4;ng &#x111;i t&#xE2;y v&#xE0; b&#x1EA3;o t&#xE2;y &#x111;i &#x111;&#xF4;ng.</p>
+<h2 id="l&#x1EB7;p-ch&#xED;nh-n&#xF3;">L&#x1EB7;p ch&#xED;nh n&#xF3;<a name="l&#x1EB7;p-ch&#xED;nh-n&#xF3;"></a></h2>
+<p>&#x110;&#xE2;y l&#xE0; m&#x1ED9;t m&#x1EE5;c r&#x1EA5;t quan tr&#x1ECD;ng. Quan tr&#x1ECD;ng g&#x1EA7;n nh&#x1EA5;t c&#x1EE7;a l&#x1ED1;i ngh&#x129; c&#xF3; ph&#x1B0;&#x1A1;ng ph&#xE1;p. (R&#x1EA5;t Arc, r&#x1EA5;t LISP v&#xE0; r&#x1EA5;t <em>functional programming</em>). B&#x1EA1;n h&#xE3;y ngh&#x129; &#x111;&#x1EBF;n ph&#x1B0;&#x1A1;ng ph&#xE1;p quy n&#x1EA1;p, ta b&#x1EAF;t &#x111;&#x1EA7;u t&#x1EEB; &#x111;i&#x1EC3;m &#x111;&#x1EA7;u l&#xE0; &#x111;i&#x1EC3;m d&#x1EC5; nh&#x1EA5;t kh&#xF4;ng c&#x1EA7;n ch&#x1EE9;ng minh, sau &#x111;&#xF3; ta ch&#x1EE9;ng minh r&#x1EB1;ng &#x111;i&#x1EC3;m ngay c&#x1EA1;nh n&#xF3; l&#xE0; &#x111;&#xFA;ng, khi &#x111;&#xF3; ta c&#xF3; th&#x1EC3; ti&#x1EBF;p t&#x1EE5;c quy n&#x1EA1;p v&#xF4; h&#x1EA1;n v&#x1EC1; ph&#xED;a sau. Khi c&#xF4; gi&#xE1;o gi&#x1EA3;ng cho b&#x1EA1;n v&#x1EC1; ph&#xE9;p to&#xE1;n &#x111;&#xF3; &#x1EDF; l&#x1EDB;p 5, b&#x1EA1;n v&#xF4; c&#xF9;ng th&#xED;ch th&#xFA;. &#x110;&#x1EBF;n l&#x1EDB;p 12, khi c&#xF4; gi&#xE1;o gi&#x1EA3;ng l&#x1EA1;i v&#x1EC1; ph&#xE9;p quy n&#x1EA1;p &#x111;&#xF3;, b&#x1EA1;n b&#x129;u m&#xF4;i (v&#xEC; b&#x1EA1;n th&#x1EA5;y ng&#x1B0;&#x1EDD;i ta b&#x129;u m&#xF4;i) &quot;&#xD4;i d&#xE0;o, ra &#x111;&#x1EDD;i ch&#x1EA3; ai d&#xF9;ng quy n&#x1EA1;p trong th&#x1EF1;c t&#x1EBF; cu&#x1ED9;c s&#x1ED1;ng&quot;. T&#xF4;i c&#xF3; d&#xF9;ng. Khi b&#x1EA1;n ngh&#x129; &#x111;&#x1EBF;n nh&#x1EEF;ng t&#xEC;nh hu&#x1ED1;ng m&#xE0; d&#x1EEF; li&#x1EC7;u b&#x1EAF;t &#x111;&#x1EA7;u b&#x1EB1;ng m&#x1ED9;t &#x111;i&#x1EC3;m ban &#x111;&#x1EA7;u d&#x1EC5; hi&#x1EC3;u, sau &#x111;&#xF3; l&#x1EB7;p d&#x1EA7;n l&#xEA;n &#x111;&#x1EBF;n v&#xF4; h&#x1EA1;n, th&#xEC; ch&#x1B0;&#x1A1;ng tr&#xEC;nh m&#xE0; b&#x1EA1;n vi&#x1EBF;t ra c&#x169;ng c&#x1EA7;n ph&#x1EA3;i ph&#x1EA3;n &#xE1;nh &#x111;i&#x1EC1;u &#x111;&#xF3;. C&#x1EA5;u tr&#xFA;c c&#x1EE7;a d&#x1EEF; li&#x1EC7;u s&#x1EBD; quy&#x1EBF;t &#x111;&#x1ECB;nh c&#x1EA5;u tr&#xFA;c c&#x1EE7;a h&#xE0;m b&#x1EA1;n c&#x1EA7;n vi&#x1EBF;t ra &#x111;&#x1EC3; x&#x1EED; l&#xFD; d&#x1EEF; li&#x1EC7;u &#x111;&#xF3;. </p>
+<p>T&#xF4;i l&#x1EA5;y v&#xED; d&#x1EE5;, b&#x1EA1;n mu&#x1ED1;n vi&#x1EBF;t m&#x1ED9;t h&#xE0;m &#x111;o &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a m&#x1ED9;t danh s&#xE1;ch. B&#x1EA1;n vi&#x1EBF;t &#x111;&#x1B0;&#x1EE3;c ti&#xEA;u &#x111;&#x1EC1; c&#x1EE7;a h&#xE0;m &#x111;&#xF3; nh&#x1B0; sau:</p>
+<pre><code>(def mylen (xs)
+ ...)
+</code></pre><ul>
+<li>L&#x1B0;u &#xFD; <code>xs</code> &#x1EDF; &#x111;&#xE2;y kh&#xF4;ng ph&#x1EA3;i &#x111;&#x1EC3; ch&#x1EC9; 1 bi&#x1EBF;n m&#xE0; l&#xE0; 1 danh s&#xE1;ch bi&#x1EBF;n.</li>
+<li>&#x110;&#x1EA7;u ti&#xEA;n b&#x1EA1;n ngh&#x129; v&#x1EC1; tr&#x1B0;&#x1EDD;ng h&#x1EE3;p d&#x1EC5; &#x1EB9;c c&#x1EE7;a d&#x1EEF; li&#x1EC7;u, &#x111;&#xF3; l&#xE0; khi danh s&#xE1;ch &#x111;&#xF3; l&#xE0; danh s&#xE1;ch r&#x1ED7;ng </li>
+<li>Sau &#x111;&#xF3; b&#x1EA1;n l&#x1EA1;i ngh&#x129;, th&#x1EBF; nh&#x1B0;ng l&#x1EA1;i s&#x1EBD; c&#xF3; nh&#x1EEF;ng danh s&#xE1;ch ch&#x1EE9;a &#x111;&#x1EF1;ng m&#x1ED9;t &#x111;&#x1ED9; d&#xE0;i b&#x1EA5;t &#x111;&#x1ECB;nh c&#xE1;c th&#xE0;nh ph&#x1EA7;n. Ph&#x1EA3;i l&#xE0;m sao?</li>
+</ul>
+<p>&#x110;&#x1EBF;n &#x111;&#xE2;y th&#xEC; b&#x1EA1;n hi&#x1EC3;u r&#x1EB1;ng d&#x1EEF; li&#x1EC7;u c&#x1EE7;a b&#x1EA1;n c&#xF3; 2 tr&#x1B0;&#x1EDD;ng h&#x1EE3;p, m&#x1ED9;t l&#xE0; danh s&#xE1;ch r&#x1ED7;ng, hai l&#xE0; danh s&#xE1;ch kh&#xE1;c r&#x1ED7;ng. L&#x1ED1;i ngh&#x129; n&#xE0;y b&#x1EA3;o b&#x1EA1;n d&#xF9;ng <code>if</code> - h&#xE0;m &#x111;i&#x1EC1;u ki&#x1EC7;n c&#xF3; hai m&#x1EC7;nh &#x111;&#x1EC1; </p>
+<pre><code>(def mylen (xs)
+    (if (no xs)
+        ...))
+</code></pre><ul>
+<li>L&#x1B0;u &#xFD; <code>(no xs)</code> s&#x1EBD; tr&#x1EA3; v&#x1EC1; <code>t</code> n&#x1EBF;u danh s&#xE1;ch r&#x1ED7;ng. </li>
+<li>Khi &#x111;&#xF3;, k&#x1EBF;t qu&#x1EA3; c&#x1EE7;a tr&#x1B0;&#x1EDD;ng h&#x1EE3;p d&#x1EC5; &#x1EB9;c l&#xE0; 0. B&#x1EDF;i v&#xEC; danh s&#xE1;ch r&#x1ED7;ng th&#xEC; t&#x1EE9;c l&#xE0; &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a danh s&#xE1;ch b&#x1EB1;ng 0.</li>
+</ul>
+<pre><code>(def mylen (xs)
+    (if (no xs)
+        0
+        ...))
+</code></pre><p>&#x110;&#x1EBF;n &#x111;&#xE2;y th&#xEC; b&#x1EA1;n th&#x1EA5;y tr&#x1B0;&#x1EDD;ng h&#x1EE3;p th&#x1EE9; 2 ph&#x1EE9;c t&#x1EA1;p h&#x1A1;n, &#x111;&#xF3; l&#xE0; danh s&#xE1;ch kh&#xE1;c r&#x1ED7;ng, nh&#x1B0;ng &#x111;&#x1ED9; d&#xE0;i b&#x1EA5;t k&#x1EF3;. Ph&#x1EA3;i l&#xE0;m th&#x1EBF; n&#xE0;o? L&#x1EBD; t&#x1EF1; nhi&#xEA;n b&#x1EA1;n s&#x1EBD; ngh&#x129;, ta &#x111;&#x1EBF;m t&#x1EEB;ng th&#xE0;nh ph&#x1EA7;n m&#x1ED9;t. &#x110;&#x1EBF;m th&#x1EBF; n&#xE0;o? Ng&#x1B0;&#x1EDD;i ch&#x103;n c&#x1EEB;u c&#xF3; m&#x1ED9;t c&#xE1;i t&#xFA;i s&#x1ECF;i, m&#x1ED7;i khi anh ta l&#xF9;a m&#x1ED9;t con c&#x1EEB;u v&#xE0;o chu&#x1ED3;ng th&#xEC; anh ta b&#x1ECF; ra &#x111;&#x1EA5;t m&#x1ED9;t h&#xF2;n s&#x1ECF;i. &#x110;&#x1EBF;n khi c&#x1EEB;u v&#xE0;o h&#x1EBF;t th&#xEC; h&#x1EBF;t s&#x1ECF;i. N&#x1EBF;u c&#xF3; ng&#xE0;y h&#x1EBF;t c&#x1EEB;u m&#xE0; ch&#x1B0;a h&#x1EBF;t s&#x1ECF;i th&#xEC; kh&#xE1; gay. Ho&#x1EB7;c n&#x1EBF;u c&#xF3; ng&#xE0;y h&#x1EBF;t s&#x1ECF;i m&#xE0; ch&#x1B0;a h&#x1EBF;t c&#x1EEB;u th&#xEC; c&#x169;ng kh&#xF4;ng ph&#x1EA3;i l&#xE0; b&#xEC;nh th&#x1B0;&#x1EDD;ng. L&#x1B0;u &#xFD; l&#xE0; &#x1EDF; &#x111;&#xE2;y anh ta kh&#xF4;ng c&#x1EA7;n bi&#x1EBF;t &#x111;&#x1EBF;m t&#x1EEB; 1 &#x111;&#x1EBF;n 10.</p>
+<p>Sau khi t&#x1EEB; bi&#x1EC7;t ng&#x1B0;&#x1EDD;i ch&#x103;n c&#x1EEB;u v&#xE0; tr&#x1EDF; v&#x1EC1; t&#x1EEB; gi&#x1EEF;a d&#xE3;y Alpes h&#xF9;ng v&#x129;, h&#xE3;y s&#x1EED; d&#x1EE5;ng ph&#x1B0;&#x1A1;ng ph&#xE1;p nh&#x1EEF;ng h&#xF2;n s&#x1ECF;i c&#x1EE7;a anh ch&#x103;n c&#x1EEB;u. H&#xE3;y t&#x1B0;&#x1EDF;ng t&#x1B0;&#x1EE3;ng r&#x1EB1;ng danh s&#xE1;ch m&#xE0; ta c&#x1EA7;n bi&#x1EBF;t &#x111;&#x1ED9; d&#xE0;i l&#xE0; m&#x1ED9;t &#x111;&#xE0;n c&#x1EEB;u, v&#xE0; ta d&#xF9;ng c&#xE1;c vi&#xEA;n s&#x1ECF;i &#x111;&#x1EC3; <em>s&#x1ED1; h&#xF3;a</em> &#x111;&#xE1;m c&#x1EEB;u. </p>
+<ul>
+<li><p>&#x110;&#x1EC3; s&#x1EF1; &#x111;&#x1EBF;m x&#x1EA3;y ra, &#x111;&#x1EA7;u ti&#xEA;n ta ph&#x1EA3;i c&#xF3; c&#xE1;ch &#x111;&#x1EC3; &#x111;&#x1EE7;n m&#x1ED9;t ch&#xFA; c&#x1EEB;u v&#xE0;o chu&#x1ED3;ng tr&#x1B0;&#x1EDB;c. M&#x1ED9;t th&#xF4;i. Ph&#x1B0;&#x1A1;ng ph&#xE1;p &#x111;&#x1A1;n gi&#x1EA3;n nh&#x1EA5;t n&#xE0;o &#x111;&#x1EC3; tr&#xED;ch xu&#x1EA5;t th&#xE0;nh ph&#x1EA7;n &#x111;&#x1EA7;u ti&#xEA;n ra kh&#x1ECF;i danh s&#xE1;ch? <code>car</code> &#x1EA1;. L&#x1B0;u &#xFD; l&#xE0; <code>car</code> l&#xE0; m&#x1ED9;t trong nh&#x1EEF;ng t&#x1EEB; v&#x1EF1;ng &#x111;&#x1EA7;u ti&#xEA;n. N&#x1EBF;u b&#x1EA1;n mu&#x1ED1;n &#x111;&#x1ECB;nh ngh&#x129;a <code>first</code> b&#x1EA1;n s&#x1EBD; d&#xF9;ng <code>car</code>. T&#x1EAD;p h&#x1EE3;p nh&#x1EEF;ng t&#x1EEB; v&#x1EF1;ng ban &#x111;&#x1EA7;u c&#x1EE7;a LISP g&#x1ED3;m c&#xF3; v&#x1ECF;n v&#x1EB9;n 6 t&#x1EEB; th&#xEC; ph&#x1EA3;i.</p>
+</li>
+<li><p>Sau khi &#x1EE7;n m&#x1ED9;t b&#xE1;c, b&#x1EA1;n c&#x1EA7;n ph&#x1EA3;i b&#x1ECF; ra m&#x1ED9;t h&#xF2;n s&#x1ECF;i. Sau &#x111;&#xF3; th&#xEC; b&#x1EA1;n nh&#x1EAD;n ra r&#x1EB1;ng, &#x1ED3;, k&#x1EC3; t&#x1EEB; &#x111;&#xE2;y ta ch&#x1EC9; c&#x1EA7;n l&#x1EB7;p &#x111;i l&#x1EB7;p l&#x1EA1;i chu&#x1ED7;i h&#xE0;nh &#x111;&#x1ED9;ng n&#xE0;y th&#xF4;i. C&#x1EE9; &#x1EE7;n m&#x1ED9;t em th&#xEC; b&#x1ECF; m&#x1ED9;t s&#x1ECF;i. C&#x1EE9; nh&#x1B0; v&#x1EAD;y cho &#x111;&#x1EBF;n h&#x1EBF;t. T&#x1EE9;c l&#xE0; b&#x1EA1;n s&#x1EBD; th&#x1EA5;y r&#x1EB1;ng trong tr&#x1B0;&#x1EDD;ng h&#x1EE3;p th&#x1EE9; 2 n&#xE0;y, ta c&#xF3; th&#x1EC3; s&#x1EED; d&#x1EE5;ng v&#xF2;ng l&#x1EB7;p &#x111;&#x1EC3; bi&#x1EC3;u hi&#x1EC7;n to&#xE0;n b&#x1ED9; qu&#xE1; tr&#xEC;nh h&#xE0;nh &#x111;&#x1ED9;ng. Nghe c&#x169;ng gi&#x1ED1;ng quy n&#x1EA1;p nh&#x1EC9;. </p>
+</li>
+<li><p>Ngh&#x129; t&#x1EF1; do b&#x1EB1;ng ng&#xF4;n ng&#x1EEF; c&#x1EE7;a ta m&#x1ED9;t l&#xFA;c ta b&#x1EAF;t &#x111;&#x1EA7;u ngh&#x129; b&#x1EB1;ng ng&#xF4;n ng&#x1EEF; Arc. Khi chu&#x1ED3;ng ch&#x1B0;a c&#xF3; c&#x1EEB;u, s&#x1ED1; &#x111;&#x1EBF;m m&#x1EB7;c &#x111;&#x1ECB;nh l&#xE0; s&#x1ED1; 0 (c&#xE2;u n&#xE0;y th&#x1EC3; hi&#x1EC7;n &#x1EDF; d&#xF2;ng <code>(if (no xs) 0</code>. V&#x1EAD;y khi c&#xF3; 1 c&#x1EEB;u v&#xE0;o chu&#x1ED3;ng, s&#x1ED1; &#x111;&#x1EBF;m s&#x1EBD; t&#x1EF1; &#x111;&#x1ED9;ng t&#x103;ng th&#xEA;m 1. V&#xE0; ta &#xE1;p d&#x1EE5;ng qu&#xE1; tr&#xEC;nh &#x111;&#xF3; v&#xE0;o &#x111;&#xE1;m c&#x1EEB;u c&#xF2;n l&#x1EA1;i. B&#x1EA1;n c&#xF3; th&#x1EC3; h&#xEC;nh dung r&#x1EB1;ng h&#xE0;m b&#x1EA1;n vi&#x1EBF;t &#x111;&#x1EC3; th&#x1EC3; hi&#x1EC7;n &#x111;i&#x1EC1;u &#x111;&#xF3; s&#x1EBD; nh&#x1B0; sau:</p>
+</li>
+</ul>
+<pre><code>.. + 1 ..  (car xs) ..    =&gt; c&#x1EEB;u &#x111;&#x1EA7;u ti&#xEA;n 
+       ..  (cdr xs) ..    =&gt; &#x111;&#xE1;m c&#x1EEB;u c&#xF2;n-l&#x1EA1;i
+</code></pre><p>L&#x1B0;u &#xFD; ta &#x111;ang vi&#x1EBF;t ch&#xED;nh x&#xE1;c nh&#x1EEF;ng g&#xEC; ta ngh&#x129;. <code>car</code> ch&#xED;nh l&#xE0; &#x111;&#x1EA7;u ti&#xEA;n v&#xE0; <code>cdr</code> ch&#xED;nh l&#xE0; c&#xF2;n-l&#x1EA1;i.</p>
+<ul>
+<li>Nh&#xEC;n v&#xE0;o b&#x1EA3;n nh&#xE1;p code c&#x1EE7;a b&#x1EA1;n, &#x111;&#x1EBF;n &#x111;&#xE2;y th&#xEC; ta l&#xE0;m g&#xEC;? H&#xE3;y nh&#xEC;n v&#xE0;o b&#x1EA3;n nh&#xE1;p &#x111;&#xF3; v&#xE0; xem ta c&#xF3; th&#x1EC3; l&#xE0;m g&#xEC; v&#x1EDB;i nh&#x1EEF;ng th&#xE0;nh ph&#x1EA7;n g&#xEC;. V&#xED; d&#x1EE5; ta s&#x1EBD; l&#xE0;m g&#xEC; v&#x1EDB;i <code>(cdr xs)</code>? &#x1ED2;, ta c&#x1EA7;n ph&#x1EA3;i &#x111;o &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a danh s&#xE1;ch <code>(cdr xs)</code>. T&#x1EE9;c l&#xE0; ta c&#x1EA7;n ph&#x1EA3;i th&#x1EF1;c hi&#x1EC7;n h&#xE0;nh &#x111;&#x1ED9;ng &#x111;&#x1EBF;m-c&#x1EEB;u l&#xEA;n &#x111;&#xE1;m-c&#x1EEB;u-&#x111;&#xF3;. B&#x1EA1;n ngh&#x129; xem b&#x1EA1;n &#x111;&#xE3; c&#xF3; h&#xE0;m n&#xE0;o &#x111;&#x1EC3; th&#x1EF1;c hi&#x1EC7;n h&#xE0;nh &#x111;&#x1ED9;ng &#x111;o &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a m&#x1ED9;t danh s&#xE1;ch ch&#x1B0;a? C&#xE2;u tr&#x1EA3; l&#x1EDD;i l&#xE0; c&#xF3;. &#x110;&#xF3; ch&#xED;nh l&#xE0; h&#xE0;m m&#xE0; b&#x1EA1;n &#x111;ang t&#xEC;m c&#xE1;ch vi&#x1EBF;t, h&#xE0;m b&#x1EA1;n &#x111;&#x1EB7;t t&#xEA;n l&#xE0; <code>mylen</code>. H&#xE3;y tin t&#xF4;i. H&#xE3;y s&#x1EED; d&#x1EE5;ng h&#xE0;m &#x111;&#xF3; v&#xE0;o code c&#x1EE7;a b&#x1EA1;n:</li>
+</ul>
+<pre><code>(def mylen (xs)
+    (if (no xs)
+        0
+        ( .. + 1 .. (car xs) ..
+                 .. (mylen (cdr xs)) ..)))
+</code></pre><ul>
+<li>&#x110;&#x1EBF;n &#x111;&#xE2;y b&#x1EA1;n s&#x1EBD; th&#x1EA5;y r&#x1EB1;ng mylen s&#x1EBD; x&#x1EED; l&#xFD; <code>(cdr xs)</code> b&#x1EB1;ng c&#xE1;ch m&#x1EDF; ra m&#x1ED9;t c&#xE2;u &#x111;i&#x1EC1;u ki&#x1EC7;n: n&#x1EBF;u <code>(cdr xs)</code> r&#x1ED7;ng th&#xEC; tr&#x1EA3; v&#x1EC1; 0, n&#x1EBF;u kh&#xF4;ng th&#xEC; ti&#x1EBF;p t&#x1EE5;c l&#xE0;m g&#xEC; &#x111;&#xF3; v&#xE0; &#x111;o &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a <code>(cdr (cdr xs))</code>. &#x110;&#x1ED9; d&#xE0;i c&#x1EE7;a <code>(cdr xs)</code> c&#x169;ng nh&#x1B0; <code>xs</code> l&#xE0; b&#x1EA5;t &#x111;&#x1ECB;nh, nh&#x1B0;ng h&#xE3;y t&#x1EF1; do cho m&#xEC;nh &#x111;i &#x111;&#x1EBF;n &#x111;i&#x1EC3;m cu&#x1ED1;i c&#x1EE7;a danh s&#xE1;ch &#x111;&#xF3;, khi m&#xE0; h&#x1EAF;n c&#xF3; 0 th&#xE0;nh ph&#x1EA7;n. Khi &#x111;&#xF3; th&#xEC; sao?<ul>
+<li>Khi &#x111;&#xF3; <code>(mylen nil)</code> s&#x1EBD; tr&#x1EA3; v&#x1EC1; gi&#xE1; tr&#x1ECB; 0. </li>
+<li>Ta &#x111;i &#x111;&#x1EBF;n &#x111;i&#x1EC3;m c&#xF2;n 1 c&#x1EEB;u &#x1EDF; ngo&#xE0;i chu&#x1ED3;ng, t&#x1EE9;c l&#xE0; danh s&#xE1;ch c&#xF3; 1 c&#x1EEB;u. Khi &#x111;&#xF3; <code>(mylen xs) = (+ 1 (mylen nil))</code></li>
+</ul>
+</li>
+</ul>
+<p>&#x110;&#xE2;y l&#xE0; h&#xE0;m ho&#xE0;n ch&#x1EC9;nh:</p>
+<pre><code>(def mylen (xs)
+    (if (no xs)
+        0
+        (+ 1 (mylen (cdr xs)))))
+</code></pre><p>&#x110;&#x1ECD;c h&#xE0;m tr&#xEA;n nh&#x1B0; sau: N&#x1EBF;u danh s&#xE1;ch r&#x1ED7;ng th&#xEC; tr&#x1EA3; v&#x1EC1; 0. N&#x1EBF;u kh&#xF4;ng th&#xEC; tr&#x1EA3; v&#x1EC1; m&#x1ED9;t c&#x1ED9;ng v&#x1EDB;i &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a &#x111;&#xE1;m-c&#xF2;n-l&#x1EA1;i. N&#xF3;i b&#x1EB1;ng m&#x1ED9;t th&#x1EE9; ng&#xF4;n ng&#x1EEF; n&#x1EED;a Arc n&#x1EED;a ta: N&#x1EBF;u danh s&#xE1;ch <code>nil</code>, th&#xEC; tr&#x1EA3; v&#x1EC1; 0, n&#x1EBF;u kh&#xF4;ng th&#xEC; tr&#x1EA3; v&#x1EC1; nhi&#x1EC1;u h&#x1A1;n 1 c&#x1EE7;a &#x111;&#x1ED9; d&#xE0;i c&#x1EE7;a <code>cdr</code> c&#x1EE7;a danh s&#xE1;ch.</p>
+<pre><code>arc&gt; (mylen nil)
+0
+arc&gt; (mylen &apos;(a b))
+2
+</code></pre><h4 id="so-s&#xE1;nh">So s&#xE1;nh</h4>
+<p>&#x110;&#x1EC3; so s&#xE1;nh v&#x1EDB;i ch&#xED;nh n&#xF3;, so s&#xE1;nh d&#xE2;y ch&#x1EEF;..</p>
+<pre><code>arc&gt; (is &apos;a &apos;a)
+t
+arc&gt; (is &quot;foo&quot; &quot;foo&quot;)
+t
+arc&gt; (let x (list &apos;a) 
+       (is x x))
+t
+</code></pre><p>&#x110;&#x1EC3; so gi&#x1EEF;a hai danh s&#xE1;ch ta d&#xF9;ng iso (<em>isomorphic</em>)</p>
+<pre><code>arc&gt; (iso (list &apos;a) (list &apos;a))
+t
+</code></pre><p>&#x110;&#x1EC3; bi&#x1EBF;t m&#x1ED9;t bi&#x1EBF;n c&#xF3; n&#x1EB1;m trong c&#xE1;c kh&#x1EA3; n&#x103;ng cho s&#x1EB5;n kh&#xF4;ng </p>
+<pre><code>arc&gt; (let x &apos;a   
+       (in x &apos;a &apos;b &apos;c))
+t
+</code></pre><p>Tr&#x1B0;&#x1EDD;ng h&#x1EE3;p:</p>
+<pre><code>arc&gt; (def translate (sym)
+       (case sym
+         apple &apos;mela 
+         onion &apos;cipolla
+               &apos;che?))
+#&lt;procedure: translate&gt;
+arc&gt; (translate &apos;apple)
+mela
+arc&gt; (translate &apos;syzygy)
+che?
+</code></pre><h4 id="c&#xE1;c-ki&#x1EC3;u-l&#x1EB7;p-kh&#xE1;c">C&#xE1;c ki&#x1EC3;u l&#x1EB7;p kh&#xE1;c</h4>
+<p>&#x110;&#xE2;y l&#xE0; nh&#x1EEF;ng ki&#x1EC3;u l&#x1EB7;p m&#xE0; kh&#xF4;ng ph&#x1EA3;i g&#x1ECD;i l&#x1EA1;i ch&#xED;nh n&#xF3; trong b&#x1EA3;n th&#xE2;n &#x111;&#x1ECB;nh ngh&#x129;a c&#x1EE7;a n&#xF3;.</p>
+<p>L&#xE0;m g&#xEC; &#x111;&#xF3; khi x &#x1EDF; trong gi&#x1EDB;i h&#x1EA1;n cho ph&#xE9;p:</p>
+<pre><code>arc&gt; (for i 1 10 
+       (pr i &quot; &quot;))
+1 2 3 4 5 6 7 8 9 10 nil
+
+arc&gt; (each x &apos;(a b c d e) 
+       (pr x &quot; &quot;))
+a b c d e nil
+</code></pre><p>Nh&#x1EEF;ng ch&#x1B0;&#x1A1;ng tr&#xEC;nh n&#xE0;y in ra th&#xE0;nh ph&#x1EA7;n trong danh s&#xE1;ch b&#x1EB1;ng pr, nh&#x1B0;ng nil l&#xE0; gi&#xE1; tr&#x1ECB; m&#xE0; ch&#xFA;ng tr&#x1EA3; v&#x1EC1;.</p>
+<p>Khi &#x111;i&#x1EC1;u ki&#x1EC7;n g&#xEC; &#x111;&#xF3; c&#xF2;n &#x111;&#xFA;ng th&#xEC; c&#xF2;n l&#xE0;m:</p>
+<pre><code>arc&gt; (let x 10
+       (while (&gt; x 5)
+         (= x (- x 1))
+         (pr x)))
+98765nil
+</code></pre><p>(H&#xE0;m &#x111;&#x1EC3; l&#xE0;m cho &#x111;&#x1EBF;n khi &#x111;i&#x1EC1;u ki&#x1EC7;n g&#xEC; &#x111;&#xF3; xu&#x1EA5;t hi&#x1EC7;n l&#xE0; <code>until</code>)</p>
+<p>L&#xE0;m c&#xE1;i g&#xEC; &#x111;&#xF3; n l&#x1EA7;n:</p>
+<pre><code>arc&gt; (repeat 5 (pr &quot;la &quot;))
+la la la la la nil
+</code></pre><h4 id="map">map</h4>
+<p>Ngo&#xE0;i c&#xE1;c ki&#x1EC3;u l&#x1EB7;p tr&#xEA;n, c&#xF3; nh&#x1EEF;ng h&#xE0;m c&#xF3; kh&#x1EA3; n&#x103;ng thao t&#xE1;c tr&#xEA;n d&#x1EEF; li&#x1EC7;u m&#x1ED9;t c&#xE1;ch m&#x1EA1;nh m&#x1EBD;, to&#xE0;n di&#x1EC7;n v&#xE0; c&#xF3; h&#x1EC7; th&#x1ED1;ng.</p>
+<p><code>map</code> s&#x1EBD; &#xE1;p d&#x1EE5;ng m&#x1ED9;t h&#xE0;m l&#xEA;n to&#xE0;n b&#x1ED9; danh s&#xE1;ch:</p>
+<pre><code>arc&gt; (map (fn (x) (+ x 10)) &apos;(1 2 3))
+(11 12 13)
+</code></pre><p>N&#x1EBF;u ta cho <code>map</code> c&#xF9;ng l&#xFA;c nhi&#x1EC1;u danh s&#xE1;ch, h&#x1EAF;n s&#x1EBD; &#xE1;p d&#x1EE5;ng l&#xEA;n h&#x1EBF;t cho &#x111;&#x1EBF;n khi h&#x1EBF;t danh s&#xE1;ch ng&#x1EAF;n nh&#x1EA5;t.</p>
+<pre><code>arc&gt; (map + &apos;(1 2 3 4) &apos;(100 200 300))
+(101 202 303)
+</code></pre><p>V&#x1EDB;i h&#xE0;m ch&#x1EC9; c&#xF3; 1 bi&#x1EBF;n, ta th&#x1EC3; c&#xF3; vi&#x1EBF;t t&#x1EAF;t: <code>[... _ ...] = (fn (_) (... _ ...))</code></p>
+<pre><code>arc&gt; (map [+ _ 10] &apos;(1 2 3))
+(11 12 13)
+</code></pre><pre><code>Trong to&#xE1;n h&#x1ECD;c: f.g(x) = f(g(x))
+Trong Arc: (foo:bar x y) = (foo (bar x y))
+</code></pre><pre><code>arc&gt; (map odd:car &apos;((1 2) (4 5) (7 9)))
+(t nil t)
+</code></pre><p>Ph&#x1EA3;n m&#x1ED9;t h&#xE0;m </p>
+<pre><code>arc&gt; (map ~odd &apos;(1 2 3 4 5)) 
+(nil t nil t nil)
+</code></pre><p>T&#x1EF1; &#x111;&#x1ECD;c nh&#x1EEF;ng h&#xE0;m sau:</p>
+<pre><code>arc&gt; (keep odd &apos;(1 2 3 4 5 6 7))
+(1 3 5 7)
+arc&gt; (rem odd &apos;(1 2 3 4 5 6))
+(2 4 6)
+arc&gt; (all odd &apos;(1 3 5 7))
+t
+arc&gt; (some even &apos;(1 3 5 7))
+nil
+arc&gt; (pos even &apos;(1 2 3 4 5))
+1
+arc&gt; (trues [if (odd _) (+ _ 10)] 
+            &apos;(1 2 3 4 5))
+(11 13 15)
+</code></pre><p>C&#xE2;u sau c&#xF3; g&#xEC; kh&#xE1;c bi&#x1EC7;t?</p>
+<pre><code>arc&gt; (rem &apos;a &apos;(a b a c u s))
+(b c u s)
+
+arc&gt; (rem #\a &quot;abacus&quot;)
+&quot;bcus&quot;
+</code></pre><h4 id="sort">sort</h4>
+<pre><code>arc&gt; (sort &lt; &apos;(2 9 3 7 5 1))
+(1 2 3 5 7 9)
+arc&gt; (insort &lt; 4 x)
+(1 2 3 4 5 7 9)
+arc&gt; x
+(1 2 3 4 5 7 9)
+
+arc&gt; (sort (fn (x y) (&lt; (len x) (len y)))
+           &apos;(&quot;orange&quot; &quot;pea&quot; &quot;apricot&quot; &quot;apple&quot;))
+(&quot;pea&quot; &quot;apple&quot; &quot;orange&quot; &quot;apricot&quot;)
+
+arc&gt; (sort (compare &lt; len)
+           &apos;(&quot;orange&quot; &quot;pea&quot; &quot;apricot&quot; &quot;apple&quot;))
+(&quot;pea&quot; &quot;apple&quot; &quot;orange&quot; &quot;apricot&quot;)
+</code></pre><h2 id="s&#x1ED1;-l&#x1B0;&#x1EE3;ng-bi&#x1EBF;n-b&#x1EA5;t-&#x111;&#x1ECB;nh">S&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n b&#x1EA5;t &#x111;&#x1ECB;nh<a name="s&#x1ED1;-l&#x1B0;&#x1EE3;ng-bi&#x1EBF;n-b&#x1EA5;t-&#x111;&#x1ECB;nh"></a></h2>
+<p>Khi &#x111;&#x1ECB;nh ngh&#x129;a m&#x1ED9;t h&#xE0;m m&#x1EDB;i, c&#xE1;c b&#x1EA1;n &#x111;&#xE3; g&#x1EB7;p hai tr&#x1B0;&#x1EDD;ng h&#x1EE3;p k&#xFD; hi&#x1EC7;u bi&#x1EBF;n nh&#x1B0; sau:</p>
+<pre><code>* fn (x y) ...     =&gt; &#x110;&#xE2;y l&#xE0; khi h&#xE0;m s&#x1ED1; nh&#x1EAD;n v&#xE0;o &#x111;&#xFA;ng 2 bi&#x1EBF;n  
+* fn (xs)  ...     =&gt; &#x110;&#xE2;y l&#xE0; khi h&#xE0;m nh&#x1EAD;n v&#xE0;o m&#x1ED9;t danh s&#xE1;ch, s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n b&#x1EA5;t k&#x1EF3;
+</code></pre><p>Ta s&#x1EBD; xem x&#xE9;t ti&#x1EBF;p c&#xE1;c tr&#x1B0;&#x1EDD;ng h&#x1EE3;p m&#xE0; h&#xE0;m nh&#x1EAD;n v&#xE0;o s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n kh&#xF4;ng c&#x1ED1; &#x111;&#x1ECB;nh:</p>
+<ul>
+<li>C&#xF3; th&#x1EC3; c&#xF3; th&#xEA;m bi&#x1EBF;n ho&#x1EB7;c kh&#xF4;ng </li>
+</ul>
+<p>H&#xE0;m <code>greet</code> sau nh&#x1EA5;t &#x111;&#x1ECB;nh nh&#x1EAD;n v&#xE0;o 1 bi&#x1EBF;n, v&#xED; d&#x1EE5; <code>&apos;joe</code>. C&#xF3; th&#x1EC3; l&#xE0; ch&#x1EC9; c&#xF3; m&#x1ED9;t bi&#x1EBF;n &#x111;&#xF3; th&#xF4;i, ho&#x1EB7;c c&#xF3; th&#x1EC3; l&#xE0; th&#xEA;m m&#x1ED9;t bi&#x1EBF;n n&#x1EEF;a l&#xE0; d&#x1EA5;u <code>!</code></p>
+<pre><code>arc&gt; (def greet (name (o punc))
+       (string &quot;hello &quot; name punc))
+#&lt;procedure: greet&gt;
+arc&gt; (greet &apos;joe)
+&quot;hello joe&quot;
+arc&gt; (greet &apos;joe #\!)
+&quot;hello joe!&quot;
+</code></pre><p>M&#x1ED9;t tr&#x1B0;&#x1EDD;ng h&#x1EE3;p ph&#x1EE9;c t&#x1EA1;p h&#x1A1;n:</p>
+<pre><code>arc&gt; (def greet (name (o punc (case name who #\? #\!)))
+       (string &quot;hello &quot; name punc)) 
+*** redefining greet
+#&lt;procedure: greet&gt;
+arc&gt; (greet &apos;who)
+&quot;hello who?&quot;
+</code></pre><ul>
+<li>Khi ta vi&#x1EBF;t <code>(x y . z)</code> ngh&#x129;a l&#xE0; h&#xE0;m n&#xE0;y nh&#x1EAD;n v&#xE0;o x v&#xE0; y sau &#x111;&#xF3; nh&#x1EAD;n th&#xEA;m s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n b&#x1EA5;t k&#x1EF3;. Trong ph&#x1EA7;n th&#xE2;n c&#x1EE7;a h&#xE0;m, x v&#xE0; y &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&#xFD; tr&#x1B0;&#x1EDB;c, sau &#x111;&#xF3; to&#xE0;n b&#x1ED9; c&#xE1;c bi&#x1EBF;n c&#xF2;n l&#x1EA1;i &#x111;&#x1B0;&#x1EE3;c cho v&#xE0;o m&#x1ED9;t danh s&#xE1;ch.</li>
+</ul>
+<pre><code>arc&gt; (def foo (x y . z) 
+       (list x y z))
+#&lt;procedure: foo&gt;
+arc&gt; (foo (+ 1 2) (+ 3 4) (+ 5 6) (+ 7 8))
+(3 7 (11 15))
+</code></pre><ul>
+<li>N&#x1EBF;u b&#x1EA1;n mu&#x1ED1;n h&#xE0;m nh&#x1EAD;n v&#xE0;o s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n b&#x1EA5;t k&#x1EF3; v&#xE0; t&#x1EA5;t c&#x1EA3; c&#xE1;c bi&#x1EBF;n &#x111;&#x1B0;&#x1EE3;c x&#x1EED; l&#xFD; nh&#x1B0; nhau (ph&#x1EA7;n sau kh&#xF4;ng b&#x1ECB; b&#x1ECF; v&#xE0;o danh s&#xE1;ch), b&#x1EA1;n vi&#x1EBF;t c&#x1EA5;u tr&#xFA;c nh&#x1B0; sau:</li>
+</ul>
+<pre><code>fn xs ... thay v&#xEC; fn (xs) ...
+</code></pre><ul>
+<li>&#x110;&#x1EC3; &#xE1;p d&#x1EE5;ng m&#x1ED9;t h&#xE0;m l&#xEA;n to&#xE0;n b&#x1ED9; danh s&#xE1;ch, ta d&#xF9;ng <code>apply</code></li>
+</ul>
+<pre><code>arc&gt; (apply + &apos;(1 2 3))
+6
+</code></pre><p>&#x110;&#x1EBF;n &#x111;&#xE2;y th&#xEC; ta c&#xF3; th&#x1EC3; vi&#x1EBF;t h&#xE0;m <code>average</code> m&#xE0; c&#xF3; th&#x1EC3; nh&#x1EAD;n s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n b&#x1EA5;t k&#x1EF3;. </p>
+<pre><code>arc&gt; (def average args 
+       (/ (apply + args) (len args)))
+#&lt;procedure: average&gt;
+arc&gt; (average 1 2 3)
+2
+</code></pre><p>T&#x1B0;&#x1A1;ng t&#x1EF1; nh&#x1B0; v&#x1EAD;y, b&#x1EA1;n c&#xF3; &#x111;&#x1ECB;nh ngh&#x129;a l&#x1EA1;i &#x111;&#x1B0;&#x1EE3;c d&#x1EA5;u <code>+</code> th&#xE0;nh ph&#xE9;p nh&#xE2;n v&#x1EDB;i s&#x1ED1; l&#x1B0;&#x1EE3;ng bi&#x1EBF;n b&#x1EA5;t k&#x1EF3; &#x111;&#x1B0;&#x1EE3;c kh&#xF4;ng.</p>
+<h2 id="l&#x1EB7;t-v&#x1EB7;t">L&#x1EB7;t v&#x1EB7;t<a name="l&#x1EB7;t-v&#x1EB7;t"></a></h2>
+<p>Danh s&#xE1;ch ki&#x1EC3;u n&#xE0;y gi&#x1ED1;ng nh&#x1B0; t&#x1EEB; &#x111;i&#x1EC3;n: m&#x1ED9;t t&#x1EEB; kh&#xF3;a g&#x1EAF;n v&#x1EDB;i m&#x1ED9;t gi&#xE1; tr&#x1ECB; t&#x1B0;&#x1A1;ng &#x1EE9;ng.</p>
+<pre><code>arc&gt; (= codes &apos;((&quot;Boston&quot; bos) (&quot;Paris&quot; cdg) (&quot;San Francisco&quot; sfo)))
+((&quot;Boston&quot; bos) (&quot;Paris&quot; cdg) (&quot;San Francisco&quot; sfo))
+
+arc&gt; (alref codes &quot;Boston&quot;)
+bos
+</code></pre><ul>
+<li>D&#xE2;y ch&#x1EEF; </li>
+</ul>
+<pre><code>arc&gt; (string 99 &quot; bottles of &quot; &apos;bee #\r)
+&quot;99 bottles of beer&quot;
+
+arc&gt; (tostring                  
+       (prn &quot;domesday&quot;)
+       (prn &quot;book&quot;))
+&quot;domesday\nbook\n&quot;
+</code></pre><ul>
+<li>coerce</li>
+</ul>
+<pre><code>arc&gt; (map type (list &apos;foo 23 23.5 &apos;(a) nil car &quot;foo&quot; #\a))
+(sym int num cons sym fn string char)
+arc&gt; (coerce #\A &apos;int)
+65
+arc&gt; (coerce &quot;foo&quot; &apos;cons)
+(#\f #\o #\o)
+arc&gt; (coerce &quot;99&quot; &apos;int)
+99
+arc&gt; (coerce &quot;99&quot; &apos;int 16)
+153
+</code></pre><ul>
+<li>N&#x1EBF;u b&#x1EA1;n t&#x1B0;&#x1EDF;ng t&#x1B0;&#x1EE3;ng danh s&#xE1;ch gi&#x1ED1;ng nh&#x1B0; m&#x1ED9;t gi&#xE1; &#x111;&#x1EC3; b&#xE0;y &#x111;&#x1ED3; &#x111;&#x1EA1;c. &#x110;&#x1ED9;ng t&#x1EEB; <code>push</code> l&#xE0; &#x111;&#x1EC3; ch&#xE8;n th&#xEA;m m&#x1ED9;t th&#xE0;nh m&#x1EDB;i l&#xEA;n &#x111;&#x1EA7;u gi&#xE1;, v&#xE0; &#x111;&#x1ED9;ng t&#x1EEB; <code>pop</code> l&#xE0; &#x111;&#x1EC3; b&#x1ECF; &#x111;i th&#xE0;nh ph&#x1EA7;n cu&#x1ED1;i gi&#xE1;.</li>
+</ul>
+<pre><code>arc&gt; (= x &apos;(c a b))
+(c a b)
+arc&gt; (pop x)
+c
+arc&gt; x
+(a b)
+arc&gt; (push &apos;f x)
+(f a b)
+arc&gt; x
+(f a b)
+</code></pre><pre><code>arc&gt; (push &apos;l (cdr x))
+(l a b)
+arc&gt; x
+(f l a b)
+</code></pre><ul>
+<li>C&#x1ED9;ng 1 v&#xE0; b&#x1EDB;t 1 </li>
+</ul>
+<pre><code>arc&gt; (let x &apos;(1 2 3) 
+       (++ (car x))
+       x)           
+(2 2 3)
+</code></pre><ul>
+<li>zap </li>
+</ul>
+<p>Ta &#x111;&#xE3; g&#x1EB7;p r&#x1EA5;t nhi&#x1EC1;u h&#xE0;m can thi&#x1EC7;p v&#xE0; thay &#x111;&#x1ED5;i gi&#xE1; tr&#x1ECB; m&#xE0; m&#x1ED9;t bi&#x1EC3;u t&#x1B0;&#x1EE3;ng &#x111;ang n&#x1EAF;m gi&#x1EEF;, gi&#x1EDD; ta s&#x1EBD; g&#x1EB7;p m&#x1ED9;t h&#xE0;m chung chung cho &#xFD; t&#x1B0;&#x1EDF;ng &#x111;&#xF3;. H&#xE0;m <code>zap</code> g&#xE1;n gi&#xE1; tr&#x1ECB; tr&#x1EA3; v&#x1EC1; v&#xE0;o bi&#x1EC3;u t&#x1B0;&#x1EE3;ng ban &#x111;&#x1EA7;u.</p>
+<pre><code>(++ x)  =  (zap [+ _ 1] x)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="emacs.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ♞CV VÀ TRANG WEB ĐẦU TIÊN">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"Arc","title":"♞ARC","level":"1.4","depth":1,"previous":{"title":"♞CV VÀ TRANG WEB ĐẦU TIÊN","level":"1.3","depth":1,"path":"emacs.md","ref":"emacs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","exercises"],"pluginsConfig":{"back-to-top-button":{},"exercises":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"arc.md","mtime":"2018-12-06T09:53:56.265Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-07T20:47:14.204Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+
