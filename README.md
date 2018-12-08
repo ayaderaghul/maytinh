@@ -37,14 +37,14 @@ Sau khi đã mài sắc công cụ và mài sắc tư duy, các bạn có khả 
    * Mã hóa thông tin 
    * Cách nói chuyện với máy tính 
    * Mạng internet 
-2. Bắt đầu cài 
+2. [Bắt đầu cài](bat-dau-cai.md) 
    * Cách tìm thông tin trên mạng 
    * Cài Ubuntu
    * Chuẩn bị Terminal, Emacs, Racket.  
-3. CV và trang web đầu tiên 
+3. [CV và trang web đầu tiên](emacs.md) 
    * Học Markdown
    * Dùng trang Github 
-4. Arc 
+4. [Arc](arc.md) 
 5. Tôi đã tạo ra cuốn sách này như thế nào?
 6. .. 
 
