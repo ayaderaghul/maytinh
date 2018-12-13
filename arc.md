@@ -24,32 +24,16 @@ REPL nghĩa là Read-Evaluate-Print-Loop (Vòng lặp Đọc-Xử lý-In). Đây
 #### Số và dây chữ: Những biểu ngữ đơn giản nhất 
 Khi bắt đầu học một ngôn ngữ mới, ta cần học những từ vựng đơn giản nhất. Một chương trình viết bằng ngôn ngữ Arc sẽ bao gồm các biểu ngữ (*expression*). Biểu ngữ là một cấu trúc ngữ pháp biểu thị một cái gì đó. Những biểu ngữ đơn giản nhất là số (*number*) và dây chữ (*string*). Một dây chữ nghĩa là một liên hoàn các chữ cái (*character*) bọc trong dấu ngoặc kép. Tôi lấy ví dụ số trước:
 
-```
+```scheme
 arc> 25
 25
 arc> 
 
 ```
 
-
-
-{% exercise %}
-Gõ thử vào dấu 3 chấm một số tự nhiên (xóa dấu ba chấm đi nhé):
-
-{% initial %}
-...
-
-{% solution %}
-assert(typeOf(x) == 'number');
-
-{% context %}
-
-{% endexercise %}
-
-
 Khi bạn gõ vào số 25, biểu ngữ này sẽ được xử lý thành giá trị mà nó mang, trong trường hợp này là chính nó. Khi đó Arc sẽ trả về cho bạn số 25 ở màn hình. Sau khi in ra xong thì Arc nhảy sang dòng lệnh mới, đợi bạn gõ lệnh mới.  Hãy thử với dây chữ:
 
-```
+```scheme
 arc> "foo"
 "foo"
 arc>
@@ -87,7 +71,7 @@ Ta có thể thấy câu thứ hai ở đây có nhiều hơn một danh từ, `
 
 Tôi quay lại với ngôn ngữ Arc thật sự, lấy ví dụ một biểu ngữ toán:
 
-```
+```scheme
 arc> (+ 1 2)
 3
 ```
@@ -102,7 +86,7 @@ Lưu ý là biểu tượng ```+``` ở đây được định nghĩa từ trư�
 
 Trong câu đơn ```(+ 1 2)``` bạn có thể thấy rằng ngoài thành phần thứ nhất là động từ, thì các thành phần còn lại chính là những biểu ngữ đơn giản nhất (các con số). Biểu ngữ đơn giản thì cũng là biểu ngữ, chứng tỏ rằng, các thành phần đó có thể được thay thế bằng các biểu ngữ phức tạp. Tức là ta lồng câu đơn vào thành câu ghép. Ví dụ:
 
-```
+```scheme
 arc> (+ 1 (* 3 4))
 12
 ```
@@ -113,7 +97,7 @@ arc> (+ 1 (* 3 4))
 
 Trong ngôn ngữ Arc, biểu tượng số dùng để chỉ các con số. Bạn không thể định nghĩa lại những biểu tượng số đó để nó mang nghĩa khác. Ngòai ra thì hầu hết các biểu tượng khác đều có thể được định nghĩa lại. Arc ép buộc bạn rất ít. Các biểu tượng dùng để chứa đựng các giá trị mà bạn muốn gán. Ví dụ:
 
-```
+```scheme
 arc> (= foo 13)
 13
 arc> foo 
@@ -123,7 +107,7 @@ Bạn sẽ thấy rằng biểu ngữ ```(= foo 13)``` là dòng lệnh bảo Ar
 
 Để ngăn Arc xử lý biểu tượng đó và trả về giá trị, ta đặt dấu nháy đơn trước biểu tượng foo, khi đó Arc sẽ trả về biểu tượng foo.
 
-```
+```scheme
 arc> 'foo 
 foo 
 ```
@@ -132,7 +116,7 @@ Sẽ có người đọc thấy kỳ quặc tại sao trong biểu ngữ ```(= f
 
 Hàm ```=``` có thể hiểu là hàm gán giá trị 13 cho biểu tượng foo. Hoặc gọi là hàm đặt tên foo cho giá trị 13. Sau khi đặt tên rồi, ta gọi lại tên foo thì Arc sẽ hiểu là giá trị 13, tất nhiên là trừ khi ta nháy đơn foo. Dấu nháy đơn sẽ luôn trả về cả câu như biểu tượng của nó là thế, tuyệt đối không xử lý và tìm hiểu ý nghĩa của cả câu là gì. Ví dụ:
 
-```
+```scheme
 arc> (+ 1 2)
 3
 arc> '(+ 1 2)
@@ -144,7 +128,7 @@ Câu đầu tiên trả về số 3 nhưng câu thứ hai trả về danh sách 
 #### Xây dựng danh sách với cons
 ```cons``` là viết tắt của *constructor* (xây dựng). Hàm này dùng để kiến tạo danh sách. Ví dụ:
 
-```
+```scheme
 arc> (cons 'f '(a b))
 (f a b)
 ```
@@ -152,7 +136,7 @@ Câu trên nghĩa là thêm biểu tượng f vào đầu danh sách có sẵn '
 
 Hàm này không thay đổi danh sách ban đầu mà tạo ra một danh sách mới. Ví dụ, nếu tôi đặt tên danh sách '(a b) là x thì khi tôi thêm 'f vào bằng ```cons``` thì Arc trả về danh sách mới chứ không can thiệp trực tiếp vào danh sách x. Khi ta gọi lại x thì Arc vẫn trả về danh sách ban đầu.
 
-```
+```scheme
 arc> (= x '(a b))
 (a b)
 arc> (cons 'f x)
@@ -167,7 +151,7 @@ Như ta có thể thấy, ```cons``` là hàm bình thường, sẽ có những 
 
 ```car``` trả về thành phần đầu tiên của một danh sách, ```cdr``` trả về danh sách đó trừ thành phần đầu tiên.
 
-```
+```scheme
 arc> (car '(a b c))
 a
 arc> (cdr '(a b c))
@@ -189,7 +173,7 @@ Chú ý rằng danh sách có thể chứa đựng thành phần của bất k�
 
 Đến đây, bạn đã biết thêm các hàm để chỉ vị trí trong danh sách, ví dụ ```car``` là chỉ vào vị trí của thành phần đầu tiên trong danh sách và lấy nó ra. Khi kết hợp với ```=```, ta có thể thay đổi giá trị của danh sách ở vị trí đầu tiên. Lấy ví dụ danh sách x.
 
-```
+```scheme
 arc> x
 (a b)
 arc> (= (car x) 'z)
@@ -207,7 +191,7 @@ Chính sự nhanh nhẹn đó khiến ngôn ngữ kiểu này có thể biến h
 
 Ta đã thấy một số động từ/hàm (*function*) ví dụ ở trên như +, cons, car, cdr. Bạn có thể tự định nghĩa thêm các động từ mới để dạy cho Arc biết. Muốn tạo được từ vựng mới thì công cụ phải có khả năng gán giá trị cho biểu tượng. Muốn làm điều đó thì trong bộ công cụ phải có một công cụ có khả năng can thiệp vào và thay đổi nội dung (giá trị) của một biểu tượng. Khi có một công cụ như thế rồi, thì sẽ có khả năng tạo ra những công cụ mới phức tạp hơn sử dụng công cụ đơn giản đó, mà cũng can thiệp vào biểu tượng ở những tầng lớp nghĩa mới. Tuy nhiên, kiểu can thiệp này tôi giới hạn ở những thời điểm khởi đầu nhất định. Bình thường, khi tôi sử dụng các hàm và biến, tôi không thay đổi nội dung gốc của cái gì cả, tôi tạo ra cái mới. Ví dụ trong đoạn code sau, cons không can thiệp vào x, x vẫn là x:
 
-```
+```scheme
 arc> (= x '(1))
 arc> (cons 2 x)
 '(2 1)
@@ -228,7 +212,7 @@ Tất nhiên nhiều khi giá trị tạo ra này ta cho ngay vào hàm khác th
 
 Tôi nói tiếp về việc tạo động từ mới. Để tạo động từ mới thì ngữ pháp như sau:
 
-```racket
+```scheme
 arc> (def average (x y) 
        (/ (+ x y) 2))
 #<procedure: average>
@@ -241,7 +225,7 @@ arc> (average 2 4)
 
 Đến đây tôi sẽ chỉ cách định nghĩa lại cho Arc biết dấu ```+``` là để chỉ phép nhân. 
 
-```
+```scheme
 arc> (def + (x y) 
 	    (* x y))
 arc> (+ 2 3)
@@ -252,14 +236,14 @@ Bạn có thể thấy rằng cách định nghĩa động từ mới rất đơ
 
 Động từ ```def``` không có gì đặc biệt, hắn gọi động từ ```=``` lên để gán một hàm vào một biểu tượng cho sẵn. Câu ```def``` ở trên chính là câu sau:
 
-```
+```scheme
 arc> (= average (fn (x y) (/ (+ x y) 2)))
 arc> (average 2 4)
 3
 ```
 Ở đây ```average``` được gán hàm/động từ ```(fn (x y) (/ (+ x y) 2))```. Hàm này nếu đứng không ```(fn (x y) (/ (+ x y) 2))``` thì là hàm không tên. Không vấn đề gì, hàm không tên vẫn hoạt động như thường. Khi bạn hiểu một ý tưởng gì đó, mà chưa nghĩ ra được tên để gán cho nó, đám nơ-ron ở trung tâm ngôn ngữ trong não bạn chưa báo ra được một từ cụ thể để gán cho ý tưởng đó. Không sao cả, nó vẫn hoạt động bình thường, nếu bạn giữ nó không tên. Ở đây cũng vậy, khi bạn bê nguyên hàm không tên kia vào một biểu ngữ, để vào đúng vị trí mà nó vẫn để, tức là vị trí đầu tiên trong danh sách, thì nó vẫn nhận vào các biến đứng sau và hoạt động bình thường. Không có gì sai trái. Ví dụ:
 
-```
+```scheme
 arc> ((fn (x y) (/ (+ x y) 2)) 2 4)
 3
 ```
@@ -270,7 +254,7 @@ Như các bạn đã thấy ở trên, ngữ pháp của một biểu ngữ là 
 
 Tôi nói tiếp về trường hợp đặc biệt này của ngữ pháp Arc, khi thành phần đầu tiên của biểu ngữ là một tổ chức dữ liệu, thì tiếp sau đó là một số đếm chỉ vị trí. Khi đó Arc sẽ dùng số đếm chỉ vị trí này để truy nhập vào tổ chức dữ liệu kia và trả về cho bạn đơn vị dữ liệu ở vị trí tương ứng. Nếu số đếm chỉ vị trí đó vượt ra ngoài độ dài của tổ chức dữ liệu, Arc sẽ báo lỗi. Lưu ý là trong khoa học máy tính, người ta thường đếm từ số 0. Ví dụ:
 
-```
+```scheme
 arc> ('(1 2 3) 0)
 1
 arc> ('(1 2 3) 3)
@@ -284,7 +268,7 @@ arc> ("foo" 1)
 #### Loại
 Có thể bạn thấy hơi ngạc nhiên khi chữ cái ```#\o``` lại khác với biểu tượng ```'o```. Trong ngôn ngữ Arc, các đơn vị dữ liệu được phân loại ra thành các loại (*type*) khác nhau. Mỗi loại sẽ có nét tính cách riêng. Tôi liệt kê ra một số loại ta đã gặp: động từ (*function*), số (*number*), dây chữ (*string*), biểu tượng (*symbol*), chữ cái (*character*), danh sách (*list*). Arc có một hàm chuyên để trả về loại của các đơn vị dữ liệu. Tức là khi bạn đưa một đơn vị dữ liệu bất kỳ cho hàm đó, hàm đó sẽ trả về loại của dữ liệu đó. Trước khi tôi nói, bạn có đoán được hàm đó là gì không? Tôi gợi ý là ngôn ngữ Arc rất hợp với cách nghĩ tự nhiên của con người. Và Arc cũng khuyến khích người ta phát triển khả năng suy nghĩ tự nhiên (*intuitive*) và logic đó. Tôi nghĩ nếu bạn đọc và hiểu Arc đến đây rồi, bạn sẽ đoán đúng. Hàm đó là ```type```. Ví dụ:
 
-```
+```scheme
 arc> (type +)
 fn                     => function / hàm 
 arc> (type 1)
@@ -303,7 +287,7 @@ cons                   => constructor / list / danh sách
 
 Ta đã thấy ở trên về việc hàm ```=``` có thể can thiệp và thay đổi giá trị của một biểu tượng. Sau khi có thêm cách mới để chỉ đến một vị trí trong tổ chức dữ liệu, tôi lấy thêm ví dụ về việc hàm ```=``` có thể can thiệp vào tổ chức dữ liệu bằng những cách khác nhau như thế nào:
 
-```
+```scheme
 ; Ban đầu biểu tượng x chưa có gía trị gì.
 arc> (= x 2)
 ; Bây giờ biểu tượng x đã có giá trị 2
@@ -350,7 +334,7 @@ arc> s
 
 Hàm ```=``` hoặc hàm ```def``` sẽ gán gía trị vào biểu tượng mãi, tức là x sẽ mang giá trị 2 cho đến hết chương trình nếu không có gì thay đổi. Tuy nhiên có cách để gán tạm, tức là x mang giá trị 2 chỉ ở trong giới hạn một biểu ngữ (một chương trình nhỏ) mà thôi. Ngoài đó ra thì x không mang giá trị 2. Đó là hàm ```let``` để gán tạm một biến, hàm ```with``` để gán tạm nhiều biến. Ví dụ:
 
-```
+```scheme
 arc> (let x 1
 	   (+ x (* x 2)))
 3
@@ -383,7 +367,7 @@ Tôi bảo bạn đi quét nhà đi, sau đó làm toán văn tiếng anh, và n
 
 Ví dụ khi ta định nghĩa hàm ```average``` ta muốn hàm này in ra biến mà hắn nhận vào trước khi in ra kết quả, ta chèn vào một biểu ngữ chuyên để in. Hàm để in là ```pr``` hoặc ```prn```. pr là *print* và prn là *print \n*. Trong khoa học máy tính, ```\n``` là dấu xuống dòng. prn tức là in ra kết quả và sau đó xuống dòng. 
 
-```
+```scheme
 arc> (def average (x y)
        (prn "my arguments were: " (list x y))
        (/ (+ x y) 2))
@@ -397,7 +381,7 @@ my arguments were: (100 200)
 
 Trong ngôn ngữ Arc, tất nhiên có câu điều kiện, bởi vì cuộc đời này nó thế. Nếu chưa có, hẳn sẽ đến lúc người lập trình tự thấy cần thiết mà viết thêm vào cho Arc hiểu. ```if``` (*nếu*) giống ```=``` và ```def``` ở chỗ hắn không xử lý hết tất cả các biến hắn ngậm vào. Khi được đưa cho 3 biến, hắn sẽ xử lý biến đầu tiên, nếu đúng, hắn trả về giá trị của biến số 2, nếu sai, hắn trả về giá trị của biến số 3.
 
-```
+```scheme
 arc> (if (odd 1) 'a 'b)
 a
 arc> (if (odd 2) 'a 'b)
@@ -410,7 +394,7 @@ Các bạn có thể hỏi: Thế nào là *đúng*? Đúng nghĩa là khi ta x�
 
 Về mặt kỹ thuật, ```nil``` vừa là sai vừa là danh sách rỗng. ```t``` là đúng. Nhưng cái gì có giá trị thì cũng đều là đúng hết.
 
-```
+```scheme
 arc> (odd 1)
 t
 arc> (odd 2)
@@ -420,20 +404,20 @@ nil
 
 Ngữ pháp của Arc khá linh hoạt khi nói đến câu điều kiện, ví dụ:
 
-```
+```scheme
 arc> (if (odd 2) 'a)
 nil         => khi chỉ có hai biến, biến thứ ba ngầm định là nil 
 ```
 
 Khi bạn muốn viết các câu đơn if lồng vào nhau:
 
-```
+```scheme
 (if a b c d e)
 ```
 
 chính là viết tắt của:
 
-```
+```scheme
 (if a 
 	b
 	(if c
@@ -443,7 +427,7 @@ chính là viết tắt của:
 
 Mỗi biến mà ```if``` nhận vào đều là một biểu ngữ duy nhất, nếu bạn muốn có các biểu ngữ chạy nối tiếp nhau (không phải câu ghép mà là hai câu đơn nối tiếp nhau), bạn có thể dùng ```do```. *do* nghĩa là làm.
 
-```
+```scheme
 arc> (do (prn "hello") 
          (+ 2 3))                             
 hello
@@ -454,14 +438,14 @@ Trong câu trên, Arc in ra dây chữ "hello" sau đó hắn làm tính 2 cộn
 
 Nếu bạn chỉ muốn một số biểu ngữ được chạy khi điều kiện trả về đúng, bạn có thể dùng cấu trúc sau: if với do và bỏ biến cuối:
 
-```
+```scheme
 (if a
     (do b
         c))
 ```
 Tuy nhiên tình huống này quá phổ biến, cho nên Arc tiến hóa thêm hẳn một hàm riêng để chỉ tình huống đó 
 
-```
+```scheme
 (when a
   b
   c)
@@ -489,7 +473,7 @@ Hàm ```no``` nhận vào duy nhất 1 biến. Hắn trả về ```t``` nếu bi
 Tôi lấy ví dụ, bạn muốn viết một hàm đo độ dài của một danh sách. Bạn viết được tiêu đề của hàm đó như sau:
 
 
-```
+```scheme
 (def mylen (xs)
  ...)
 
@@ -501,7 +485,7 @@ Tôi lấy ví dụ, bạn muốn viết một hàm đo độ dài của một d
 
 Đến đây thì bạn hiểu rằng dữ liệu của bạn có 2 trường hợp, một là danh sách rỗng, hai là danh sách khác rỗng. Lối nghĩ này bảo bạn dùng ```if``` - hàm điều kiện có hai mệnh đề 
 
-```
+```scheme
 (def mylen (xs)
 	(if (no xs)
 		...))
@@ -510,7 +494,7 @@ Tôi lấy ví dụ, bạn muốn viết một hàm đo độ dài của một d
 * Lưu ý ```(no xs)``` sẽ trả về ```t``` nếu danh sách rỗng. 
 * Khi đó, kết quả của trường hợp dễ ẹc là 0. Bởi vì danh sách rỗng thì tức là độ dài của danh sách bằng 0.
 
-```
+```scheme
 (def mylen (xs)
 	(if (no xs)
 		0
@@ -527,7 +511,7 @@ Sau khi từ biệt người chăn cừu và trở về từ giữa dãy Alpes h
 
 * Nghĩ tự do bằng ngôn ngữ của ta một lúc ta bắt đầu nghĩ bằng ngôn ngữ Arc. Khi chuồng chưa có cừu, số đếm mặc định là số 0 (câu này thể hiện ở dòng ```(if (no xs) 0```. Vậy khi có 1 cừu vào chuồng, số đếm sẽ tự động tăng thêm 1. Và ta áp dụng quá trình đó vào đám cừu còn lại. Bạn có thể hình dung rằng hàm bạn viết để thể hiện điều đó sẽ như sau:
 
-```
+```scheme
 .. + 1 ..  (car xs) ..    => cừu đầu tiên 
        ..  (cdr xs) ..    => đám cừu còn-lại 
 
@@ -536,7 +520,7 @@ Lưu ý ta đang viết chính xác những gì ta nghĩ. ```car``` chính là �
 
 * Nhìn vào bản nháp code của bạn, đến đây thì ta làm gì? Hãy nhìn vào bản nháp đó và xem ta có thể làm gì với những thành phần gì. Ví dụ ta sẽ làm gì với ```(cdr xs)```? Ồ, ta cần phải đo độ dài của danh sách ```(cdr xs)```. Tức là ta cần phải thực hiện hành động đếm-cừu lên đám-cừu-đó. Bạn nghĩ xem bạn đã có hàm nào để thực hiện hành động đo độ dài của một danh sách chưa? Câu trả lời là có. Đó chính là hàm mà bạn đang tìm cách viết, hàm bạn đặt tên là ```mylen```. Hãy tin tôi. Hãy sử dụng hàm đó vào code của bạn:
 
-```
+```scheme
 (def mylen (xs)
 	(if (no xs)
 		0
@@ -550,7 +534,7 @@ Lưu ý ta đang viết chính xác những gì ta nghĩ. ```car``` chính là �
 
 Đây là hàm hoàn chỉnh:
 
-```
+```scheme
 (def mylen (xs)
 	(if (no xs)
 		0
@@ -558,7 +542,7 @@ Lưu ý ta đang viết chính xác những gì ta nghĩ. ```car``` chính là �
 ```
 Đọc hàm trên như sau: Nếu danh sách rỗng thì trả về 0. Nếu không thì trả về một cộng với độ dài của đám-còn-lại. Nói bằng một thứ ngôn ngữ nửa Arc nửa ta: Nếu danh sách ```nil```, thì trả về 0, nếu không thì trả về nhiều hơn 1 của độ dài của ```cdr``` của danh sách.
 
-```
+```scheme
 arc> (mylen nil)
 0
 arc> (mylen '(a b))
@@ -569,7 +553,7 @@ arc> (mylen '(a b))
 
 Để so sánh với chính nó, so sánh dây chữ..
 
-```
+```scheme
 arc> (is 'a 'a)
 t
 arc> (is "foo" "foo")
@@ -581,13 +565,13 @@ t
 
 Để so giữa hai danh sách ta dùng iso (*isomorphic*)
 
-```
+```scheme
 arc> (iso (list 'a) (list 'a))
 t
 ```
 Để biết một biến có nằm trong các khả năng cho sẵn không 
 
-```
+```scheme
 arc> (let x 'a   
        (in x 'a 'b 'c))
 t
@@ -595,7 +579,7 @@ t
 
 Trường hợp:
 
-```
+```scheme
 arc> (def translate (sym)
        (case sym
          apple 'mela 
@@ -613,7 +597,7 @@ che?
 
 Làm gì đó khi x ở trong giới hạn cho phép:
 
-```
+```scheme
 arc> (for i 1 10 
        (pr i " "))
 1 2 3 4 5 6 7 8 9 10 nil
@@ -626,7 +610,7 @@ Những chương trình này in ra thành phần trong danh sách bằng pr, nh�
 
 Khi điều kiện gì đó còn đúng thì còn làm:
 
-```
+```scheme
 arc> (let x 10
        (while (> x 5)
          (= x (- x 1))
@@ -638,7 +622,7 @@ arc> (let x 10
 
 Làm cái gì đó n lần:
 
-```
+```scheme
 arc> (repeat 5 (pr "la "))
 la la la la la nil
 ```
@@ -649,44 +633,44 @@ Ngoài các kiểu lặp trên, có những hàm có khả năng thao tác trên
 
 ```map``` sẽ áp dụng một hàm lên toàn bộ danh sách:
 
-```
+```scheme
 arc> (map (fn (x) (+ x 10)) '(1 2 3))
 (11 12 13)
 ```
 
 Nếu ta cho ```map``` cùng lúc nhiều danh sách, hắn sẽ áp dụng lên hết cho đến khi hết danh sách ngắn nhất.
 
-```
+```scheme
 arc> (map + '(1 2 3 4) '(100 200 300))
 (101 202 303)
 ```
 
 Với hàm chỉ có 1 biến, ta thể có viết tắt: ```[... _ ...] = (fn (_) (... _ ...))```
 
-```
+```scheme
 arc> (map [+ _ 10] '(1 2 3))
 (11 12 13)
 ```
 
-``` 
+```scheme
 Trong toán học: f.g(x) = f(g(x))
 Trong Arc: (foo:bar x y) = (foo (bar x y)) 
 ```
 
-```
+```scheme
 arc> (map odd:car '((1 2) (4 5) (7 9)))
 (t nil t)
 ```
 Phản một hàm 
 
-```
+```scheme
 arc> (map ~odd '(1 2 3 4 5)) 
 (nil t nil t nil)
 ```
 
 Tự đọc những hàm sau:
 
-```
+```scheme
 arc> (keep odd '(1 2 3 4 5 6 7))
 (1 3 5 7)
 arc> (rem odd '(1 2 3 4 5 6))
@@ -704,7 +688,7 @@ arc> (trues [if (odd _) (+ _ 10)]
 
 Câu sau có gì khác biệt?
 
-```
+```scheme
 arc> (rem 'a '(a b a c u s))
 (b c u s)
 
@@ -713,7 +697,7 @@ arc> (rem #\a "abacus")
 ```
 #### sort 
 
-```
+```scheme
 arc> (sort < '(2 9 3 7 5 1))
 (1 2 3 5 7 9)
 arc> (insort < 4 x)
@@ -743,7 +727,7 @@ Ta sẽ xem xét tiếp các trường hợp mà hàm nhận vào số lượng 
 
 Hàm ```greet``` sau nhất định nhận vào 1 biến, ví dụ ```'joe```. Có thể là chỉ có một biến đó thôi, hoặc có thể là thêm một biến nữa là dấu ```!```
 
-```
+```scheme
 arc> (def greet (name (o punc))
        (string "hello " name punc))
 #<procedure: greet>
@@ -753,7 +737,7 @@ arc> (greet 'joe #\!)
 "hello joe!"
 ```
 Một trường hợp phức tạp hơn:
-```
+```scheme
 arc> (def greet (name (o punc (case name who #\? #\!)))
        (string "hello " name punc)) 
 *** redefining greet
@@ -764,7 +748,7 @@ arc> (greet 'who)
 
 * Khi ta viết ```(x y . z)``` nghĩa là hàm này nhận vào x và y sau đó nhận thêm số lượng biến bất kỳ. Trong phần thân của hàm, x và y được xử lý trước, sau đó toàn bộ các biến còn lại được cho vào một danh sách.
 
-```
+```scheme
 arc> (def foo (x y . z) 
        (list x y z))
 #<procedure: foo>
@@ -780,14 +764,14 @@ fn xs ... thay vì fn (xs) ...
 
 * Để áp dụng một hàm lên toàn bộ danh sách, ta dùng ```apply```
 
-```
+```scheme
 arc> (apply + '(1 2 3))
 6
 ```
 
 Đến đây thì ta có thể viết hàm ```average``` mà có thể nhận số lượng biến bất kỳ. 
 
-```
+```scheme
 arc> (def average args 
        (/ (apply + args) (len args)))
 #<procedure: average>
@@ -800,7 +784,7 @@ Tương tự như vậy, bạn có định nghĩa lại được dấu ```+``` t
 
 Danh sách kiểu này giống như từ điển: một từ khóa gắn với một giá trị tương ứng.
 
-```
+```scheme
 arc> (= codes '(("Boston" bos) ("Paris" cdg) ("San Francisco" sfo)))
 (("Boston" bos) ("Paris" cdg) ("San Francisco" sfo))
 
@@ -810,7 +794,7 @@ bos
 
 * Dây chữ 
 
-```
+```scheme
 arc> (string 99 " bottles of " 'bee #\r)
 "99 bottles of beer"
 
@@ -822,7 +806,7 @@ arc> (tostring
 
 * coerce
 
-```
+```scheme
 arc> (map type (list 'foo 23 23.5 '(a) nil car "foo" #\a))
 (sym int num cons sym fn string char)
 arc> (coerce #\A 'int)
@@ -838,7 +822,7 @@ arc> (coerce "99" 'int 16)
 * Nếu bạn tưởng tượng danh sách giống như một giá để bày đồ đạc. Động từ ```push``` là để chèn thêm một thành mới lên đầu giá, và động từ ```pop``` là để bỏ đi thành phần cuối giá.
 
 
-```
+```scheme
 arc> (= x '(c a b))
 (c a b)
 arc> (pop x)
@@ -852,7 +836,7 @@ arc> x
 ```
 
 
-```
+```scheme
 arc> (push 'l (cdr x))
 (l a b)
 arc> x
@@ -861,7 +845,7 @@ arc> x
 
 * Cộng 1 và bớt 1 
 
-```
+```scheme
 arc> (let x '(1 2 3) 
        (++ (car x))
        x)           
@@ -871,6 +855,6 @@ arc> (let x '(1 2 3)
 
 Ta đã gặp rất nhiều hàm can thiệp và thay đổi giá trị mà một biểu tượng đang nắm giữ, giờ ta sẽ gặp một hàm chung chung cho ý tưởng đó. Hàm ```zap``` gán giá trị trả về vào biểu tượng ban đầu.
 
-```
+```scheme
 (++ x)  =  (zap [+ _ 1] x)
 ```
