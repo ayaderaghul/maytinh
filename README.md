@@ -69,7 +69,7 @@ All the screenshots was taken by me on my own device. In chapter 2, I use some g
 
 ## Acknowledgement
 
-These people significantly change the course of my life for the better: Romas Vijeikis, Hoàng Minh Thắng, Mathias Felleisen. There are some others that I look up and try to learn from them too. I read Paul Graham extensively.
+These people significantly change the course of my life for the better: Romas Vijeikis, Hoàng Minh Thắng, Matthias Felleisen. There are some others that I look up and try to learn from them too. I read Paul Graham extensively.
 
 Maintainer: Nguyễn Linh Chi (nguyenlinhchi09@gmail.com)
 
